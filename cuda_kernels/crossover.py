@@ -13,6 +13,34 @@ size = -1
 max_size_route = -1
 
 
+#@cuda.jit
+#def computeClosestCrossover_OX(rng_states, size_pop, distance_matrix_gpu, solution_pop, offspring, size_route_offspring, demand_route_global_mem, client_demands, indices):
+
+
+    #d = cuda.grid(1)
+    #nbParent = 2
+
+    #if d < size_pop:
+
+        #idx1 = int(d)
+        #idx2 = int(indices[idx1])
+        
+        #parents = nb.cuda.local.array((nbParent, max_size_route, nb_voitures), nb.int16)
+
+        #for idx1_v in range(nb_voitures):
+            #for idx1_c in range(max_size_route):
+                #parents[0, idx1_c, idx1_v] = solution_pop[idx1, idx1_c, idx1_v]
+                #parents[1, idx1_c, idx1_v] = solution_pop[idx2, idx1_c, idx1_v]
+        
+        
+        #.......
+        
+        #offspring[d, 0, 0] = 0
+        #offspring[d, 1, 0] = client1
+        #offspring[d, 2, 0] = client2
+        #offspring[d, 3, 0] = 0
+        #offspring[d, 4, 0] = -1
+        
 @cuda.jit
 def computeClosestCrossover_GPX(rng_states, size_pop, distance_matrix_gpu, solution_pop, offspring, size_route_offspring, demand_route_global_mem, client_demands, indices):
 

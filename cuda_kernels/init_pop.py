@@ -43,11 +43,6 @@ def generate_illegal_solutions(D, rng_states, demand_route, client_demands, curr
             if(r < 0):
                 r = 0
 
-            #r = i % nb_voitures
-
-            #if(i == 55):
-                #test2[d] = int(size_route_local[0])
-                
 
                 
                 
