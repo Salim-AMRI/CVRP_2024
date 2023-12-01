@@ -1,0 +1,172 @@
+30/11/2023 06:18:57 init
+30/11/2023 06:18:57 cuda:0
+30/11/2023 06:19:00 ############################
+30/11/2023 06:19:00 Start TABU
+30/11/2023 06:19:00 ############################
+30/11/2023 06:19:04 Tabucol duration : 4.182158946990967
+30/11/2023 06:19:04 Epoch : 0
+30/11/2023 06:19:04 Pop best : 784_worst : 984_avg : 848.27
+30/11/2023 06:19:04 Save best solution
+30/11/2023 06:19:04 Keep best with diversity/fit tradeoff
+30/11/2023 06:19:04 start matrix distance
+30/11/2023 06:19:05 Matrix distance duration : 0.6365313529968262
+30/11/2023 06:19:05 end  matrix distance
+30/11/2023 06:19:05 start insertion in pop
+30/11/2023 06:19:05 len(idx_selected) 100
+30/11/2023 06:19:05 Nb insertion 100
+30/11/2023 06:19:05 Insertion in pop : 0.004885673522949219
+30/11/2023 06:19:05 end insertion in pop
+30/11/2023 06:19:05 After keep best info
+30/11/2023 06:19:05 Pop _best : 784_worst : 984_avg : 848.27
+30/11/2023 06:19:05 [784 784 784 784 784 784 784 784 784 784 784 812 814 815 815 817 824 824
+ 827 827 828 829 829 829 829 829 829 829 829 829 829 829 829 829 830 830
+ 830 830 830 831 836 842 843 844 844 844 844 844 844 844 845 845 846 846
+ 846 846 846 846 847 848 850 851 852 852 853 853 854 859 859 859 859 859
+ 859 859 859 860 861 861 868 872 874 884 886 886 891 895 895 896 897 897
+ 903 913 913 916 918 919 927 949 950 984]
+30/11/2023 06:19:05 Avg dist : 47.48646464646465 min dist : 0.0 max dist : 72
+30/11/2023 06:19:05 ############################
+30/11/2023 06:19:05 start crossover
+30/11/2023 06:19:05 ############################
+30/11/2023 06:19:05 Start crossovers
+30/11/2023 06:19:05 add pending dealloc: cuMemFree_v2 132000 bytes
+30/11/2023 06:19:06 nb cross already tested in pop : 100
+30/11/2023 06:19:06 Crossover duration : 1.5028636455535889
+30/11/2023 06:19:06 generation duration : 6.367143630981445
+30/11/2023 06:19:06 ############################
+30/11/2023 06:19:06 Start TABU
+30/11/2023 06:19:06 ############################
+30/11/2023 06:19:07 PB demand after tabu0
+30/11/2023 06:19:07 PB score after tabu0
+30/11/2023 06:19:07 PB demand after tabu1
+30/11/2023 06:19:07 PB score after tabu1
+30/11/2023 06:19:07 PB demand after tabu2
+30/11/2023 06:19:07 PB score after tabu2
+30/11/2023 06:19:07 PB demand after tabu3
+30/11/2023 06:19:07 PB score after tabu3
+30/11/2023 06:19:07 PB demand after tabu4
+30/11/2023 06:19:07 PB score after tabu4
+30/11/2023 06:19:07 PB demand after tabu5
+30/11/2023 06:19:07 PB score after tabu5
+30/11/2023 06:19:07 PB demand after tabu6
+30/11/2023 06:19:07 PB score after tabu6
+30/11/2023 06:19:07 PB demand after tabu7
+30/11/2023 06:19:07 PB score after tabu7
+30/11/2023 06:19:07 PB demand after tabu8
+30/11/2023 06:19:07 PB score after tabu8
+30/11/2023 06:19:07 PB demand after tabu9
+30/11/2023 06:19:07 PB score after tabu9
+30/11/2023 06:19:07 PB demand after tabu10
+30/11/2023 06:19:07 PB score after tabu10
+30/11/2023 06:19:07 PB score after tabu11
+30/11/2023 06:19:07 PB score after tabu12
+30/11/2023 06:19:07 PB score after tabu13
+30/11/2023 06:19:07 PB score after tabu14
+30/11/2023 06:19:07 PB demand after tabu16
+30/11/2023 06:19:07 PB score after tabu16
+30/11/2023 06:19:07 PB demand after tabu17
+30/11/2023 06:19:07 PB score after tabu17
+30/11/2023 06:19:07 PB score after tabu18
+30/11/2023 06:19:07 PB score after tabu19
+30/11/2023 06:19:07 PB score after tabu20
+30/11/2023 06:19:07 PB score after tabu22
+30/11/2023 06:19:07 PB score after tabu24
+30/11/2023 06:19:07 PB score after tabu27
+30/11/2023 06:19:07 PB score after tabu28
+30/11/2023 06:19:07 PB score after tabu29
+30/11/2023 06:19:07 PB score after tabu30
+30/11/2023 06:19:07 PB demand after tabu31
+30/11/2023 06:19:07 PB score after tabu31
+30/11/2023 06:19:07 PB score after tabu43
+30/11/2023 06:19:07 PB score after tabu44
+30/11/2023 06:19:07 PB score after tabu46
+30/11/2023 06:19:07 PB score after tabu47
+30/11/2023 06:19:07 PB score after tabu49
+30/11/2023 06:19:07 PB score after tabu51
+30/11/2023 06:19:07 PB demand after tabu53
+30/11/2023 06:19:07 PB score after tabu53
+30/11/2023 06:19:07 PB demand after tabu55
+30/11/2023 06:19:07 PB score after tabu55
+30/11/2023 06:19:07 PB demand after tabu56
+30/11/2023 06:19:07 PB score after tabu56
+30/11/2023 06:19:07 PB demand after tabu57
+30/11/2023 06:19:07 PB score after tabu57
+30/11/2023 06:19:07 PB demand after tabu58
+30/11/2023 06:19:07 PB score after tabu58
+30/11/2023 06:19:07 PB score after tabu61
+30/11/2023 06:19:07 PB score after tabu68
+30/11/2023 06:19:07 PB score after tabu69
+30/11/2023 06:19:07 PB score after tabu70
+30/11/2023 06:19:07 PB score after tabu71
+30/11/2023 06:19:07 PB score after tabu79
+30/11/2023 06:19:07 PB demand after tabu81
+30/11/2023 06:19:07 PB score after tabu81
+30/11/2023 06:19:07 PB demand after tabu87
+30/11/2023 06:19:07 PB score after tabu87
+30/11/2023 06:19:07 PB demand after tabu89
+30/11/2023 06:19:07 PB score after tabu89
+30/11/2023 06:19:07 PB score after tabu92
+30/11/2023 06:19:07 PB demand after tabu97
+30/11/2023 06:19:07 PB score after tabu97
+30/11/2023 06:19:07 Tabucol duration : 0.8143918514251709
+30/11/2023 06:19:07 Epoch : 1
+30/11/2023 06:19:07 Pop best : 777_worst : 99999_avg : 26610.34
+30/11/2023 06:19:07 Save best solution
+30/11/2023 06:19:07 Keep best with diversity/fit tradeoff
+30/11/2023 06:19:07 start matrix distance
+30/11/2023 06:19:07 add pending dealloc: cuMemFree_v2 132000 bytes
+30/11/2023 06:19:07 Matrix distance duration : 0.0031104087829589844
+30/11/2023 06:19:07 end  matrix distance
+30/11/2023 06:19:07 start insertion in pop
+30/11/2023 06:19:07 len(idx_selected) 100
+30/11/2023 06:19:07 Nb insertion 52
+30/11/2023 06:19:07 Insertion in pop : 0.003869295120239258
+30/11/2023 06:19:07 end insertion in pop
+30/11/2023 06:19:07 After keep best info
+30/11/2023 06:19:07 Pop _best : 777_worst : 844_avg : 813.82
+30/11/2023 06:19:07 [777 777 777 777 777 777 777 777 777 777 777 777 777 777 777 777 777 777
+ 777 777 784 784 784 784 784 784 784 784 784 784 784 784 796 812 814 814
+ 815 815 817 824 824 825 827 827 827 828 828 828 829 829 829 829 829 829
+ 829 829 829 829 829 829 829 829 829 829 829 829 829 829 829 829 829 829
+ 829 829 829 829 829 829 830 830 830 830 830 830 831 831 836 840 842 843
+ 844 844 844 844 844 844 844 844 844 844]
+30/11/2023 06:19:07 Avg dist : 32.96949494949495 min dist : 0.0 max dist : 72
+30/11/2023 06:19:07 ############################
+30/11/2023 06:19:07 start crossover
+30/11/2023 06:19:07 ############################
+30/11/2023 06:19:07 Start crossovers
+30/11/2023 06:19:07 add pending dealloc: cuMemFree_v2 132000 bytes
+30/11/2023 06:19:07 add pending dealloc: cuMemFree_v2 800 bytes
+30/11/2023 06:19:07 nb cross already tested in pop : 131
+30/11/2023 06:19:07 Crossover duration : 0.005235433578491211
+30/11/2023 06:19:07 generation duration : 0.8505110740661621
+30/11/2023 06:19:07 add pending dealloc: cuMemFree_v2 800 bytes
+30/11/2023 06:19:07 add pending dealloc: cuMemFree_v2 132000 bytes
+30/11/2023 06:19:07 add pending dealloc: module_unload ? bytes
+30/11/2023 06:19:07 add pending dealloc: module_unload ? bytes
+30/11/2023 06:19:07 add pending dealloc: module_unload ? bytes
+30/11/2023 06:19:07 add pending dealloc: module_unload ? bytes
+30/11/2023 06:19:07 add pending dealloc: module_unload ? bytes
+30/11/2023 06:19:07 add pending dealloc: cuMemFree_v2 800 bytes
+30/11/2023 06:19:07 add pending dealloc: cuMemFree_v2 80000 bytes
+30/11/2023 06:19:07 add pending dealloc: cuMemFree_v2 80000 bytes
+30/11/2023 06:19:07 add pending dealloc: cuMemFree_v2 400 bytes
+30/11/2023 06:19:07 add pending dealloc: cuMemFree_v2 8192 bytes
+30/11/2023 06:19:07 dealloc: cuMemFree_v2 132000 bytes
+30/11/2023 06:19:07 dealloc: cuMemFree_v2 132000 bytes
+30/11/2023 06:19:07 dealloc: cuMemFree_v2 132000 bytes
+30/11/2023 06:19:07 dealloc: cuMemFree_v2 800 bytes
+30/11/2023 06:19:07 dealloc: cuMemFree_v2 800 bytes
+30/11/2023 06:19:07 dealloc: cuMemFree_v2 132000 bytes
+30/11/2023 06:19:07 dealloc: cuMemFree_v2 800 bytes
+30/11/2023 06:19:07 dealloc: cuMemFree_v2 80000 bytes
+30/11/2023 06:19:07 dealloc: cuMemFree_v2 80000 bytes
+30/11/2023 06:19:07 dealloc: cuMemFree_v2 400 bytes
+30/11/2023 06:19:07 dealloc: cuMemFree_v2 8192 bytes
+30/11/2023 06:19:07 add pending dealloc: cuMemFree_v2 40 bytes
+30/11/2023 06:19:07 add pending dealloc: cuMemFree_v2 256 bytes
+30/11/2023 06:19:07 add pending dealloc: cuMemFree_v2 4000 bytes
+30/11/2023 06:19:07 add pending dealloc: cuMemFree_v2 4000 bytes
+30/11/2023 06:19:07 add pending dealloc: cuMemFree_v2 4000 bytes
+30/11/2023 06:19:07 add pending dealloc: cuMemFree_v2 132000 bytes
+30/11/2023 06:19:07 add pending dealloc: cuMemFree_v2 160768 bytes

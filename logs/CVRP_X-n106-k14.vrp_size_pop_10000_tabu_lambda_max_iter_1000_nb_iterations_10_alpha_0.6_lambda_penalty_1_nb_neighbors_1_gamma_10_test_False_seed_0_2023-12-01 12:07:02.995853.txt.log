@@ -1,0 +1,46 @@
+01/12/2023 12:07:02 init
+01/12/2023 12:07:03 cuda:1
+01/12/2023 12:07:27 ############################
+01/12/2023 12:07:27 Start TABU
+01/12/2023 12:07:27 ############################
+01/12/2023 12:10:13 Tabucol duration : 166.06662917137146
+01/12/2023 12:10:13 Epoch : 0
+01/12/2023 12:10:13 Pop best : 26784_worst : 99999_avg : 29602.5985
+01/12/2023 12:10:13 Save best solution
+01/12/2023 12:10:13 Keep best with diversity/fit tradeoff
+01/12/2023 12:10:13 start matrix distance
+01/12/2023 12:11:20 Matrix distance duration : 66.61324214935303
+01/12/2023 12:11:20 end  matrix distance
+01/12/2023 12:11:20 start insertion in pop
+01/12/2023 12:11:23 len(idx_selected) 10000
+01/12/2023 12:11:23 Nb insertion 10000
+01/12/2023 12:11:25 Insertion in pop : 5.249329328536987
+01/12/2023 12:11:25 end insertion in pop
+01/12/2023 12:11:25 begin verify solution pop
+01/12/2023 12:11:25 add pending dealloc: module_unload ? bytes
+01/12/2023 12:11:25 add pending dealloc: module_unload ? bytes
+01/12/2023 12:11:25 add pending dealloc: cuMemFree_v2 119840000 bytes
+01/12/2023 12:11:25 add pending dealloc: module_unload ? bytes
+01/12/2023 12:11:25 add pending dealloc: module_unload ? bytes
+01/12/2023 12:11:25 add pending dealloc: cuMemFree_v2 800000000 bytes
+01/12/2023 12:11:25 add pending dealloc: cuMemFree_v2 800000000 bytes
+01/12/2023 12:11:25 add pending dealloc: cuMemFree_v2 40000 bytes
+01/12/2023 12:11:25 add pending dealloc: cuMemFree_v2 89888 bytes
+01/12/2023 12:11:25 add pending dealloc: cuMemFree_v2 112 bytes
+01/12/2023 12:11:25 add pending dealloc: cuMemFree_v2 848 bytes
+01/12/2023 12:11:25 add pending dealloc: cuMemFree_v2 1120000 bytes
+01/12/2023 12:11:25 add pending dealloc: cuMemFree_v2 1120000 bytes
+01/12/2023 12:11:25 add pending dealloc: cuMemFree_v2 1120000 bytes
+01/12/2023 12:11:25 add pending dealloc: cuMemFree_v2 119840000 bytes
+01/12/2023 12:11:25 dealloc: cuMemFree_v2 119840000 bytes
+01/12/2023 12:11:25 dealloc: cuMemFree_v2 800000000 bytes
+01/12/2023 12:11:25 dealloc: cuMemFree_v2 800000000 bytes
+01/12/2023 12:11:25 dealloc: cuMemFree_v2 40000 bytes
+01/12/2023 12:11:25 dealloc: cuMemFree_v2 89888 bytes
+01/12/2023 12:11:25 dealloc: cuMemFree_v2 112 bytes
+01/12/2023 12:11:25 dealloc: cuMemFree_v2 848 bytes
+01/12/2023 12:11:25 dealloc: cuMemFree_v2 1120000 bytes
+01/12/2023 12:11:25 dealloc: cuMemFree_v2 1120000 bytes
+01/12/2023 12:11:25 dealloc: cuMemFree_v2 1120000 bytes
+01/12/2023 12:11:25 dealloc: cuMemFree_v2 119840000 bytes
+01/12/2023 12:11:25 add pending dealloc: cuMemFree_v2 1600000000 bytes

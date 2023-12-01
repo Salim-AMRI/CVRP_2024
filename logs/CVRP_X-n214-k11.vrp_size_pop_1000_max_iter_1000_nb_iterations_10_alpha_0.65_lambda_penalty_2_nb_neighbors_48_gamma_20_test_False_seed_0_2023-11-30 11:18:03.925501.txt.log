@@ -1,0 +1,30 @@
+30/11/2023 11:18:03 init
+30/11/2023 11:18:04 cuda:0
+30/11/2023 11:18:09 ############################
+30/11/2023 11:18:09 Start TABU
+30/11/2023 11:18:09 ############################
+30/11/2023 11:18:10 add pending dealloc: module_unload ? bytes
+30/11/2023 11:18:10 add pending dealloc: module_unload ? bytes
+30/11/2023 11:18:10 add pending dealloc: cuMemFree_v2 8000 bytes
+30/11/2023 11:18:10 add pending dealloc: cuMemFree_v2 8000000 bytes
+30/11/2023 11:18:10 add pending dealloc: cuMemFree_v2 8000000 bytes
+30/11/2023 11:18:10 add pending dealloc: cuMemFree_v2 4000 bytes
+30/11/2023 11:18:10 add pending dealloc: cuMemFree_v2 366368 bytes
+30/11/2023 11:18:10 add pending dealloc: cuMemFree_v2 88 bytes
+30/11/2023 11:18:10 add pending dealloc: cuMemFree_v2 1712 bytes
+30/11/2023 11:18:10 add pending dealloc: cuMemFree_v2 88000 bytes
+30/11/2023 11:18:10 add pending dealloc: cuMemFree_v2 88000 bytes
+30/11/2023 11:18:10 add pending dealloc: cuMemFree_v2 88000 bytes
+30/11/2023 11:18:10 add pending dealloc: cuMemFree_v2 18920000 bytes
+30/11/2023 11:18:10 dealloc: cuMemFree_v2 8000 bytes
+30/11/2023 11:18:10 dealloc: cuMemFree_v2 8000000 bytes
+30/11/2023 11:18:10 dealloc: cuMemFree_v2 8000000 bytes
+30/11/2023 11:18:10 dealloc: cuMemFree_v2 4000 bytes
+30/11/2023 11:18:10 dealloc: cuMemFree_v2 366368 bytes
+30/11/2023 11:18:10 dealloc: cuMemFree_v2 88 bytes
+30/11/2023 11:18:10 dealloc: cuMemFree_v2 1712 bytes
+30/11/2023 11:18:10 dealloc: cuMemFree_v2 88000 bytes
+30/11/2023 11:18:10 dealloc: cuMemFree_v2 88000 bytes
+30/11/2023 11:18:10 dealloc: cuMemFree_v2 88000 bytes
+30/11/2023 11:18:10 dealloc: cuMemFree_v2 18920000 bytes
+30/11/2023 11:18:10 add pending dealloc: cuMemFree_v2 16000000 bytes

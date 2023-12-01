@@ -1,0 +1,501 @@
+01/12/2023 11:51:29 init
+01/12/2023 11:51:29 cuda:1
+01/12/2023 11:51:31 ############################
+01/12/2023 11:51:31 Start TABU
+01/12/2023 11:51:31 ############################
+01/12/2023 11:52:02 Tabucol duration : 31.048892498016357
+01/12/2023 11:52:02 Epoch : 0
+01/12/2023 11:52:02 Pop best : 28384_worst : 99999_avg : 98590.46
+01/12/2023 11:52:02 Save best solution
+01/12/2023 11:52:02 Keep best with diversity/fit tradeoff
+01/12/2023 11:52:02 start matrix distance
+01/12/2023 11:52:03 Matrix distance duration : 1.0839207172393799
+01/12/2023 11:52:03 end  matrix distance
+01/12/2023 11:52:03 start insertion in pop
+01/12/2023 11:52:03 len(idx_selected) 100
+01/12/2023 11:52:03 Nb insertion 100
+01/12/2023 11:52:03 Insertion in pop : 0.006083011627197266
+01/12/2023 11:52:03 end insertion in pop
+01/12/2023 11:52:03 begin verify solution pop
+01/12/2023 11:52:03 PB score : 2
+01/12/2023 11:52:03 PB demand solution 2
+01/12/2023 11:52:03 PB score : 3
+01/12/2023 11:52:03 PB demand solution 3
+01/12/2023 11:52:03 PB score : 4
+01/12/2023 11:52:03 PB demand solution 4
+01/12/2023 11:52:03 PB score : 5
+01/12/2023 11:52:03 PB demand solution 5
+01/12/2023 11:52:03 PB score : 6
+01/12/2023 11:52:03 PB demand solution 6
+01/12/2023 11:52:03 PB score : 7
+01/12/2023 11:52:03 PB demand solution 7
+01/12/2023 11:52:03 PB score : 8
+01/12/2023 11:52:03 PB demand solution 8
+01/12/2023 11:52:03 PB score : 9
+01/12/2023 11:52:03 PB demand solution 9
+01/12/2023 11:52:04 PB score : 10
+01/12/2023 11:52:04 PB demand solution 10
+01/12/2023 11:52:04 PB score : 11
+01/12/2023 11:52:04 PB demand solution 11
+01/12/2023 11:52:04 PB score : 12
+01/12/2023 11:52:04 PB demand solution 12
+01/12/2023 11:52:04 PB score : 13
+01/12/2023 11:52:04 PB demand solution 13
+01/12/2023 11:52:04 PB score : 14
+01/12/2023 11:52:04 PB demand solution 14
+01/12/2023 11:52:04 PB score : 15
+01/12/2023 11:52:04 PB demand solution 15
+01/12/2023 11:52:04 PB score : 16
+01/12/2023 11:52:04 PB demand solution 16
+01/12/2023 11:52:04 PB score : 17
+01/12/2023 11:52:04 PB demand solution 17
+01/12/2023 11:52:04 PB score : 18
+01/12/2023 11:52:04 PB demand solution 18
+01/12/2023 11:52:04 PB score : 19
+01/12/2023 11:52:04 PB demand solution 19
+01/12/2023 11:52:04 PB score : 20
+01/12/2023 11:52:04 PB demand solution 20
+01/12/2023 11:52:04 PB score : 21
+01/12/2023 11:52:04 PB demand solution 21
+01/12/2023 11:52:04 PB score : 22
+01/12/2023 11:52:04 PB demand solution 22
+01/12/2023 11:52:04 PB score : 23
+01/12/2023 11:52:04 PB demand solution 23
+01/12/2023 11:52:04 PB score : 24
+01/12/2023 11:52:04 PB demand solution 24
+01/12/2023 11:52:04 PB score : 25
+01/12/2023 11:52:04 PB demand solution 25
+01/12/2023 11:52:04 PB score : 26
+01/12/2023 11:52:04 PB demand solution 26
+01/12/2023 11:52:04 PB score : 27
+01/12/2023 11:52:04 PB demand solution 27
+01/12/2023 11:52:04 PB score : 28
+01/12/2023 11:52:04 PB demand solution 28
+01/12/2023 11:52:04 PB score : 29
+01/12/2023 11:52:04 PB demand solution 29
+01/12/2023 11:52:04 PB score : 30
+01/12/2023 11:52:04 PB demand solution 30
+01/12/2023 11:52:04 PB score : 31
+01/12/2023 11:52:04 PB demand solution 31
+01/12/2023 11:52:04 PB score : 32
+01/12/2023 11:52:04 PB demand solution 32
+01/12/2023 11:52:04 PB score : 33
+01/12/2023 11:52:04 PB demand solution 33
+01/12/2023 11:52:04 PB score : 34
+01/12/2023 11:52:04 PB demand solution 34
+01/12/2023 11:52:04 PB score : 35
+01/12/2023 11:52:04 PB demand solution 35
+01/12/2023 11:52:04 PB score : 36
+01/12/2023 11:52:04 PB demand solution 36
+01/12/2023 11:52:04 PB score : 37
+01/12/2023 11:52:04 PB demand solution 37
+01/12/2023 11:52:04 PB score : 38
+01/12/2023 11:52:04 PB demand solution 38
+01/12/2023 11:52:04 PB score : 39
+01/12/2023 11:52:04 PB demand solution 39
+01/12/2023 11:52:04 PB score : 40
+01/12/2023 11:52:04 PB demand solution 40
+01/12/2023 11:52:04 PB score : 41
+01/12/2023 11:52:04 PB demand solution 41
+01/12/2023 11:52:04 PB score : 42
+01/12/2023 11:52:04 PB demand solution 42
+01/12/2023 11:52:04 PB score : 43
+01/12/2023 11:52:04 PB demand solution 43
+01/12/2023 11:52:04 PB score : 44
+01/12/2023 11:52:04 PB demand solution 44
+01/12/2023 11:52:04 PB score : 45
+01/12/2023 11:52:04 PB demand solution 45
+01/12/2023 11:52:04 PB score : 46
+01/12/2023 11:52:04 PB demand solution 46
+01/12/2023 11:52:04 PB score : 47
+01/12/2023 11:52:04 PB demand solution 47
+01/12/2023 11:52:04 PB score : 48
+01/12/2023 11:52:04 PB demand solution 48
+01/12/2023 11:52:04 PB score : 49
+01/12/2023 11:52:04 PB demand solution 49
+01/12/2023 11:52:04 PB score : 50
+01/12/2023 11:52:04 PB demand solution 50
+01/12/2023 11:52:04 PB score : 51
+01/12/2023 11:52:04 PB demand solution 51
+01/12/2023 11:52:04 PB score : 52
+01/12/2023 11:52:04 PB demand solution 52
+01/12/2023 11:52:04 PB score : 53
+01/12/2023 11:52:04 PB demand solution 53
+01/12/2023 11:52:04 PB score : 54
+01/12/2023 11:52:04 PB demand solution 54
+01/12/2023 11:52:04 PB score : 55
+01/12/2023 11:52:04 PB demand solution 55
+01/12/2023 11:52:04 PB score : 56
+01/12/2023 11:52:04 PB demand solution 56
+01/12/2023 11:52:04 PB score : 57
+01/12/2023 11:52:04 PB demand solution 57
+01/12/2023 11:52:04 PB score : 58
+01/12/2023 11:52:04 PB demand solution 58
+01/12/2023 11:52:04 PB score : 59
+01/12/2023 11:52:04 PB demand solution 59
+01/12/2023 11:52:04 PB score : 60
+01/12/2023 11:52:04 PB demand solution 60
+01/12/2023 11:52:04 PB score : 61
+01/12/2023 11:52:04 PB demand solution 61
+01/12/2023 11:52:04 PB score : 62
+01/12/2023 11:52:04 PB demand solution 62
+01/12/2023 11:52:04 PB score : 63
+01/12/2023 11:52:04 PB demand solution 63
+01/12/2023 11:52:04 PB score : 64
+01/12/2023 11:52:04 PB demand solution 64
+01/12/2023 11:52:04 PB score : 65
+01/12/2023 11:52:04 PB demand solution 65
+01/12/2023 11:52:04 PB score : 66
+01/12/2023 11:52:04 PB demand solution 66
+01/12/2023 11:52:04 PB score : 67
+01/12/2023 11:52:04 PB demand solution 67
+01/12/2023 11:52:04 PB score : 68
+01/12/2023 11:52:04 PB demand solution 68
+01/12/2023 11:52:04 PB score : 69
+01/12/2023 11:52:04 PB demand solution 69
+01/12/2023 11:52:04 PB score : 70
+01/12/2023 11:52:04 PB demand solution 70
+01/12/2023 11:52:04 PB score : 71
+01/12/2023 11:52:04 PB demand solution 71
+01/12/2023 11:52:04 PB score : 72
+01/12/2023 11:52:04 PB demand solution 72
+01/12/2023 11:52:04 PB score : 73
+01/12/2023 11:52:04 PB demand solution 73
+01/12/2023 11:52:04 PB score : 74
+01/12/2023 11:52:04 PB demand solution 74
+01/12/2023 11:52:04 PB score : 75
+01/12/2023 11:52:04 PB demand solution 75
+01/12/2023 11:52:04 PB score : 76
+01/12/2023 11:52:04 PB demand solution 76
+01/12/2023 11:52:04 PB score : 77
+01/12/2023 11:52:04 PB demand solution 77
+01/12/2023 11:52:04 PB score : 78
+01/12/2023 11:52:04 PB demand solution 78
+01/12/2023 11:52:04 PB score : 79
+01/12/2023 11:52:04 PB demand solution 79
+01/12/2023 11:52:04 PB score : 80
+01/12/2023 11:52:04 PB demand solution 80
+01/12/2023 11:52:04 PB score : 81
+01/12/2023 11:52:04 PB demand solution 81
+01/12/2023 11:52:04 PB score : 82
+01/12/2023 11:52:04 PB demand solution 82
+01/12/2023 11:52:04 PB score : 83
+01/12/2023 11:52:04 PB demand solution 83
+01/12/2023 11:52:04 PB score : 84
+01/12/2023 11:52:04 PB demand solution 84
+01/12/2023 11:52:04 PB score : 85
+01/12/2023 11:52:04 PB demand solution 85
+01/12/2023 11:52:04 PB score : 86
+01/12/2023 11:52:04 PB demand solution 86
+01/12/2023 11:52:04 PB score : 87
+01/12/2023 11:52:04 PB demand solution 87
+01/12/2023 11:52:04 PB score : 88
+01/12/2023 11:52:04 PB demand solution 88
+01/12/2023 11:52:04 PB score : 89
+01/12/2023 11:52:04 PB demand solution 89
+01/12/2023 11:52:04 PB score : 90
+01/12/2023 11:52:04 PB demand solution 90
+01/12/2023 11:52:04 PB score : 91
+01/12/2023 11:52:04 PB demand solution 91
+01/12/2023 11:52:04 PB score : 92
+01/12/2023 11:52:04 PB demand solution 92
+01/12/2023 11:52:04 PB score : 93
+01/12/2023 11:52:04 PB demand solution 93
+01/12/2023 11:52:04 PB score : 94
+01/12/2023 11:52:04 PB demand solution 94
+01/12/2023 11:52:04 PB score : 95
+01/12/2023 11:52:04 PB demand solution 95
+01/12/2023 11:52:04 PB score : 96
+01/12/2023 11:52:04 PB demand solution 96
+01/12/2023 11:52:04 PB score : 97
+01/12/2023 11:52:04 PB demand solution 97
+01/12/2023 11:52:04 PB score : 98
+01/12/2023 11:52:04 PB demand solution 98
+01/12/2023 11:52:04 PB score : 99
+01/12/2023 11:52:04 PB demand solution 99
+01/12/2023 11:52:04 end verify solution pop
+01/12/2023 11:52:04 After keep best info
+01/12/2023 11:52:04 Pop _best : 28384_worst : 99999_avg : 98590.46
+01/12/2023 11:52:04 [28384 30760 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ 99999 99999 99999 99999]
+01/12/2023 11:52:04 Avg dist : 202.4690909090909 min dist : 180.0 max dist : 235
+01/12/2023 11:52:04 ############################
+01/12/2023 11:52:04 start crossover
+01/12/2023 11:52:04 ############################
+01/12/2023 11:52:04 Start crossovers
+01/12/2023 11:52:04 add pending dealloc: cuMemFree_v2 1198400 bytes
+01/12/2023 11:52:05 nb cross already tested in pop : 100
+01/12/2023 11:52:05 Crossover duration : 1.6858408451080322
+01/12/2023 11:52:05 generation duration : 34.09310555458069
+01/12/2023 11:52:05 ############################
+01/12/2023 11:52:05 Start TABU
+01/12/2023 11:52:05 ############################
+01/12/2023 11:52:34 Tabucol duration : 28.278356313705444
+01/12/2023 11:52:34 Epoch : 1
+01/12/2023 11:52:34 Pop best : 29226_worst : 99999_avg : 99291.27
+01/12/2023 11:52:34 Keep best with diversity/fit tradeoff
+01/12/2023 11:52:34 start matrix distance
+01/12/2023 11:52:34 add pending dealloc: cuMemFree_v2 1198400 bytes
+01/12/2023 11:52:34 Matrix distance duration : 0.007708072662353516
+01/12/2023 11:52:34 end  matrix distance
+01/12/2023 11:52:34 start insertion in pop
+01/12/2023 11:52:34 len(idx_selected) 100
+01/12/2023 11:52:34 Nb insertion 98
+01/12/2023 11:52:34 Insertion in pop : 0.005329608917236328
+01/12/2023 11:52:34 end insertion in pop
+01/12/2023 11:52:34 begin verify solution pop
+01/12/2023 11:52:34 PB score : 3
+01/12/2023 11:52:34 PB demand solution 3
+01/12/2023 11:52:34 PB score : 4
+01/12/2023 11:52:34 PB demand solution 4
+01/12/2023 11:52:34 PB score : 5
+01/12/2023 11:52:34 PB demand solution 5
+01/12/2023 11:52:34 PB score : 6
+01/12/2023 11:52:34 PB demand solution 6
+01/12/2023 11:52:34 PB score : 7
+01/12/2023 11:52:34 PB demand solution 7
+01/12/2023 11:52:34 PB score : 8
+01/12/2023 11:52:34 PB demand solution 8
+01/12/2023 11:52:34 PB score : 9
+01/12/2023 11:52:34 PB demand solution 9
+01/12/2023 11:52:34 PB score : 10
+01/12/2023 11:52:34 PB demand solution 10
+01/12/2023 11:52:34 PB score : 11
+01/12/2023 11:52:34 PB demand solution 11
+01/12/2023 11:52:34 PB score : 12
+01/12/2023 11:52:34 PB demand solution 12
+01/12/2023 11:52:34 PB score : 13
+01/12/2023 11:52:34 PB demand solution 13
+01/12/2023 11:52:34 PB score : 14
+01/12/2023 11:52:34 PB demand solution 14
+01/12/2023 11:52:34 PB score : 15
+01/12/2023 11:52:34 PB demand solution 15
+01/12/2023 11:52:34 PB score : 16
+01/12/2023 11:52:34 PB demand solution 16
+01/12/2023 11:52:34 PB score : 17
+01/12/2023 11:52:34 PB demand solution 17
+01/12/2023 11:52:34 PB score : 18
+01/12/2023 11:52:34 PB demand solution 18
+01/12/2023 11:52:34 PB score : 19
+01/12/2023 11:52:34 PB demand solution 19
+01/12/2023 11:52:34 PB score : 20
+01/12/2023 11:52:34 PB demand solution 20
+01/12/2023 11:52:34 PB score : 21
+01/12/2023 11:52:34 PB demand solution 21
+01/12/2023 11:52:34 PB score : 22
+01/12/2023 11:52:34 PB demand solution 22
+01/12/2023 11:52:34 PB score : 23
+01/12/2023 11:52:34 PB demand solution 23
+01/12/2023 11:52:34 PB score : 24
+01/12/2023 11:52:34 PB demand solution 24
+01/12/2023 11:52:34 PB score : 25
+01/12/2023 11:52:34 PB demand solution 25
+01/12/2023 11:52:34 PB score : 26
+01/12/2023 11:52:34 PB demand solution 26
+01/12/2023 11:52:34 PB score : 27
+01/12/2023 11:52:34 PB demand solution 27
+01/12/2023 11:52:34 PB score : 28
+01/12/2023 11:52:34 PB demand solution 28
+01/12/2023 11:52:34 PB score : 29
+01/12/2023 11:52:34 PB demand solution 29
+01/12/2023 11:52:34 PB score : 30
+01/12/2023 11:52:34 PB demand solution 30
+01/12/2023 11:52:34 PB score : 31
+01/12/2023 11:52:34 PB demand solution 31
+01/12/2023 11:52:34 PB score : 32
+01/12/2023 11:52:34 PB demand solution 32
+01/12/2023 11:52:34 PB score : 33
+01/12/2023 11:52:34 PB demand solution 33
+01/12/2023 11:52:34 PB score : 34
+01/12/2023 11:52:34 PB demand solution 34
+01/12/2023 11:52:34 PB score : 35
+01/12/2023 11:52:34 PB demand solution 35
+01/12/2023 11:52:34 PB score : 36
+01/12/2023 11:52:34 PB demand solution 36
+01/12/2023 11:52:34 PB score : 37
+01/12/2023 11:52:34 PB demand solution 37
+01/12/2023 11:52:34 PB score : 38
+01/12/2023 11:52:34 PB demand solution 38
+01/12/2023 11:52:34 PB score : 39
+01/12/2023 11:52:34 PB demand solution 39
+01/12/2023 11:52:34 PB score : 40
+01/12/2023 11:52:34 PB demand solution 40
+01/12/2023 11:52:34 PB score : 41
+01/12/2023 11:52:34 PB demand solution 41
+01/12/2023 11:52:34 PB score : 42
+01/12/2023 11:52:34 PB demand solution 42
+01/12/2023 11:52:34 PB score : 43
+01/12/2023 11:52:34 PB demand solution 43
+01/12/2023 11:52:34 PB score : 44
+01/12/2023 11:52:34 PB demand solution 44
+01/12/2023 11:52:34 PB score : 45
+01/12/2023 11:52:34 PB demand solution 45
+01/12/2023 11:52:34 PB score : 46
+01/12/2023 11:52:34 PB demand solution 46
+01/12/2023 11:52:34 PB score : 47
+01/12/2023 11:52:34 PB demand solution 47
+01/12/2023 11:52:34 PB score : 48
+01/12/2023 11:52:34 PB demand solution 48
+01/12/2023 11:52:34 PB score : 49
+01/12/2023 11:52:34 PB demand solution 49
+01/12/2023 11:52:34 PB score : 50
+01/12/2023 11:52:34 PB demand solution 50
+01/12/2023 11:52:34 PB score : 51
+01/12/2023 11:52:34 PB demand solution 51
+01/12/2023 11:52:34 PB score : 52
+01/12/2023 11:52:34 PB demand solution 52
+01/12/2023 11:52:34 PB score : 53
+01/12/2023 11:52:34 PB demand solution 53
+01/12/2023 11:52:34 PB score : 54
+01/12/2023 11:52:34 PB demand solution 54
+01/12/2023 11:52:34 PB score : 55
+01/12/2023 11:52:34 PB demand solution 55
+01/12/2023 11:52:34 PB score : 56
+01/12/2023 11:52:34 PB demand solution 56
+01/12/2023 11:52:34 PB score : 57
+01/12/2023 11:52:34 PB demand solution 57
+01/12/2023 11:52:34 PB score : 58
+01/12/2023 11:52:34 PB demand solution 58
+01/12/2023 11:52:34 PB score : 59
+01/12/2023 11:52:34 PB demand solution 59
+01/12/2023 11:52:34 PB score : 60
+01/12/2023 11:52:34 PB demand solution 60
+01/12/2023 11:52:34 PB score : 61
+01/12/2023 11:52:34 PB demand solution 61
+01/12/2023 11:52:34 PB score : 62
+01/12/2023 11:52:34 PB demand solution 62
+01/12/2023 11:52:34 PB score : 63
+01/12/2023 11:52:34 PB demand solution 63
+01/12/2023 11:52:34 PB score : 64
+01/12/2023 11:52:34 PB demand solution 64
+01/12/2023 11:52:34 PB score : 65
+01/12/2023 11:52:34 PB demand solution 65
+01/12/2023 11:52:34 PB score : 66
+01/12/2023 11:52:34 PB demand solution 66
+01/12/2023 11:52:34 PB score : 67
+01/12/2023 11:52:34 PB demand solution 67
+01/12/2023 11:52:34 PB score : 68
+01/12/2023 11:52:34 PB demand solution 68
+01/12/2023 11:52:34 PB score : 69
+01/12/2023 11:52:34 PB demand solution 69
+01/12/2023 11:52:34 PB score : 70
+01/12/2023 11:52:34 PB demand solution 70
+01/12/2023 11:52:34 PB score : 71
+01/12/2023 11:52:34 PB demand solution 71
+01/12/2023 11:52:34 PB score : 72
+01/12/2023 11:52:34 PB demand solution 72
+01/12/2023 11:52:34 PB score : 73
+01/12/2023 11:52:34 PB demand solution 73
+01/12/2023 11:52:34 PB score : 74
+01/12/2023 11:52:34 PB demand solution 74
+01/12/2023 11:52:34 PB score : 75
+01/12/2023 11:52:34 PB demand solution 75
+01/12/2023 11:52:34 PB score : 76
+01/12/2023 11:52:34 PB demand solution 76
+01/12/2023 11:52:34 PB score : 77
+01/12/2023 11:52:34 PB demand solution 77
+01/12/2023 11:52:34 PB score : 78
+01/12/2023 11:52:34 PB demand solution 78
+01/12/2023 11:52:34 PB score : 79
+01/12/2023 11:52:34 PB demand solution 79
+01/12/2023 11:52:34 PB score : 80
+01/12/2023 11:52:34 PB demand solution 80
+01/12/2023 11:52:34 PB score : 81
+01/12/2023 11:52:34 PB demand solution 81
+01/12/2023 11:52:34 PB score : 82
+01/12/2023 11:52:34 PB demand solution 82
+01/12/2023 11:52:34 PB score : 83
+01/12/2023 11:52:34 PB demand solution 83
+01/12/2023 11:52:34 PB score : 84
+01/12/2023 11:52:34 PB demand solution 84
+01/12/2023 11:52:34 PB score : 85
+01/12/2023 11:52:34 PB demand solution 85
+01/12/2023 11:52:34 PB score : 86
+01/12/2023 11:52:34 PB demand solution 86
+01/12/2023 11:52:34 PB score : 87
+01/12/2023 11:52:34 PB demand solution 87
+01/12/2023 11:52:34 PB score : 88
+01/12/2023 11:52:34 PB demand solution 88
+01/12/2023 11:52:34 PB score : 89
+01/12/2023 11:52:34 PB demand solution 89
+01/12/2023 11:52:34 PB score : 90
+01/12/2023 11:52:34 PB demand solution 90
+01/12/2023 11:52:34 PB score : 91
+01/12/2023 11:52:34 PB demand solution 91
+01/12/2023 11:52:34 PB score : 92
+01/12/2023 11:52:34 PB demand solution 92
+01/12/2023 11:52:34 PB score : 93
+01/12/2023 11:52:34 PB demand solution 93
+01/12/2023 11:52:34 PB score : 94
+01/12/2023 11:52:34 PB demand solution 94
+01/12/2023 11:52:34 PB score : 95
+01/12/2023 11:52:34 PB demand solution 95
+01/12/2023 11:52:34 PB score : 96
+01/12/2023 11:52:34 PB demand solution 96
+01/12/2023 11:52:34 PB score : 97
+01/12/2023 11:52:34 PB demand solution 97
+01/12/2023 11:52:34 PB score : 98
+01/12/2023 11:52:34 PB demand solution 98
+01/12/2023 11:52:34 PB score : 99
+01/12/2023 11:52:34 PB demand solution 99
+01/12/2023 11:52:34 end verify solution pop
+01/12/2023 11:52:34 After keep best info
+01/12/2023 11:52:34 Pop _best : 28384_worst : 99999_avg : 97882.73
+01/12/2023 11:52:34 [28384 29226 30760 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ 99999 99999 99999 99999]
+01/12/2023 11:52:34 Avg dist : 208.36888888888888 min dist : 56.0 max dist : 233
+01/12/2023 11:52:34 ############################
+01/12/2023 11:52:34 start crossover
+01/12/2023 11:52:34 ############################
+01/12/2023 11:52:34 Start crossovers
+01/12/2023 11:52:34 add pending dealloc: cuMemFree_v2 1198400 bytes
+01/12/2023 11:52:34 add pending dealloc: cuMemFree_v2 800 bytes
+01/12/2023 11:52:34 nb cross already tested in pop : 101
+01/12/2023 11:52:34 Crossover duration : 0.0070950984954833984
+01/12/2023 11:52:34 generation duration : 28.57630729675293
+01/12/2023 11:52:34 ############################
+01/12/2023 11:52:34 Start TABU
+01/12/2023 11:52:34 ############################
+01/12/2023 11:53:05 add pending dealloc: cuMemFree_v2 800 bytes
+01/12/2023 11:53:05 add pending dealloc: cuMemFree_v2 1198400 bytes
+01/12/2023 11:53:05 add pending dealloc: module_unload ? bytes
+01/12/2023 11:53:05 add pending dealloc: module_unload ? bytes
+01/12/2023 11:53:05 add pending dealloc: module_unload ? bytes
+01/12/2023 11:53:05 add pending dealloc: module_unload ? bytes
+01/12/2023 11:53:05 add pending dealloc: module_unload ? bytes
+01/12/2023 11:53:05 add pending dealloc: cuMemFree_v2 80000 bytes
+01/12/2023 11:53:05 add pending dealloc: cuMemFree_v2 80000 bytes
+01/12/2023 11:53:05 add pending dealloc: cuMemFree_v2 400 bytes
+01/12/2023 11:53:05 add pending dealloc: cuMemFree_v2 89888 bytes
+01/12/2023 11:53:05 add pending dealloc: cuMemFree_v2 112 bytes
+01/12/2023 11:53:05 dealloc: cuMemFree_v2 1198400 bytes
+01/12/2023 11:53:05 dealloc: cuMemFree_v2 1198400 bytes
+01/12/2023 11:53:05 dealloc: cuMemFree_v2 1198400 bytes
+01/12/2023 11:53:05 dealloc: cuMemFree_v2 800 bytes
+01/12/2023 11:53:05 dealloc: cuMemFree_v2 800 bytes
+01/12/2023 11:53:05 dealloc: cuMemFree_v2 1198400 bytes
+01/12/2023 11:53:05 dealloc: cuMemFree_v2 80000 bytes
+01/12/2023 11:53:05 dealloc: cuMemFree_v2 80000 bytes
+01/12/2023 11:53:05 dealloc: cuMemFree_v2 400 bytes
+01/12/2023 11:53:05 dealloc: cuMemFree_v2 89888 bytes
+01/12/2023 11:53:05 dealloc: cuMemFree_v2 112 bytes
+01/12/2023 11:53:05 add pending dealloc: cuMemFree_v2 848 bytes
+01/12/2023 11:53:05 add pending dealloc: cuMemFree_v2 11200 bytes
+01/12/2023 11:53:05 add pending dealloc: cuMemFree_v2 11200 bytes
+01/12/2023 11:53:05 add pending dealloc: cuMemFree_v2 11200 bytes
+01/12/2023 11:53:05 add pending dealloc: cuMemFree_v2 1198400 bytes
+01/12/2023 11:53:05 add pending dealloc: cuMemFree_v2 160768 bytes

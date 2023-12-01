@@ -1,0 +1,1135 @@
+30/11/2023 04:24:09 init
+30/11/2023 04:24:09 cuda:0
+30/11/2023 04:24:13 ############################
+30/11/2023 04:24:13 Start TABU
+30/11/2023 04:24:13 ############################
+30/11/2023 04:24:16 Tabucol duration : 2.3342208862304688
+30/11/2023 04:24:16 Epoch : 0
+30/11/2023 04:24:16 Pop best : 830_worst : 984_avg : 894.6
+30/11/2023 04:24:16 Save best solution
+30/11/2023 04:24:16 Keep best with diversity/fit tradeoff
+30/11/2023 04:24:16 start matrix distance
+30/11/2023 04:24:16 Matrix distance duration : 0.6475522518157959
+30/11/2023 04:24:16 end  matrix distance
+30/11/2023 04:24:16 start insertion in pop
+30/11/2023 04:24:16 len(idx_selected) 10
+30/11/2023 04:24:16 Nb insertion 10
+30/11/2023 04:24:16 Insertion in pop : 0.0032613277435302734
+30/11/2023 04:24:16 end insertion in pop
+30/11/2023 04:24:16 After keep best info
+30/11/2023 04:24:16 Pop _best : 830_worst : 984_avg : 894.6
+30/11/2023 04:24:16 [830 849 850 858 858 862 927 950 978 984]
+30/11/2023 04:24:16 Avg dist : 48.355555555555554 min dist : 30.0 max dist : 68
+30/11/2023 04:24:16 ############################
+30/11/2023 04:24:16 start crossover
+30/11/2023 04:24:16 ############################
+30/11/2023 04:24:16 Start crossovers
+30/11/2023 04:24:16 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:18 nb cross already tested in pop : 10
+30/11/2023 04:24:18 Crossover duration : 1.908043622970581
+30/11/2023 04:24:18 generation duration : 4.92006254196167
+30/11/2023 04:24:18 ############################
+30/11/2023 04:24:18 Start TABU
+30/11/2023 04:24:18 ############################
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB nb_clients after tabu 1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 Tabucol duration : 0.06424880027770996
+30/11/2023 04:24:18 Epoch : 1
+30/11/2023 04:24:18 Pop best : 716_worst : 881_avg : 820.5
+30/11/2023 04:24:18 Save best solution
+30/11/2023 04:24:18 Keep best with diversity/fit tradeoff
+30/11/2023 04:24:18 start matrix distance
+30/11/2023 04:24:18 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:18 Matrix distance duration : 0.0031943321228027344
+30/11/2023 04:24:18 end  matrix distance
+30/11/2023 04:24:18 start insertion in pop
+30/11/2023 04:24:18 len(idx_selected) 10
+30/11/2023 04:24:18 Nb insertion 8
+30/11/2023 04:24:18 Insertion in pop : 0.0024530887603759766
+30/11/2023 04:24:18 end insertion in pop
+30/11/2023 04:24:18 After keep best info
+30/11/2023 04:24:18 Pop _best : 716_worst : 849_avg : 813.8
+30/11/2023 04:24:18 [716 785 795 804 830 833 838 841 847 849]
+30/11/2023 04:24:18 Avg dist : 36.2 min dist : 11.0 max dist : 64
+30/11/2023 04:24:18 ############################
+30/11/2023 04:24:18 start crossover
+30/11/2023 04:24:18 ############################
+30/11/2023 04:24:18 Start crossovers
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB nb_clients after tabu 1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:18 add pending dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:18 nb cross already tested in pop : 10
+30/11/2023 04:24:18 Crossover duration : 0.017861366271972656
+30/11/2023 04:24:18 generation duration : 0.11281776428222656
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB nb_clients after tabu 1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 PB demand after tabu1
+30/11/2023 04:24:18 ############################
+30/11/2023 04:24:18 Start TABU
+30/11/2023 04:24:18 ############################
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 PB score after tabu2
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 PB nb_clients after tabu 2
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 Tabucol duration : 0.06428217887878418
+30/11/2023 04:24:18 Epoch : 2
+30/11/2023 04:24:18 Pop best : 693_worst : 845_avg : 787.2
+30/11/2023 04:24:18 Save best solution
+30/11/2023 04:24:18 Keep best with diversity/fit tradeoff
+30/11/2023 04:24:18 start matrix distance
+30/11/2023 04:24:18 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:18 Matrix distance duration : 0.003288745880126953
+30/11/2023 04:24:18 end  matrix distance
+30/11/2023 04:24:18 start insertion in pop
+30/11/2023 04:24:18 len(idx_selected) 10
+30/11/2023 04:24:18 Nb insertion 6
+30/11/2023 04:24:18 Insertion in pop : 0.002726316452026367
+30/11/2023 04:24:18 end insertion in pop
+30/11/2023 04:24:18 After keep best info
+30/11/2023 04:24:18 Pop _best : 693_worst : 828_avg : 763.7
+30/11/2023 04:24:18 [693 716 720 737 737 785 795 804 822 828]
+30/11/2023 04:24:18 Avg dist : 30.977777777777778 min dist : 7.0 max dist : 64
+30/11/2023 04:24:18 ############################
+30/11/2023 04:24:18 start crossover
+30/11/2023 04:24:18 ############################
+30/11/2023 04:24:18 Start crossovers
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 PB score after tabu2
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 PB nb_clients after tabu 2
+30/11/2023 04:24:18 PB demand after tabu2
+30/11/2023 04:24:18 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:18 add pending dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:18 nb cross already tested in pop : 10
+30/11/2023 04:24:18 Crossover duration : 0.022623777389526367
+30/11/2023 04:24:19 generation duration : 0.12168574333190918
+30/11/2023 04:24:19 PB demand after tabu2
+30/11/2023 04:24:19 PB demand after tabu2
+30/11/2023 04:24:19 PB demand after tabu2
+30/11/2023 04:24:19 PB score after tabu2
+30/11/2023 04:24:19 PB demand after tabu2
+30/11/2023 04:24:19 PB demand after tabu2
+30/11/2023 04:24:19 PB demand after tabu2
+30/11/2023 04:24:19 PB demand after tabu2
+30/11/2023 04:24:19 PB demand after tabu2
+30/11/2023 04:24:19 PB nb_clients after tabu 2
+30/11/2023 04:24:19 PB demand after tabu2
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 Start TABU
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB score after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB nb_clients after tabu 3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB nb_clients after tabu 3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB score after tabu3
+30/11/2023 04:24:19 PB nb_clients after tabu 3
+30/11/2023 04:24:19 Tabucol duration : 0.059615373611450195
+30/11/2023 04:24:19 Epoch : 3
+30/11/2023 04:24:19 Pop best : 675_worst : 788_avg : 725.2
+30/11/2023 04:24:19 Save best solution
+30/11/2023 04:24:19 Keep best with diversity/fit tradeoff
+30/11/2023 04:24:19 start matrix distance
+30/11/2023 04:24:19 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 Matrix distance duration : 0.0023779869079589844
+30/11/2023 04:24:19 end  matrix distance
+30/11/2023 04:24:19 start insertion in pop
+30/11/2023 04:24:19 len(idx_selected) 10
+30/11/2023 04:24:19 Nb insertion 5
+30/11/2023 04:24:19 Insertion in pop : 0.0020151138305664062
+30/11/2023 04:24:19 end insertion in pop
+30/11/2023 04:24:19 After keep best info
+30/11/2023 04:24:19 Pop _best : 675_worst : 737_avg : 709.8
+30/11/2023 04:24:19 [675 687 693 700 708 716 720 725 737 737]
+30/11/2023 04:24:19 Avg dist : 23.866666666666667 min dist : 6.0 max dist : 59
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 start crossover
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 Start crossovers
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB score after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB nb_clients after tabu 3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB nb_clients after tabu 3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB score after tabu3
+30/11/2023 04:24:19 PB nb_clients after tabu 3
+30/11/2023 04:24:19 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 add pending dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:19 nb cross already tested in pop : 14
+30/11/2023 04:24:19 Crossover duration : 0.02817535400390625
+30/11/2023 04:24:19 generation duration : 0.11554360389709473
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB score after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB nb_clients after tabu 3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB nb_clients after tabu 3
+30/11/2023 04:24:19 PB demand after tabu3
+30/11/2023 04:24:19 PB score after tabu3
+30/11/2023 04:24:19 PB nb_clients after tabu 3
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 Start TABU
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 Tabucol duration : 0.07758831977844238
+30/11/2023 04:24:19 Epoch : 4
+30/11/2023 04:24:19 Pop best : 686_worst : 795_avg : 723.3
+30/11/2023 04:24:19 Keep best with diversity/fit tradeoff
+30/11/2023 04:24:19 start matrix distance
+30/11/2023 04:24:19 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 Matrix distance duration : 0.011986732482910156
+30/11/2023 04:24:19 end  matrix distance
+30/11/2023 04:24:19 start insertion in pop
+30/11/2023 04:24:19 len(idx_selected) 10
+30/11/2023 04:24:19 Nb insertion 6
+30/11/2023 04:24:19 Insertion in pop : 0.0022933483123779297
+30/11/2023 04:24:19 end insertion in pop
+30/11/2023 04:24:19 After keep best info
+30/11/2023 04:24:19 Pop _best : 675_worst : 715_avg : 698.8
+30/11/2023 04:24:19 [675 686 693 694 700 703 707 707 708 715]
+30/11/2023 04:24:19 Avg dist : 23.844444444444445 min dist : 4.0 max dist : 56
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 start crossover
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 Start crossovers
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 add pending dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:19 nb cross already tested in pop : 11
+30/11/2023 04:24:19 Crossover duration : 0.03216886520385742
+30/11/2023 04:24:19 generation duration : 0.14345002174377441
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 PB demand after tabu4
+30/11/2023 04:24:19 PB score after tabu4
+30/11/2023 04:24:19 PB nb_clients after tabu 4
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 Start TABU
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 Tabucol duration : 0.0719146728515625
+30/11/2023 04:24:19 Epoch : 5
+30/11/2023 04:24:19 Pop best : 631_worst : 763_avg : 703.7
+30/11/2023 04:24:19 Save best solution
+30/11/2023 04:24:19 Keep best with diversity/fit tradeoff
+30/11/2023 04:24:19 start matrix distance
+30/11/2023 04:24:19 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 Matrix distance duration : 0.0027632713317871094
+30/11/2023 04:24:19 end  matrix distance
+30/11/2023 04:24:19 start insertion in pop
+30/11/2023 04:24:19 len(idx_selected) 10
+30/11/2023 04:24:19 Nb insertion 5
+30/11/2023 04:24:19 Insertion in pop : 0.0024390220642089844
+30/11/2023 04:24:19 end insertion in pop
+30/11/2023 04:24:19 After keep best info
+30/11/2023 04:24:19 Pop _best : 631_worst : 700_avg : 681.1
+30/11/2023 04:24:19 [631 644 675 686 693 694 694 696 698 700]
+30/11/2023 04:24:19 Avg dist : 19.822222222222223 min dist : 4.0 max dist : 46
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 start crossover
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 Start crossovers
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 add pending dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:19 nb cross already tested in pop : 15
+30/11/2023 04:24:19 Crossover duration : 0.03467893600463867
+30/11/2023 04:24:19 generation duration : 0.1347486972808838
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 PB demand after tabu5
+30/11/2023 04:24:19 PB score after tabu5
+30/11/2023 04:24:19 PB nb_clients after tabu 5
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 Start TABU
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB nb_clients after tabu 6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB nb_clients after tabu 6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB score after tabu6
+30/11/2023 04:24:19 PB nb_clients after tabu 6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB score after tabu6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB score after tabu6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB score after tabu6
+30/11/2023 04:24:19 PB nb_clients after tabu 6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB score after tabu6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB nb_clients after tabu 6
+30/11/2023 04:24:19 Tabucol duration : 0.0652322769165039
+30/11/2023 04:24:19 Epoch : 6
+30/11/2023 04:24:19 Pop best : 633_worst : 782_avg : 702.2
+30/11/2023 04:24:19 Keep best with diversity/fit tradeoff
+30/11/2023 04:24:19 start matrix distance
+30/11/2023 04:24:19 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 Matrix distance duration : 0.002914905548095703
+30/11/2023 04:24:19 end  matrix distance
+30/11/2023 04:24:19 start insertion in pop
+30/11/2023 04:24:19 len(idx_selected) 10
+30/11/2023 04:24:19 Nb insertion 4
+30/11/2023 04:24:19 Insertion in pop : 0.0026395320892333984
+30/11/2023 04:24:19 end insertion in pop
+30/11/2023 04:24:19 After keep best info
+30/11/2023 04:24:19 Pop _best : 631_worst : 694_avg : 671.6
+30/11/2023 04:24:19 [631 633 644 675 678 686 689 693 693 694]
+30/11/2023 04:24:19 Avg dist : 16.977777777777778 min dist : 2.0 max dist : 48
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 start crossover
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 Start crossovers
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB nb_clients after tabu 6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB nb_clients after tabu 6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB score after tabu6
+30/11/2023 04:24:19 PB nb_clients after tabu 6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB score after tabu6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB score after tabu6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB score after tabu6
+30/11/2023 04:24:19 PB nb_clients after tabu 6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB score after tabu6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB nb_clients after tabu 6
+30/11/2023 04:24:19 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 add pending dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:19 nb cross already tested in pop : 18
+30/11/2023 04:24:19 Crossover duration : 0.027611732482910156
+30/11/2023 04:24:19 generation duration : 0.1171715259552002
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB nb_clients after tabu 6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB nb_clients after tabu 6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB score after tabu6
+30/11/2023 04:24:19 PB nb_clients after tabu 6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB score after tabu6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB score after tabu6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB score after tabu6
+30/11/2023 04:24:19 PB nb_clients after tabu 6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB score after tabu6
+30/11/2023 04:24:19 PB demand after tabu6
+30/11/2023 04:24:19 PB nb_clients after tabu 6
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 Start TABU
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 Tabucol duration : 0.08194494247436523
+30/11/2023 04:24:19 Epoch : 7
+30/11/2023 04:24:19 Pop best : 641_worst : 869_avg : 714.1
+30/11/2023 04:24:19 Keep best with diversity/fit tradeoff
+30/11/2023 04:24:19 start matrix distance
+30/11/2023 04:24:19 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 Matrix distance duration : 0.002775430679321289
+30/11/2023 04:24:19 end  matrix distance
+30/11/2023 04:24:19 start insertion in pop
+30/11/2023 04:24:19 len(idx_selected) 10
+30/11/2023 04:24:19 Nb insertion 3
+30/11/2023 04:24:19 Insertion in pop : 0.002638101577758789
+30/11/2023 04:24:19 end insertion in pop
+30/11/2023 04:24:19 After keep best info
+30/11/2023 04:24:19 Pop _best : 631_worst : 689_avg : 664.7
+30/11/2023 04:24:19 [631 633 641 644 675 678 684 686 686 689]
+30/11/2023 04:24:19 Avg dist : 12.688888888888888 min dist : 2.0 max dist : 34
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 start crossover
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 Start crossovers
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 add pending dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:19 nb cross already tested in pop : 21
+30/11/2023 04:24:19 Crossover duration : 0.05092668533325195
+30/11/2023 04:24:19 generation duration : 0.1602475643157959
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB nb_clients after tabu 7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 PB demand after tabu7
+30/11/2023 04:24:19 PB score after tabu7
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 Start TABU
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB score after tabu8
+30/11/2023 04:24:19 PB nb_clients after tabu 8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB score after tabu8
+30/11/2023 04:24:19 PB nb_clients after tabu 8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB nb_clients after tabu 8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB score after tabu8
+30/11/2023 04:24:19 PB nb_clients after tabu 8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB score after tabu8
+30/11/2023 04:24:19 PB nb_clients after tabu 8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB score after tabu8
+30/11/2023 04:24:19 PB nb_clients after tabu 8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB score after tabu8
+30/11/2023 04:24:19 PB nb_clients after tabu 8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB score after tabu8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB score after tabu8
+30/11/2023 04:24:19 Tabucol duration : 0.08313608169555664
+30/11/2023 04:24:19 Epoch : 8
+30/11/2023 04:24:19 Pop best : 648_worst : 802_avg : 700.2
+30/11/2023 04:24:19 Keep best with diversity/fit tradeoff
+30/11/2023 04:24:19 start matrix distance
+30/11/2023 04:24:19 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:19 Matrix distance duration : 0.003925800323486328
+30/11/2023 04:24:19 end  matrix distance
+30/11/2023 04:24:19 start insertion in pop
+30/11/2023 04:24:19 len(idx_selected) 10
+30/11/2023 04:24:19 Nb insertion 3
+30/11/2023 04:24:19 Insertion in pop : 0.0028111934661865234
+30/11/2023 04:24:19 end insertion in pop
+30/11/2023 04:24:19 After keep best info
+30/11/2023 04:24:19 Pop _best : 631_worst : 686_avg : 660.0
+30/11/2023 04:24:19 [631 633 641 644 648 675 678 680 684 686]
+30/11/2023 04:24:19 Avg dist : 12.822222222222223 min dist : 4.0 max dist : 34
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 start crossover
+30/11/2023 04:24:19 ############################
+30/11/2023 04:24:19 Start crossovers
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB score after tabu8
+30/11/2023 04:24:19 PB nb_clients after tabu 8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB score after tabu8
+30/11/2023 04:24:19 PB nb_clients after tabu 8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB nb_clients after tabu 8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB score after tabu8
+30/11/2023 04:24:19 PB nb_clients after tabu 8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB score after tabu8
+30/11/2023 04:24:19 PB nb_clients after tabu 8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB score after tabu8
+30/11/2023 04:24:19 PB nb_clients after tabu 8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB score after tabu8
+30/11/2023 04:24:19 PB nb_clients after tabu 8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB score after tabu8
+30/11/2023 04:24:19 PB demand after tabu8
+30/11/2023 04:24:19 PB score after tabu8
+30/11/2023 04:24:19 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:20 nb cross already tested in pop : 21
+30/11/2023 04:24:20 Crossover duration : 0.040419578552246094
+30/11/2023 04:24:20 generation duration : 0.15419650077819824
+30/11/2023 04:24:20 PB demand after tabu8
+30/11/2023 04:24:20 PB score after tabu8
+30/11/2023 04:24:20 PB nb_clients after tabu 8
+30/11/2023 04:24:20 PB demand after tabu8
+30/11/2023 04:24:20 PB score after tabu8
+30/11/2023 04:24:20 PB nb_clients after tabu 8
+30/11/2023 04:24:20 PB demand after tabu8
+30/11/2023 04:24:20 PB nb_clients after tabu 8
+30/11/2023 04:24:20 PB demand after tabu8
+30/11/2023 04:24:20 PB score after tabu8
+30/11/2023 04:24:20 PB nb_clients after tabu 8
+30/11/2023 04:24:20 PB demand after tabu8
+30/11/2023 04:24:20 PB score after tabu8
+30/11/2023 04:24:20 PB nb_clients after tabu 8
+30/11/2023 04:24:20 PB demand after tabu8
+30/11/2023 04:24:20 PB score after tabu8
+30/11/2023 04:24:20 PB nb_clients after tabu 8
+30/11/2023 04:24:20 PB demand after tabu8
+30/11/2023 04:24:20 PB demand after tabu8
+30/11/2023 04:24:20 PB score after tabu8
+30/11/2023 04:24:20 PB nb_clients after tabu 8
+30/11/2023 04:24:20 PB demand after tabu8
+30/11/2023 04:24:20 PB score after tabu8
+30/11/2023 04:24:20 PB demand after tabu8
+30/11/2023 04:24:20 PB score after tabu8
+30/11/2023 04:24:20 ############################
+30/11/2023 04:24:20 Start TABU
+30/11/2023 04:24:20 ############################
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 Tabucol duration : 0.08411240577697754
+30/11/2023 04:24:20 Epoch : 9
+30/11/2023 04:24:20 Pop best : 670_worst : 753_avg : 702.8
+30/11/2023 04:24:20 Keep best with diversity/fit tradeoff
+30/11/2023 04:24:20 start matrix distance
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 Matrix distance duration : 0.0028836727142333984
+30/11/2023 04:24:20 end  matrix distance
+30/11/2023 04:24:20 start insertion in pop
+30/11/2023 04:24:20 len(idx_selected) 10
+30/11/2023 04:24:20 Nb insertion 1
+30/11/2023 04:24:20 Insertion in pop : 0.0025222301483154297
+30/11/2023 04:24:20 end insertion in pop
+30/11/2023 04:24:20 After keep best info
+30/11/2023 04:24:20 Pop _best : 631_worst : 684_avg : 658.4
+30/11/2023 04:24:20 [631 633 641 644 648 670 675 678 680 684]
+30/11/2023 04:24:20 Avg dist : 12.71111111111111 min dist : 4.0 max dist : 34
+30/11/2023 04:24:20 ############################
+30/11/2023 04:24:20 start crossover
+30/11/2023 04:24:20 ############################
+30/11/2023 04:24:20 Start crossovers
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:20 nb cross already tested in pop : 29
+30/11/2023 04:24:20 Crossover duration : 0.03982400894165039
+30/11/2023 04:24:20 generation duration : 0.15077662467956543
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB demand after tabu9
+30/11/2023 04:24:20 PB score after tabu9
+30/11/2023 04:24:20 PB nb_clients after tabu 9
+30/11/2023 04:24:20 ############################
+30/11/2023 04:24:20 Start TABU
+30/11/2023 04:24:20 ############################
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 Tabucol duration : 0.08040308952331543
+30/11/2023 04:24:20 Epoch : 10
+30/11/2023 04:24:20 Pop best : 645_worst : 869_avg : 719.8
+30/11/2023 04:24:20 Keep best with diversity/fit tradeoff
+30/11/2023 04:24:20 start matrix distance
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 Matrix distance duration : 0.0023088455200195312
+30/11/2023 04:24:20 end  matrix distance
+30/11/2023 04:24:20 start insertion in pop
+30/11/2023 04:24:20 len(idx_selected) 10
+30/11/2023 04:24:20 Nb insertion 2
+30/11/2023 04:24:20 Insertion in pop : 0.0023920536041259766
+30/11/2023 04:24:20 end insertion in pop
+30/11/2023 04:24:20 After keep best info
+30/11/2023 04:24:20 Pop _best : 631_worst : 678_avg : 651.3
+30/11/2023 04:24:20 [631 633 641 644 645 648 648 670 675 678]
+30/11/2023 04:24:20 Avg dist : 10.133333333333333 min dist : 2.0 max dist : 34
+30/11/2023 04:24:20 ############################
+30/11/2023 04:24:20 start crossover
+30/11/2023 04:24:20 ############################
+30/11/2023 04:24:20 Start crossovers
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:20 nb cross already tested in pop : 35
+30/11/2023 04:24:20 Crossover duration : 0.038639068603515625
+30/11/2023 04:24:20 generation duration : 0.1448836326599121
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 PB nb_clients after tabu 10
+30/11/2023 04:24:20 PB demand after tabu10
+30/11/2023 04:24:20 PB score after tabu10
+30/11/2023 04:24:20 ############################
+30/11/2023 04:24:20 Start TABU
+30/11/2023 04:24:20 ############################
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB score after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB score after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB score after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB score after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB score after tabu11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 Tabucol duration : 0.08922457695007324
+30/11/2023 04:24:20 Epoch : 11
+30/11/2023 04:24:20 Pop best : 667_worst : 877_avg : 749.4
+30/11/2023 04:24:20 Keep best with diversity/fit tradeoff
+30/11/2023 04:24:20 start matrix distance
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 Matrix distance duration : 0.0028586387634277344
+30/11/2023 04:24:20 end  matrix distance
+30/11/2023 04:24:20 start insertion in pop
+30/11/2023 04:24:20 len(idx_selected) 10
+30/11/2023 04:24:20 Nb insertion 1
+30/11/2023 04:24:20 Insertion in pop : 0.002552509307861328
+30/11/2023 04:24:20 end insertion in pop
+30/11/2023 04:24:20 After keep best info
+30/11/2023 04:24:20 Pop _best : 631_worst : 675_avg : 650.2
+30/11/2023 04:24:20 [631 633 641 644 645 648 648 667 670 675]
+30/11/2023 04:24:20 Avg dist : 10.644444444444444 min dist : 2.0 max dist : 34
+30/11/2023 04:24:20 ############################
+30/11/2023 04:24:20 start crossover
+30/11/2023 04:24:20 ############################
+30/11/2023 04:24:20 Start crossovers
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB score after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB score after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB score after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB score after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB score after tabu11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:20 nb cross already tested in pop : 34
+30/11/2023 04:24:20 Crossover duration : 0.05016779899597168
+30/11/2023 04:24:20 generation duration : 0.16772890090942383
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB score after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB score after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB score after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB score after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB score after tabu11
+30/11/2023 04:24:20 PB demand after tabu11
+30/11/2023 04:24:20 PB nb_clients after tabu 11
+30/11/2023 04:24:20 ############################
+30/11/2023 04:24:20 Start TABU
+30/11/2023 04:24:20 ############################
+30/11/2023 04:24:20 PB demand after tabu12
+30/11/2023 04:24:20 PB score after tabu12
+30/11/2023 04:24:20 PB nb_clients after tabu 12
+30/11/2023 04:24:20 PB demand after tabu12
+30/11/2023 04:24:20 PB score after tabu12
+30/11/2023 04:24:20 PB nb_clients after tabu 12
+30/11/2023 04:24:20 PB demand after tabu12
+30/11/2023 04:24:20 PB nb_clients after tabu 12
+30/11/2023 04:24:20 PB demand after tabu12
+30/11/2023 04:24:20 PB nb_clients after tabu 12
+30/11/2023 04:24:20 PB demand after tabu12
+30/11/2023 04:24:20 PB score after tabu12
+30/11/2023 04:24:20 PB nb_clients after tabu 12
+30/11/2023 04:24:20 PB demand after tabu12
+30/11/2023 04:24:20 PB score after tabu12
+30/11/2023 04:24:20 PB nb_clients after tabu 12
+30/11/2023 04:24:20 PB demand after tabu12
+30/11/2023 04:24:20 PB nb_clients after tabu 12
+30/11/2023 04:24:20 PB demand after tabu12
+30/11/2023 04:24:20 PB score after tabu12
+30/11/2023 04:24:20 PB nb_clients after tabu 12
+30/11/2023 04:24:20 PB demand after tabu12
+30/11/2023 04:24:20 PB nb_clients after tabu 12
+30/11/2023 04:24:20 PB demand after tabu12
+30/11/2023 04:24:20 PB score after tabu12
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 add pending dealloc: module_unload ? bytes
+30/11/2023 04:24:20 add pending dealloc: module_unload ? bytes
+30/11/2023 04:24:20 add pending dealloc: module_unload ? bytes
+30/11/2023 04:24:20 add pending dealloc: module_unload ? bytes
+30/11/2023 04:24:20 add pending dealloc: module_unload ? bytes
+30/11/2023 04:24:20 add pending dealloc: module_unload ? bytes
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 800 bytes
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 800 bytes
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 40 bytes
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 8192 bytes
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 40 bytes
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 256 bytes
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 400 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 800 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 800 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 40 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 8192 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 40 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 256 bytes
+30/11/2023 04:24:20 dealloc: cuMemFree_v2 400 bytes
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 400 bytes
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 400 bytes
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:24:20 add pending dealloc: cuMemFree_v2 2048 bytes

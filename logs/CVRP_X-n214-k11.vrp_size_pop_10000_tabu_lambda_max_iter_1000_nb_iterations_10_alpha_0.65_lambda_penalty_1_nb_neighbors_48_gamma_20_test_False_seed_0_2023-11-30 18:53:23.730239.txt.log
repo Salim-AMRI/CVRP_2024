@@ -1,0 +1,147 @@
+30/11/2023 06:53:23 init
+30/11/2023 06:53:23 cuda:0
+30/11/2023 06:53:48 ############################
+30/11/2023 06:53:48 Start TABU
+30/11/2023 06:53:48 ############################
+30/11/2023 07:02:58 Tabucol duration : 549.8064126968384
+30/11/2023 07:02:58 Epoch : 0
+30/11/2023 07:02:58 Pop best : 12250_worst : 99999_avg : 21394.3065
+30/11/2023 07:02:58 Save best solution
+30/11/2023 07:02:58 Keep best with diversity/fit tradeoff
+30/11/2023 07:02:58 start matrix distance
+30/11/2023 07:05:49 Matrix distance duration : 171.14301466941833
+30/11/2023 07:05:49 end  matrix distance
+30/11/2023 07:05:49 start insertion in pop
+30/11/2023 07:05:52 len(idx_selected) 10000
+30/11/2023 07:05:52 Nb insertion 10000
+30/11/2023 07:05:54 Insertion in pop : 5.173092603683472
+30/11/2023 07:05:54 end insertion in pop
+30/11/2023 07:05:54 After keep best info
+30/11/2023 07:05:54 Pop _best : 12250_worst : 99999_avg : 21394.3065
+30/11/2023 07:05:54 [12250 12295 12354 ... 99999 99999 99999]
+30/11/2023 07:05:55 Avg dist : 389.26119699969996 min dist : 290.0 max dist : 447
+30/11/2023 07:05:55 ############################
+30/11/2023 07:05:55 start crossover
+30/11/2023 07:05:55 ############################
+30/11/2023 07:05:55 Start crossovers
+30/11/2023 07:05:55 add pending dealloc: cuMemFree_v2 189200000 bytes
+30/11/2023 07:06:01 nb cross already tested in pop : 10000
+30/11/2023 07:06:01 Crossover duration : 6.206751585006714
+30/11/2023 07:06:01 generation duration : 732.9259958267212
+30/11/2023 07:06:10 ############################
+30/11/2023 07:06:10 Start TABU
+30/11/2023 07:06:10 ############################
+30/11/2023 07:15:04 Tabucol duration : 533.8099777698517
+30/11/2023 07:15:04 Epoch : 1
+30/11/2023 07:15:04 Pop best : 12092_worst : 99999_avg : 22256.6992
+30/11/2023 07:15:04 Save best solution
+30/11/2023 07:15:04 Keep best with diversity/fit tradeoff
+30/11/2023 07:15:04 start matrix distance
+30/11/2023 07:15:04 Call to cuMemAlloc results in CUDA_ERROR_OUT_OF_MEMORY
+30/11/2023 07:15:04 dealloc: cuMemFree_v2 189200000 bytes
+30/11/2023 07:15:04 add pending dealloc: cuMemFree_v2 189200000 bytes
+30/11/2023 07:17:53 Matrix distance duration : 168.95236086845398
+30/11/2023 07:17:53 end  matrix distance
+30/11/2023 07:17:53 start insertion in pop
+30/11/2023 07:17:56 len(idx_selected) 10000
+30/11/2023 07:17:56 Nb insertion 6896
+30/11/2023 07:17:58 Insertion in pop : 4.904747724533081
+30/11/2023 07:17:58 end insertion in pop
+30/11/2023 07:17:58 After keep best info
+30/11/2023 07:17:58 Pop _best : 12092_worst : 13437_avg : 13078.406
+30/11/2023 07:17:58 [12092 12098 12139 ... 13437 13437 13437]
+30/11/2023 07:17:59 Avg dist : 291.30618301830185 min dist : 92.0 max dist : 434
+30/11/2023 07:17:59 ############################
+30/11/2023 07:17:59 start crossover
+30/11/2023 07:17:59 ############################
+30/11/2023 07:17:59 Start crossovers
+30/11/2023 07:17:59 Call to cuMemAlloc results in CUDA_ERROR_OUT_OF_MEMORY
+30/11/2023 07:17:59 dealloc: cuMemFree_v2 189200000 bytes
+30/11/2023 07:17:59 add pending dealloc: cuMemFree_v2 189200000 bytes
+30/11/2023 07:18:03 add pending dealloc: cuMemFree_v2 80000 bytes
+30/11/2023 07:18:03 nb cross already tested in pop : 11987
+30/11/2023 07:18:03 Crossover duration : 4.814425945281982
+30/11/2023 07:18:03 generation duration : 713.0501260757446
+30/11/2023 07:18:13 ############################
+30/11/2023 07:18:13 Start TABU
+30/11/2023 07:18:13 ############################
+30/11/2023 07:27:02 Tabucol duration : 529.5279331207275
+30/11/2023 07:27:02 Epoch : 2
+30/11/2023 07:27:02 Pop best : 11960_worst : 99999_avg : 22494.1183
+30/11/2023 07:27:02 Save best solution
+30/11/2023 07:27:02 Keep best with diversity/fit tradeoff
+30/11/2023 07:27:02 start matrix distance
+30/11/2023 07:27:02 Call to cuMemAlloc results in CUDA_ERROR_OUT_OF_MEMORY
+30/11/2023 07:27:02 dealloc: cuMemFree_v2 189200000 bytes
+30/11/2023 07:27:02 dealloc: cuMemFree_v2 80000 bytes
+30/11/2023 07:27:02 add pending dealloc: cuMemFree_v2 189200000 bytes
+30/11/2023 07:29:51 Matrix distance duration : 168.94136571884155
+30/11/2023 07:29:51 end  matrix distance
+30/11/2023 07:29:51 start insertion in pop
+30/11/2023 07:29:54 len(idx_selected) 10000
+30/11/2023 07:29:54 Nb insertion 5939
+30/11/2023 07:29:56 Insertion in pop : 4.780002117156982
+30/11/2023 07:29:56 end insertion in pop
+30/11/2023 07:29:56 After keep best info
+30/11/2023 07:29:56 Pop _best : 11960_worst : 13046_avg : 12783.9992
+30/11/2023 07:29:56 [11960 11964 11972 ... 13046 13046 13046]
+30/11/2023 07:29:56 Avg dist : 269.2973927792779 min dist : 37.0 max dist : 434
+30/11/2023 07:29:56 ############################
+30/11/2023 07:29:56 start crossover
+30/11/2023 07:29:56 ############################
+30/11/2023 07:29:56 Start crossovers
+30/11/2023 07:29:56 Call to cuMemAlloc results in CUDA_ERROR_OUT_OF_MEMORY
+30/11/2023 07:29:56 dealloc: cuMemFree_v2 189200000 bytes
+30/11/2023 07:29:56 add pending dealloc: cuMemFree_v2 189200000 bytes
+30/11/2023 07:30:01 add pending dealloc: cuMemFree_v2 80000 bytes
+30/11/2023 07:30:01 nb cross already tested in pop : 11987
+30/11/2023 07:30:01 Crossover duration : 4.85275936126709
+30/11/2023 07:30:01 generation duration : 708.6676967144012
+30/11/2023 07:30:11 ############################
+30/11/2023 07:30:11 Start TABU
+30/11/2023 07:30:11 ############################
+30/11/2023 07:39:01 Tabucol duration : 530.7221252918243
+30/11/2023 07:39:01 Epoch : 3
+30/11/2023 07:39:01 Pop best : 11823_worst : 99999_avg : 22243.4803
+30/11/2023 07:39:01 Save best solution
+30/11/2023 07:39:01 Keep best with diversity/fit tradeoff
+30/11/2023 07:39:01 start matrix distance
+30/11/2023 07:39:01 Call to cuMemAlloc results in CUDA_ERROR_OUT_OF_MEMORY
+30/11/2023 07:39:01 dealloc: cuMemFree_v2 189200000 bytes
+30/11/2023 07:39:01 dealloc: cuMemFree_v2 80000 bytes
+30/11/2023 07:39:01 add pending dealloc: cuMemFree_v2 189200000 bytes
+30/11/2023 07:41:50 Matrix distance duration : 168.903315782547
+30/11/2023 07:41:50 end  matrix distance
+30/11/2023 07:41:50 start insertion in pop
+30/11/2023 07:41:53 len(idx_selected) 10000
+30/11/2023 07:41:53 Nb insertion 5431
+30/11/2023 07:41:55 Insertion in pop : 4.688915491104126
+30/11/2023 07:41:55 end insertion in pop
+30/11/2023 07:41:55 After keep best info
+30/11/2023 07:41:55 Pop _best : 11823_worst : 12794_avg : 12577.7771
+30/11/2023 07:41:55 [11823 11830 11884 ... 12794 12794 12794]
+30/11/2023 07:41:55 Avg dist : 255.35808404840483 min dist : 9.0 max dist : 432
+30/11/2023 07:41:55 ############################
+30/11/2023 07:41:55 start crossover
+30/11/2023 07:41:55 ############################
+30/11/2023 07:41:55 Start crossovers
+30/11/2023 07:41:56 Call to cuMemAlloc results in CUDA_ERROR_OUT_OF_MEMORY
+30/11/2023 07:41:56 dealloc: cuMemFree_v2 189200000 bytes
+30/11/2023 07:41:56 add pending dealloc: cuMemFree_v2 189200000 bytes
+30/11/2023 07:42:00 add pending dealloc: cuMemFree_v2 80000 bytes
+30/11/2023 07:42:00 nb cross already tested in pop : 12963
+30/11/2023 07:42:00 Crossover duration : 4.866112232208252
+30/11/2023 07:42:00 generation duration : 709.7487833499908
+30/11/2023 07:42:10 ############################
+30/11/2023 07:42:10 Start TABU
+30/11/2023 07:42:10 ############################
+30/11/2023 07:50:56 Tabucol duration : 526.7155768871307
+30/11/2023 07:50:56 Epoch : 4
+30/11/2023 07:50:56 Pop best : 11711_worst : 99999_avg : 22245.0298
+30/11/2023 07:50:56 Save best solution
+30/11/2023 07:50:56 Keep best with diversity/fit tradeoff
+30/11/2023 07:50:56 start matrix distance
+30/11/2023 07:50:56 Call to cuMemAlloc results in CUDA_ERROR_OUT_OF_MEMORY
+30/11/2023 07:50:56 dealloc: cuMemFree_v2 189200000 bytes
+30/11/2023 07:50:56 dealloc: cuMemFree_v2 80000 bytes
+30/11/2023 07:50:56 add pending dealloc: cuMemFree_v2 189200000 bytes

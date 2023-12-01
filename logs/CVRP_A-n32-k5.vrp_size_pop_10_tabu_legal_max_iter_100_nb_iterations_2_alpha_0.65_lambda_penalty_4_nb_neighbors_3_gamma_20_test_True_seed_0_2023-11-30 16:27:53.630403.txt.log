@@ -1,0 +1,57 @@
+30/11/2023 04:27:53 init
+30/11/2023 04:27:53 cuda:0
+30/11/2023 04:27:57 ############################
+30/11/2023 04:27:57 Start TABU
+30/11/2023 04:27:57 ############################
+30/11/2023 04:27:59 Tabucol duration : 2.465229034423828
+30/11/2023 04:27:59 Epoch : 0
+30/11/2023 04:27:59 Pop best : 830_worst : 984_avg : 894.6
+30/11/2023 04:27:59 Save best solution
+30/11/2023 04:27:59 Keep best with diversity/fit tradeoff
+30/11/2023 04:27:59 start matrix distance
+30/11/2023 04:28:00 Matrix distance duration : 0.9442329406738281
+30/11/2023 04:28:00 end  matrix distance
+30/11/2023 04:28:00 start insertion in pop
+30/11/2023 04:28:00 len(idx_selected) 10
+30/11/2023 04:28:00 Nb insertion 10
+30/11/2023 04:28:00 Insertion in pop : 0.003133535385131836
+30/11/2023 04:28:00 end insertion in pop
+30/11/2023 04:28:00 After keep best info
+30/11/2023 04:28:00 Pop _best : 830_worst : 984_avg : 894.6
+30/11/2023 04:28:00 [830 849 850 858 858 862 927 950 978 984]
+30/11/2023 04:28:00 Avg dist : 48.355555555555554 min dist : 30.0 max dist : 68
+30/11/2023 04:28:00 ############################
+30/11/2023 04:28:00 start crossover
+30/11/2023 04:28:00 ############################
+30/11/2023 04:28:00 Start crossovers
+30/11/2023 04:28:00 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:28:00 add pending dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:28:00 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:28:00 add pending dealloc: module_unload ? bytes
+30/11/2023 04:28:00 add pending dealloc: module_unload ? bytes
+30/11/2023 04:28:00 add pending dealloc: module_unload ? bytes
+30/11/2023 04:28:00 add pending dealloc: module_unload ? bytes
+30/11/2023 04:28:00 add pending dealloc: module_unload ? bytes
+30/11/2023 04:28:00 add pending dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:28:00 add pending dealloc: cuMemFree_v2 800 bytes
+30/11/2023 04:28:00 add pending dealloc: cuMemFree_v2 800 bytes
+30/11/2023 04:28:00 add pending dealloc: cuMemFree_v2 40 bytes
+30/11/2023 04:28:00 add pending dealloc: cuMemFree_v2 8192 bytes
+30/11/2023 04:28:00 add pending dealloc: cuMemFree_v2 40 bytes
+30/11/2023 04:28:00 add pending dealloc: cuMemFree_v2 256 bytes
+30/11/2023 04:28:00 add pending dealloc: cuMemFree_v2 400 bytes
+30/11/2023 04:28:00 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:28:00 dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:28:00 dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:28:00 dealloc: cuMemFree_v2 80 bytes
+30/11/2023 04:28:00 dealloc: cuMemFree_v2 800 bytes
+30/11/2023 04:28:00 dealloc: cuMemFree_v2 800 bytes
+30/11/2023 04:28:00 dealloc: cuMemFree_v2 40 bytes
+30/11/2023 04:28:00 dealloc: cuMemFree_v2 8192 bytes
+30/11/2023 04:28:00 dealloc: cuMemFree_v2 40 bytes
+30/11/2023 04:28:00 dealloc: cuMemFree_v2 256 bytes
+30/11/2023 04:28:00 dealloc: cuMemFree_v2 400 bytes
+30/11/2023 04:28:00 add pending dealloc: cuMemFree_v2 400 bytes
+30/11/2023 04:28:00 add pending dealloc: cuMemFree_v2 400 bytes
+30/11/2023 04:28:00 add pending dealloc: cuMemFree_v2 13200 bytes
+30/11/2023 04:28:00 add pending dealloc: cuMemFree_v2 2048 bytes
