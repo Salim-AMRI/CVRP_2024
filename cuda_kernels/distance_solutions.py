@@ -8,6 +8,7 @@ from numba import cuda
 nb_voitures = -1
 nb_clients = -1
 size = -1
+max_size_route = -1
 
 # CUDA kernel : compute symmetric distance matrix between solutions
 @cuda.jit
@@ -25,7 +26,7 @@ def computeSymmetricMatrixDistance_Hamming(size_pop, matrixDistance, solution_po
 
             
         for id_v in range(nb_voitures):
-            for id_c in range(nb_clients + 2):
+            for id_c in range( max_size_route):
                 if solution_pop[idx1, id_c + 1, id_v] != -1:
                     M1[solution_pop[idx1, id_c , id_v], solution_pop[idx1, id_c + 1, id_v]] = 1
                        
@@ -45,6 +46,98 @@ def computeSymmetricMatrixDistance_Hamming(size_pop, matrixDistance, solution_po
         matrixDistance[int(idx1), int(idx2)] = distance
         matrixDistance[int(idx2), int(idx1)] = distance
         
+        
+    
+
+# CUDA kernel : compute symmetric distance matrix between solutions
+@cuda.jit
+def computeSymmetricMatrixDistance_Hamming_v2(size_pop, matrixDistance, solution_pop):
+
+    d = cuda.grid(1)
+    if d < (size_pop * (size_pop - 1) / 2):
+        # Get upper triangular matrix indices from thread index !
+        idx1 = int( size_pop - 2 - int( math.sqrt(-8.0 * d + 4.0 * size_pop * (size_pop - 1) - 7) / 2.0 - 0.5 ) )
+        idx2 = int( d   + idx1   + 1  - size_pop * (size_pop - 1) / 2 + (size_pop - idx1) * ((size_pop - idx1) - 1) / 2 )
+
+
+        M1 = nb.cuda.local.array((nb_clients,2), dtype=nb.int8)
+        M2 = nb.cuda.local.array((nb_clients,2), dtype=nb.int8)
+
+        
+            
+        for id_v in range(nb_voitures):
+            for id_c in range( max_size_route):
+                if solution_pop[idx1, id_c + 1, id_v] != -1 and solution_pop[idx1, id_c + 1, id_v] != 0:
+                    
+                    M1[solution_pop[idx1, id_c , id_v] - 1 , 0] = solution_pop[idx1, id_c - 1, id_v]
+                    M1[solution_pop[idx1, id_c , id_v] - 1, 1] = solution_pop[idx1, id_c + 1, id_v]
+                       
+                if solution_pop[idx2, id_c + 1, id_v] != -1 and solution_pop[idx2, id_c + 1, id_v] != 0:
+                    
+                    M1[solution_pop[idx2, id_c , id_v] - 1, 0] = solution_pop[idx2, id_c - 1, id_v]
+                    M1[solution_pop[idx2, id_c , id_v] - 1, 1] = solution_pop[idx2, id_c + 1, id_v]
+               
+            
+        distance = 0
+        
+        for i in range(nb_clients):
+
+            if(M1[i,0] != M2[i,0]):
+                    
+                    distance += 1
+
+            if(M1[i,1] != M2[i,1]):
+                    
+                    distance += 1
+                    
+                    
+        matrixDistance[int(idx1), int(idx2)] = distance//2
+        matrixDistance[int(idx2), int(idx1)] = distance//2
+        
+
+
+# Cuda kernel to compute distance between existing pop solution and affspring solutions
+@cuda.jit
+def computeMatrixDistance_Hamming_v2(size_sub_pop, size_sub_pop2, matrixDistance, tSolution1, tSolution2):
+
+    d = cuda.grid(1)
+    if d < size_sub_pop * size_sub_pop2:
+
+        idx1 = int(d // size_sub_pop2)
+        idx2 = int(d % size_sub_pop2)
+
+        M1 = nb.cuda.local.array((nb_clients,2), dtype=nb.int8)
+        M2 = nb.cuda.local.array((nb_clients,2), dtype=nb.int8)
+
+        
+            
+        for id_v in range(nb_voitures):
+            for id_c in range( max_size_route):
+                if tSolution1[idx1, id_c + 1, id_v] != -1 and tSolution1[idx1, id_c + 1, id_v] != 0:
+                    
+                    M1[tSolution1[idx1, id_c , id_v] - 1 , 0] = tSolution1[idx1, id_c - 1, id_v]
+                    M1[tSolution1[idx1, id_c , id_v] - 1, 1] = tSolution1[idx1, id_c + 1, id_v]
+                       
+                if tSolution2[idx2, id_c + 1, id_v] != -1 and tSolution2[idx2, id_c + 1, id_v] != 0:
+                    
+                    M1[tSolution2[idx2, id_c , id_v] - 1, 0] = tSolution2[idx2, id_c - 1, id_v]
+                    M1[tSolution2[idx2, id_c , id_v] - 1, 1] = tSolution2[idx2, id_c + 1, id_v]
+               
+            
+        distance = 0
+        
+        for i in range(nb_clients):
+
+            if(M1[i,0] != M2[i,0]):
+                    
+                    distance += 1
+
+            if(M1[i,1] != M2[i,1]):
+                    
+                    distance += 1
+                    
+                    
+        matrixDistance[int(idx1), int(idx2)] = distance//2
         
         
         
@@ -179,6 +272,8 @@ def computeSymmetricMatrixDistance_Sorensen(size_pop, matrixDistance, solution_p
 
 
 
+        
+        
 
 # Cuda kernel to compute distance between existing pop solution and affspring solutions
 @cuda.jit
@@ -195,7 +290,7 @@ def computeMatrixDistance_Hamming(size_sub_pop, size_sub_pop2, matrixDistance, t
 
             
         for id_v in range(nb_voitures):
-            for id_c in range(nb_clients + 2):
+            for id_c in range(max_size_route):
                 if tSolution1[idx1, id_c + 1, id_v] != -1:
                     M1[tSolution1[idx1, id_c , id_v], tSolution1[idx1, id_c + 1, id_v]] = 1
                        

@@ -7,9 +7,9 @@ from utils.utils import read_instance
 
 
 instance = "instances/X-n106-k14.vrp"
-solution = np.loadtxt("solutions/solution_cvrp_X-n106-k14.vrp_score_26593_epoch_1.csv")
+#solution = np.loadtxt("solutions/solution_cvrp_X-n106-k14.vrp_score_26593_epoch_1.csv")
 
-
+solution = np.loadtxt("test_offspring1.csv")
 
 
 

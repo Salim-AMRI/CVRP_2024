@@ -1,3 +1,0 @@
-01/12/2023 10:01:23 init
-01/12/2023 10:01:23 cuda:0
-01/12/2023 10:01:24 add pending dealloc: cuMemFree_v2 16000000 bytes

@@ -27,15 +27,21 @@ parser.add_argument("--id_gpu", type=int, help="id_gpu", default=0)
 parser.add_argument("--seed", type=int, help="seed", default=0)
 
 parser.add_argument("--size_pop", help="size_pop", type=int, default=10000)
-parser.add_argument("--alpha", help="alpha", type=float, default=0.6)
+parser.add_argument("--alpha", help="alpha", type=float, default=0.4)
 
-parser.add_argument("--max_iter", help="max_iter", type=int, default=1000)
-parser.add_argument("--nb_iterations", help="nb_iterations", type=int, default=10)
-parser.add_argument("--lambda_penalty", help="lambda_penalty", type=float, default=1)
+parser.add_argument("--max_iter", help="max_iter", type=int, default=2000)
+parser.add_argument("--nb_iterations", help="nb_iterations", type=int, default=20)
+parser.add_argument("--lambda_penalty", help="lambda_penalty", type=float, default=0.5)
 parser.add_argument("--nb_neighbors", help="nb_neighbors", type=int, default=48)
 
+parser.add_argument("--factor_lambda", help="nb_iterations", type=float, default=2.0)
+
+parser.add_argument("--nb_nearest_neighbor_tabu", help="nb_nearest_neighbor_tabu", type=int, default=20)
+
 parser.add_argument("--gamma", help="gamma", type=int, default=10)
-parser.add_argument("--LS", help="LS", type=str, default="tabu_lambda")
+parser.add_argument("--LS", help="LS", type=str, default="tabu_CVRP_lambda_swap_NN")
+parser.add_argument("--type_crossover", help="type_crossover", type=str, default="OX")
+
 
 parser.add_argument('--test', help="test", action='store_true')
 
@@ -50,40 +56,25 @@ nb_iterations = args.nb_iterations
 lambda_penalty = args.lambda_penalty
 gamma = args.gamma
 LS = args.LS
+nb_nearest_neighbor_tabu = args.nb_nearest_neighbor_tabu
+factor_lambda = args.factor_lambda
+type_crossover = args.type_crossover
 
 test = args.test
 seed = args.seed
 
 if(test):
-    size_pop = 100
-    max_iter = 1000
-    nb_iterations = 2
+    size_pop = 10
+    max_iter = 10
+    nb_iterations = 1
     nb_neighbors = 3
+
 else:
     size_pop = args.size_pop
 
 
 print("size_pop")
 print(size_pop)
-
-name_expe = f"CVRP_{instance}_size_pop_{size_pop}_{LS}_max_iter_{max_iter}_nb_iterations_{nb_iterations}_alpha_{alpha}_lambda_penalty_{lambda_penalty}_nb_neighbors_{nb_neighbors}_gamma_{gamma}_test_{test}_seed_{seed}_{datetime.datetime.now()}.txt"
-
-
-logging.basicConfig(
-    handlers=[
-        logging.FileHandler(f"logs/{name_expe}.log"),
-        logging.StreamHandler(),
-    ],
-    level=logging.INFO,
-    format="%(asctime)s %(message)s",
-    datefmt="%d/%m/%Y %I:%M:%S",
-)
-
-
-# Init gpu devices
-cuda.select_device(args.id_gpu)
-device = f"cuda:{args.id_gpu}"
-logging.info(device)
 
 
 # Load graph
@@ -104,6 +95,30 @@ print("nb_clients : "  + str(nb_clients))
 print("nb_voitures : "  + str(nb_voitures))
 print("capacity : "  + str(capacity))
 
+if(nb_nearest_neighbor_tabu == -1):
+    nb_nearest_neighbor_tabu = nb_clients - 1
+
+
+name_expe = f"CVRP_{instance}_size_pop_{size_pop}_{LS}_{type_crossover}_max_iter_{max_iter}_nb_iterations_{nb_iterations}_alpha_{alpha}_lambda_penalty_{lambda_penalty}_nb_neighbors_pop_{nb_neighbors}_nb_nearest_neighbor_tabu_{nb_nearest_neighbor_tabu}_factor_lambda_{factor_lambda}_gamma_{gamma}_test_{test}_seed_{seed}_{datetime.datetime.now()}.txt"
+
+
+logging.basicConfig(
+    handlers=[
+        logging.FileHandler(f"logs/{name_expe}.log"),
+        logging.StreamHandler(),
+    ],
+    level=logging.INFO,
+    format="%(asctime)s %(message)s",
+    datefmt="%d/%m/%Y %I:%M:%S",
+)
+
+
+# Init gpu devices
+cuda.select_device(args.id_gpu)
+device = f"cuda:{args.id_gpu}"
+logging.info(device)
+
+
 min_dist_insertion = nb_clients / gamma
 #min_dist_insertion = 0
 
@@ -120,6 +135,7 @@ import cuda_kernels.init_pop
 cuda_kernels.distance_solutions.nb_clients = nb_clients
 cuda_kernels.distance_solutions.nb_voitures = nb_voitures
 cuda_kernels.distance_solutions.size = nb_clients + 1
+cuda_kernels.distance_solutions.max_size_route = int(nb_clients/nb_voitures * 2)
 cuda_kernels.init_pop.nb_clients = nb_clients
 cuda_kernels.init_pop.nb_voitures = nb_voitures
 cuda_kernels.local_search.size = nb_clients + 2
@@ -127,9 +143,18 @@ cuda_kernels.local_search.nb_clients = nb_clients
 cuda_kernels.local_search.nb_voitures = nb_voitures
 cuda_kernels.local_search.max_size_route = int(nb_clients/nb_voitures * 2)
 
+print("nb_nearest_neighbor_tabu")
+print(nb_nearest_neighbor_tabu)
+
+cuda_kernels.local_search.nb_nearest_neighbor_tabu = nb_nearest_neighbor_tabu
+
+
 cuda_kernels.crossover.nb_clients = nb_clients
 cuda_kernels.crossover.nb_voitures = nb_voitures
+cuda_kernels.crossover.size = nb_clients + 2
 cuda_kernels.crossover.max_size_route = int(nb_clients/nb_voitures * 4)
+cuda_kernels.crossover.size2 = nb_clients + 1
+cuda_kernels.crossover.max_clients = 2*nb_clients
 
 
 # Définir blockspergrid1 et threadsperblock
@@ -197,6 +222,28 @@ matrixDistance2_gpu_memory = cuda.to_device(matrixDistance2)
 
 
 
+if("NN" in LS):
+    distance_matrix_cvrp_filled = np.where(distance_matrix_cvrp == 0, 99999, distance_matrix_cvrp)[1:, 1:]
+    
+    print("distance_matrix_cvrp_filled.shape")
+    print(distance_matrix_cvrp_filled.shape)
+    
+    closest_clients = np.argsort(distance_matrix_cvrp_filled, axis=1)[:, :nb_nearest_neighbor_tabu]
+    
+    closest_clients = closest_clients + 1
+    print("closest_clients")
+    print(closest_clients)
+    print(closest_clients.shape)
+    print("np.min(closest_clients.shape)")
+    print(np.min(closest_clients))
+    print("np.max(closest_clients.shape)")
+    print(np.max(closest_clients))
+    
+    
+    closest_clients_gpu_memory = cuda.to_device(np.ascontiguousarray(closest_clients))
+    
+    
+    
 
 ###################################################################################################################################################
 
@@ -206,17 +253,18 @@ logging.info("############################")
     
     
 
-if(LS == "tabu_legal"):
+#if(LS == "tabu_legal"):
     
-    cuda_kernels.init_pop.generate_illegal_solutions[blockspergrid0, threadsperblock](size_pop, rng_states, demand_route_global_mem,
-                                                                          client_demands_global_mem, 
-                                                                          offsprings_pop_global_mem, size_route_global_mem)
+    #cuda_kernels.init_pop.generate_illegal_solutions[blockspergrid0, threadsperblock](size_pop, rng_states, demand_route_global_mem,
+                                                                          #client_demands_global_mem, 
+                                                                          #offsprings_pop_global_mem, size_route_global_mem)
     
-    cuda_kernels.init_pop.repair_solutions[blockspergrid0, threadsperblock](size_pop, rng_states, distance_matrix_cvrp_global_mem,demand_route_global_mem, client_demands_global_mem, vehicle_capacity_global_mem, offsprings_pop_global_mem, size_route_global_mem)
+    #cuda_kernels.init_pop.repair_solutions[blockspergrid0, threadsperblock](size_pop, rng_states, distance_matrix_cvrp_global_mem,demand_route_global_mem, client_demands_global_mem, vehicle_capacity_global_mem, offsprings_pop_global_mem, size_route_global_mem)
         
-elif(LS == "tabu_lambda"):
+#elif(LS == "tabu_lambda "):
     
-    cuda_kernels.init_pop.generate_illegal_solutions[blockspergrid0, threadsperblock](size_pop, rng_states,  demand_route_global_mem,
+
+cuda_kernels.init_pop.generate_illegal_solutions[blockspergrid0, threadsperblock](size_pop, rng_states,  demand_route_global_mem,
                                                                           client_demands_global_mem, offsprings_pop_global_mem, size_route_global_mem)
 
 
@@ -274,13 +322,59 @@ for epoch in range(99999):
                                                        vehicle_capacity_global_mem, client_demands_global_mem,
                                                        size_route_global_mem, fitness_offsprings_gpu_memory, lambda_penalty, alpha,  nb_iterations)
 
+        
+    elif(LS == "tabu_lambda_swap"):
 
+        print("START TABU SWAP")
+        print("lambda_penalty")
+        print(lambda_penalty)
+        
+        cuda_kernels.local_search.tabu_CVRP_lambda_swap[blockspergrid0, threadsperblock](rng_states, size_pop, max_iter, distance_matrix_cvrp_global_mem,
+                                                       offsprings_pop_global_mem, demand_route_global_mem,
+                                                       vehicle_capacity_global_mem, client_demands_global_mem,
+                                                       size_route_global_mem, fitness_offsprings_gpu_memory, lambda_penalty, alpha,  nb_iterations)        
+
+    elif(LS == "tabu_CVRP_lambda_swap_NN"):
+
+        print("START TABU SWAP NN")
+
+        
+        cuda_kernels.local_search.tabu_CVRP_lambda_swap_NN[blockspergrid0, threadsperblock](rng_states, size_pop, max_iter, distance_matrix_cvrp_global_mem,
+                                                       offsprings_pop_global_mem, demand_route_global_mem,
+                                                       vehicle_capacity_global_mem, client_demands_global_mem,
+                                                       size_route_global_mem, fitness_offsprings_gpu_memory, closest_clients_gpu_memory, lambda_penalty, factor_lambda, alpha,  nb_iterations)  
+        
+
+    elif(LS == "tabu_CVRP_lambda_swap_NN_v2"):
+
+        print("START TABU SWAP NN v2")
+
+        
+        cuda_kernels.local_search.tabu_CVRP_lambda_swap_NN_v2[blockspergrid0, threadsperblock](rng_states, size_pop, max_iter, distance_matrix_cvrp_global_mem,
+                                                       offsprings_pop_global_mem, demand_route_global_mem,
+                                                       vehicle_capacity_global_mem, client_demands_global_mem,
+                                                       size_route_global_mem, fitness_offsprings_gpu_memory, closest_clients_gpu_memory, lambda_penalty, alpha,  nb_iterations) 
+
+        
+    #elif(LS == "tabu_lambda_swap_v2"):
+
+        #print("START TABU SWAP v2")
+
+        #cuda_kernels.local_search.tabu_CVRP_lambda_swap_v2[blockspergrid0, threadsperblock](rng_states, size_pop, max_iter, distance_matrix_cvrp_global_mem,
+                                                       #offsprings_pop_global_mem, demand_route_global_mem,
+                                                       #vehicle_capacity_global_mem, client_demands_global_mem,
+                                                       #size_route_global_mem, fitness_offsprings_gpu_memory, lambda_penalty, alpha,  nb_iterations)
+        
+        
     nb.cuda.synchronize()
     
     offsprings_pop = offsprings_pop_global_mem.copy_to_host()
     fitness_offsprings = fitness_offsprings_gpu_memory.copy_to_host()
 
-   
+    print(fitness_offsprings)
+    
+    
+    
     logging.info("############################")
     logging.info("Log results Tabu")
     logging.info("############################")     
@@ -327,7 +421,6 @@ for epoch in range(99999):
     logging.info("Keep best with diversity/fit tradeoff")
     
     
-
     
     logging.info("############################")
     logging.info("Start distance evaluation between individuals in pop")
@@ -341,14 +434,14 @@ for epoch in range(99999):
 
 
 
-    cuda_kernels.distance_solutions.computeMatrixDistance_Hamming[blockspergrid1, threadsperblock](size_pop, size_pop, matrixDistance1_gpu_memory,
+    cuda_kernels.distance_solutions.computeMatrixDistance_Hamming_v2[blockspergrid1, threadsperblock](size_pop, size_pop, matrixDistance1_gpu_memory,
                                                                                  solutions_pop_global_mem, offsprings_pop_global_mem)
 
     matrixDistance1 = matrixDistance1_gpu_memory.copy_to_host()
 
 
 
-    cuda_kernels.distance_solutions.computeSymmetricMatrixDistance_Hamming[blockspergrid2, threadsperblock](size_pop, matrixDistance2_gpu_memory, offsprings_pop_global_mem)
+    cuda_kernels.distance_solutions.computeSymmetricMatrixDistance_Hamming_v2[blockspergrid2, threadsperblock](size_pop, matrixDistance2_gpu_memory, offsprings_pop_global_mem)
 
     matrixDistance2 = matrixDistance2_gpu_memory.copy_to_host()
 
@@ -405,7 +498,7 @@ for epoch in range(99999):
         if(score != fitness_pop[i] and fitness_pop[i] != 99999):
             logging.info("PB score : " + str(i))
             
-        if(np.max(demand) > capacity):
+        if(np.max(demand) > capacity and fitness_pop[i] != 99999):
             logging.info("PB demand solution " + str(i))     
 
 
@@ -470,17 +563,78 @@ for epoch in range(99999):
 
     
     ########## Compute crossovers #####################
-    cuda_kernels.crossover.computeClosestCrossover_GPX[blockspergrid1, threadsperblock](
-            rng_states,
-            size_pop,
-            distance_matrix_cvrp_global_mem,
-            solutions_pop_global_mem,
-            offsprings_pop_global_mem,
-            size_route_global_mem,
-            demand_route_global_mem,
-            client_demands_global_mem,
-            closest_individuals_gpu_memory,
-        )
+    
+
+
+    
+    if(type_crossover == "OX"):
+        cuda_kernels.crossover.computeCrossover_OX[blockspergrid0, threadsperblock](
+                rng_states,
+                size_pop,
+                distance_matrix_cvrp_global_mem,
+                solutions_pop_global_mem,
+                offsprings_pop_global_mem,
+                size_route_global_mem,
+                demand_route_global_mem,
+                client_demands_global_mem,
+                closest_individuals_gpu_memory,
+                vehicle_capacity_global_mem
+                )
+                
+    elif(type_crossover == "AOX"):
+        cuda_kernels.crossover.computeCrossover_AOX[blockspergrid0, threadsperblock](
+                rng_states,
+                size_pop,
+                distance_matrix_cvrp_global_mem,
+                solutions_pop_global_mem,
+                offsprings_pop_global_mem,
+                size_route_global_mem,
+                demand_route_global_mem,
+                client_demands_global_mem,
+                closest_individuals_gpu_memory,
+                vehicle_capacity_global_mem
+                )
+
+    elif(type_crossover == "LOX"):
+        cuda_kernels.crossover.computeCrossover_LOX[blockspergrid0, threadsperblock](
+                rng_states,
+                size_pop,
+                distance_matrix_cvrp_global_mem,
+                solutions_pop_global_mem,
+                offsprings_pop_global_mem,
+                size_route_global_mem,
+                demand_route_global_mem,
+                client_demands_global_mem,
+                closest_individuals_gpu_memory,
+                vehicle_capacity_global_mem
+                )
+        
+    elif(type_crossover == "GPX"):
+        cuda_kernels.crossover.computeClosestCrossover_GPX[blockspergrid0, threadsperblock](
+                rng_states,
+                size_pop,
+                distance_matrix_cvrp_global_mem,
+                solutions_pop_global_mem,
+                offsprings_pop_global_mem,
+                size_route_global_mem,
+                demand_route_global_mem,
+                client_demands_global_mem,
+                closest_individuals_gpu_memory,
+            )
+        
+    elif(type_crossover == "PR"):
+        cuda_kernels.crossover.compute_pathRelinking[blockspergrid0, threadsperblock](
+                rng_states,
+                size_pop,
+                distance_matrix_cvrp_global_mem,
+                solutions_pop_global_mem,
+                offsprings_pop_global_mem,
+                size_route_global_mem,
+                demand_route_global_mem,
+                client_demands_global_mem,
+                closest_individuals_gpu_memory,
+            )        
+        
     ###############################################"
 
 
@@ -533,4 +687,7 @@ for epoch in range(99999):
     
     logging.info(f"generation duration : {time() - startEpoch}")
     
-  
+
+    
+
+
