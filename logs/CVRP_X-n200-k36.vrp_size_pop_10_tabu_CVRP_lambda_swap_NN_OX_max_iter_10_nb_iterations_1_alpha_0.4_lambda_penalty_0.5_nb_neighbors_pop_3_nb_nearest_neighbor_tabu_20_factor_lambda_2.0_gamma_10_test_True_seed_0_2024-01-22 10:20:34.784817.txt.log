@@ -1,0 +1,618 @@
+22/01/2024 10:20:34 init
+22/01/2024 10:20:34 cuda:1
+22/01/2024 10:20:36 ############################
+22/01/2024 10:20:36 Init population
+22/01/2024 10:20:36 ############################
+22/01/2024 10:20:37 begin verify solution init
+22/01/2024 10:20:37 end verify solution init
+22/01/2024 10:20:37 ############################
+22/01/2024 10:20:37 Start Memetic algorithm
+22/01/2024 10:20:37 ############################
+22/01/2024 10:20:37 ############################
+22/01/2024 10:20:37 Start TABU
+22/01/2024 10:20:37 ############################
+22/01/2024 10:20:44 ############################
+22/01/2024 10:20:44 Log results Tabu
+22/01/2024 10:20:44 ############################
+22/01/2024 10:20:44 Tabucol duration : 6.6836676597595215
+22/01/2024 10:20:44 Epoch : 0
+22/01/2024 10:20:44 Pop best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:44 Save best solution
+22/01/2024 10:20:44 Keep best with diversity/fit tradeoff
+22/01/2024 10:20:44 ############################
+22/01/2024 10:20:44 Start distance evaluation between individuals in pop
+22/01/2024 10:20:44 ############################
+22/01/2024 10:20:45 Matrix distance duration : 0.8885679244995117
+22/01/2024 10:20:45 end  matrix distance
+22/01/2024 10:20:45 ############################
+22/01/2024 10:20:45 Start insertion in pop
+22/01/2024 10:20:45 ############################
+22/01/2024 10:20:45 len(idx_selected) 10
+22/01/2024 10:20:45 Nb insertion 10
+22/01/2024 10:20:45 Insertion in pop : 0.0030777454376220703
+22/01/2024 10:20:45 ############################
+22/01/2024 10:20:45 Start log pop and verification
+22/01/2024 10:20:45 ############################
+22/01/2024 10:20:45 begin verify solution pop
+22/01/2024 10:20:45 end verify solution pop
+22/01/2024 10:20:45 After keep best info
+22/01/2024 10:20:45 Pop _best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:45 [99999 99999 99999 99999 99999 99999 99999 99999 99999 99999]
+22/01/2024 10:20:45 Avg dist : 164.2888888888889 min dist : 157.0 max dist : 169
+22/01/2024 10:20:45 ############################
+22/01/2024 10:20:45 Crossovers
+22/01/2024 10:20:45 ############################
+22/01/2024 10:20:45 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:47 nb cross already tested in pop : 10
+22/01/2024 10:20:47 Crossover duration : 2.039674758911133
+22/01/2024 10:20:47 begin verify crosssovers
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 end verify crosssovers
+22/01/2024 10:20:47 end generation
+22/01/2024 10:20:47 generation duration : 9.764306783676147
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Start TABU
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Log results Tabu
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Tabucol duration : 0.10457420349121094
+22/01/2024 10:20:47 Epoch : 1
+22/01/2024 10:20:47 Pop best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:47 Keep best with diversity/fit tradeoff
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Start distance evaluation between individuals in pop
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:47 Matrix distance duration : 0.0044078826904296875
+22/01/2024 10:20:47 end  matrix distance
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Start insertion in pop
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 len(idx_selected) 10
+22/01/2024 10:20:47 Nb insertion 0
+22/01/2024 10:20:47 Insertion in pop : 0.003116130828857422
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Start log pop and verification
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 begin verify solution pop
+22/01/2024 10:20:47 end verify solution pop
+22/01/2024 10:20:47 After keep best info
+22/01/2024 10:20:47 Pop _best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:47 [99999 99999 99999 99999 99999 99999 99999 99999 99999 99999]
+22/01/2024 10:20:47 Avg dist : 164.2888888888889 min dist : 157.0 max dist : 169
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Crossovers
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:47 add pending dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:47 nb cross already tested in pop : 20
+22/01/2024 10:20:47 Crossover duration : 0.005189418792724609
+22/01/2024 10:20:47 begin verify crosssovers
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 end verify crosssovers
+22/01/2024 10:20:47 end generation
+22/01/2024 10:20:47 generation duration : 0.2493581771850586
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Start TABU
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Log results Tabu
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Tabucol duration : 0.07543301582336426
+22/01/2024 10:20:47 Epoch : 2
+22/01/2024 10:20:47 Pop best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:47 Keep best with diversity/fit tradeoff
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Start distance evaluation between individuals in pop
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:47 Matrix distance duration : 0.009602546691894531
+22/01/2024 10:20:47 end  matrix distance
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Start insertion in pop
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 len(idx_selected) 10
+22/01/2024 10:20:47 Nb insertion 0
+22/01/2024 10:20:47 Insertion in pop : 0.0022125244140625
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Start log pop and verification
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 begin verify solution pop
+22/01/2024 10:20:47 end verify solution pop
+22/01/2024 10:20:47 After keep best info
+22/01/2024 10:20:47 Pop _best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:47 [99999 99999 99999 99999 99999 99999 99999 99999 99999 99999]
+22/01/2024 10:20:47 Avg dist : 164.2888888888889 min dist : 157.0 max dist : 169
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Crossovers
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:47 add pending dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:47 nb cross already tested in pop : 30
+22/01/2024 10:20:47 Crossover duration : 0.0056438446044921875
+22/01/2024 10:20:47 begin verify crosssovers
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 end verify crosssovers
+22/01/2024 10:20:47 end generation
+22/01/2024 10:20:47 generation duration : 0.22074246406555176
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Start TABU
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Log results Tabu
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Tabucol duration : 0.07465624809265137
+22/01/2024 10:20:47 Epoch : 3
+22/01/2024 10:20:47 Pop best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:47 Keep best with diversity/fit tradeoff
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Start distance evaluation between individuals in pop
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:47 Matrix distance duration : 0.003174304962158203
+22/01/2024 10:20:47 end  matrix distance
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Start insertion in pop
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 len(idx_selected) 10
+22/01/2024 10:20:47 Nb insertion 0
+22/01/2024 10:20:47 Insertion in pop : 0.002966642379760742
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Start log pop and verification
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 begin verify solution pop
+22/01/2024 10:20:47 end verify solution pop
+22/01/2024 10:20:47 After keep best info
+22/01/2024 10:20:47 Pop _best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:47 [99999 99999 99999 99999 99999 99999 99999 99999 99999 99999]
+22/01/2024 10:20:47 Avg dist : 164.2888888888889 min dist : 157.0 max dist : 169
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Crossovers
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:47 add pending dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:47 nb cross already tested in pop : 40
+22/01/2024 10:20:47 Crossover duration : 0.0060803890228271484
+22/01/2024 10:20:47 begin verify crosssovers
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 pb last depot
+22/01/2024 10:20:47 nb depots
+22/01/2024 10:20:47 end verify crosssovers
+22/01/2024 10:20:47 end generation
+22/01/2024 10:20:47 generation duration : 0.22858333587646484
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Start TABU
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Log results Tabu
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Tabucol duration : 0.07303714752197266
+22/01/2024 10:20:47 Epoch : 4
+22/01/2024 10:20:47 Pop best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:47 Keep best with diversity/fit tradeoff
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Start distance evaluation between individuals in pop
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:47 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:47 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:47 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:47 dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:47 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:47 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:47 dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:47 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:47 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:47 dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:47 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:47 Matrix distance duration : 0.013094902038574219
+22/01/2024 10:20:47 end  matrix distance
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Start insertion in pop
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 len(idx_selected) 10
+22/01/2024 10:20:47 Nb insertion 0
+22/01/2024 10:20:47 Insertion in pop : 0.0031418800354003906
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 Start log pop and verification
+22/01/2024 10:20:47 ############################
+22/01/2024 10:20:47 begin verify solution pop
+22/01/2024 10:20:48 end verify solution pop
+22/01/2024 10:20:48 After keep best info
+22/01/2024 10:20:48 Pop _best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:48 [99999 99999 99999 99999 99999 99999 99999 99999 99999 99999]
+22/01/2024 10:20:48 Avg dist : 164.2888888888889 min dist : 157.0 max dist : 169
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Crossovers
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:48 add pending dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:48 nb cross already tested in pop : 50
+22/01/2024 10:20:48 Crossover duration : 0.005535602569580078
+22/01/2024 10:20:48 begin verify crosssovers
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 end verify crosssovers
+22/01/2024 10:20:48 end generation
+22/01/2024 10:20:48 generation duration : 0.22864866256713867
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Start TABU
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Log results Tabu
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Tabucol duration : 0.07325077056884766
+22/01/2024 10:20:48 Epoch : 5
+22/01/2024 10:20:48 Pop best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:48 Keep best with diversity/fit tradeoff
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Start distance evaluation between individuals in pop
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:48 Matrix distance duration : 0.002561807632446289
+22/01/2024 10:20:48 end  matrix distance
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Start insertion in pop
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 len(idx_selected) 10
+22/01/2024 10:20:48 Nb insertion 0
+22/01/2024 10:20:48 Insertion in pop : 0.0027914047241210938
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Start log pop and verification
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 begin verify solution pop
+22/01/2024 10:20:48 end verify solution pop
+22/01/2024 10:20:48 After keep best info
+22/01/2024 10:20:48 Pop _best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:48 [99999 99999 99999 99999 99999 99999 99999 99999 99999 99999]
+22/01/2024 10:20:48 Avg dist : 164.2888888888889 min dist : 157.0 max dist : 169
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Crossovers
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:48 add pending dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:48 nb cross already tested in pop : 60
+22/01/2024 10:20:48 Crossover duration : 0.004866123199462891
+22/01/2024 10:20:48 begin verify crosssovers
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 end verify crosssovers
+22/01/2024 10:20:48 end generation
+22/01/2024 10:20:48 generation duration : 0.22277426719665527
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Start TABU
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Log results Tabu
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Tabucol duration : 0.07335090637207031
+22/01/2024 10:20:48 Epoch : 6
+22/01/2024 10:20:48 Pop best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:48 Keep best with diversity/fit tradeoff
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Start distance evaluation between individuals in pop
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:48 Matrix distance duration : 0.0033981800079345703
+22/01/2024 10:20:48 end  matrix distance
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Start insertion in pop
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 len(idx_selected) 10
+22/01/2024 10:20:48 Nb insertion 0
+22/01/2024 10:20:48 Insertion in pop : 0.0027959346771240234
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Start log pop and verification
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 begin verify solution pop
+22/01/2024 10:20:48 end verify solution pop
+22/01/2024 10:20:48 After keep best info
+22/01/2024 10:20:48 Pop _best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:48 [99999 99999 99999 99999 99999 99999 99999 99999 99999 99999]
+22/01/2024 10:20:48 Avg dist : 164.2888888888889 min dist : 157.0 max dist : 169
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Crossovers
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:48 add pending dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:48 nb cross already tested in pop : 70
+22/01/2024 10:20:48 Crossover duration : 0.005463361740112305
+22/01/2024 10:20:48 begin verify crosssovers
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 end verify crosssovers
+22/01/2024 10:20:48 end generation
+22/01/2024 10:20:48 generation duration : 0.21800684928894043
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Start TABU
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Log results Tabu
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Tabucol duration : 0.07355284690856934
+22/01/2024 10:20:48 Epoch : 7
+22/01/2024 10:20:48 Pop best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:48 Keep best with diversity/fit tradeoff
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Start distance evaluation between individuals in pop
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:48 Matrix distance duration : 0.0019371509552001953
+22/01/2024 10:20:48 end  matrix distance
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Start insertion in pop
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 len(idx_selected) 10
+22/01/2024 10:20:48 Nb insertion 0
+22/01/2024 10:20:48 Insertion in pop : 0.0028421878814697266
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Start log pop and verification
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 begin verify solution pop
+22/01/2024 10:20:48 end verify solution pop
+22/01/2024 10:20:48 After keep best info
+22/01/2024 10:20:48 Pop _best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:48 [99999 99999 99999 99999 99999 99999 99999 99999 99999 99999]
+22/01/2024 10:20:48 Avg dist : 164.2888888888889 min dist : 157.0 max dist : 169
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Crossovers
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:48 add pending dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:48 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:48 dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:48 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:48 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:48 dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:48 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:48 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:48 dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:48 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:48 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:48 dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:48 nb cross already tested in pop : 80
+22/01/2024 10:20:48 Crossover duration : 0.015463113784790039
+22/01/2024 10:20:48 begin verify crosssovers
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 end verify crosssovers
+22/01/2024 10:20:48 end generation
+22/01/2024 10:20:48 generation duration : 0.22816133499145508
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Start TABU
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Log results Tabu
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Tabucol duration : 0.07352423667907715
+22/01/2024 10:20:48 Epoch : 8
+22/01/2024 10:20:48 Pop best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:48 Keep best with diversity/fit tradeoff
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Start distance evaluation between individuals in pop
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:48 Matrix distance duration : 0.0032286643981933594
+22/01/2024 10:20:48 end  matrix distance
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Start insertion in pop
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 len(idx_selected) 10
+22/01/2024 10:20:48 Nb insertion 0
+22/01/2024 10:20:48 Insertion in pop : 0.0025882720947265625
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Start log pop and verification
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 begin verify solution pop
+22/01/2024 10:20:48 end verify solution pop
+22/01/2024 10:20:48 After keep best info
+22/01/2024 10:20:48 Pop _best : 99999_worst : 99999_avg : 99999.0
+22/01/2024 10:20:48 [99999 99999 99999 99999 99999 99999 99999 99999 99999 99999]
+22/01/2024 10:20:48 Avg dist : 164.2888888888889 min dist : 157.0 max dist : 169
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 Crossovers
+22/01/2024 10:20:48 ############################
+22/01/2024 10:20:48 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:48 add pending dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:48 nb cross already tested in pop : 90
+22/01/2024 10:20:48 Crossover duration : 0.005400419235229492
+22/01/2024 10:20:48 begin verify crosssovers
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:48 pb last depot
+22/01/2024 10:20:48 nb depots
+22/01/2024 10:20:49 pb last depot
+22/01/2024 10:20:49 nb depots
+22/01/2024 10:20:49 pb last depot
+22/01/2024 10:20:49 nb depots
+22/01/2024 10:20:49 end verify crosssovers
+22/01/2024 10:20:49 end generation
+22/01/2024 10:20:49 add pending dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:49 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:49 add pending dealloc: module_unload ? bytes
+22/01/2024 10:20:49 add pending dealloc: module_unload ? bytes
+22/01/2024 10:20:49 add pending dealloc: module_unload ? bytes
+22/01/2024 10:20:49 add pending dealloc: module_unload ? bytes
+22/01/2024 10:20:49 add pending dealloc: module_unload ? bytes
+22/01/2024 10:20:49 add pending dealloc: cuMemFree_v2 31840 bytes
+22/01/2024 10:20:49 add pending dealloc: cuMemFree_v2 800 bytes
+22/01/2024 10:20:49 add pending dealloc: cuMemFree_v2 800 bytes
+22/01/2024 10:20:49 add pending dealloc: cuMemFree_v2 40 bytes
+22/01/2024 10:20:49 add pending dealloc: cuMemFree_v2 320000 bytes
+22/01/2024 10:20:49 add pending dealloc: cuMemFree_v2 288 bytes
+22/01/2024 10:20:49 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:49 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:49 dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:49 dealloc: cuMemFree_v2 80 bytes
+22/01/2024 10:20:49 dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:49 dealloc: cuMemFree_v2 31840 bytes
+22/01/2024 10:20:49 dealloc: cuMemFree_v2 800 bytes
+22/01/2024 10:20:49 dealloc: cuMemFree_v2 800 bytes
+22/01/2024 10:20:49 dealloc: cuMemFree_v2 40 bytes
+22/01/2024 10:20:49 dealloc: cuMemFree_v2 320000 bytes
+22/01/2024 10:20:49 dealloc: cuMemFree_v2 288 bytes
+22/01/2024 10:20:49 add pending dealloc: cuMemFree_v2 1600 bytes
+22/01/2024 10:20:49 add pending dealloc: cuMemFree_v2 2880 bytes
+22/01/2024 10:20:49 add pending dealloc: cuMemFree_v2 2880 bytes
+22/01/2024 10:20:49 add pending dealloc: cuMemFree_v2 2880 bytes
+22/01/2024 10:20:49 add pending dealloc: cuMemFree_v2 578880 bytes
+22/01/2024 10:20:49 add pending dealloc: cuMemFree_v2 1024 bytes

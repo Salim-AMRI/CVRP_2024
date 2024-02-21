@@ -1,9 +1,8 @@
 import logging
 import math
-
 import numba as nb
 import numpy as np
-from numba import cuda
+from numba import cuda, int16, int64, boolean
 from numba.cuda.random import xoroshiro128p_uniform_float32
 
 nb_clients = -1
@@ -11,11 +10,10 @@ nb_voitures = -1
 size = -1
 max_size_route = -1
 size2 = -1
-max_clients = -1
-
+infinit = 99999
 
 @cuda.jit
-def computeCrossover_OX(rng_states, size_pop, distance_matrix_gpu, solution_pop, offsprings_pop, size_route_offspring, demand_route_global_mem, client_demands, indices, vehicle_capacity):
+def computeCrossover_OX(rng_states, size_pop, distance_matrix_gpu, solution_pop, offsprings_pop, size_route_offspring, demand_route_global_mem, client_demands, indices, vehicle_capacity, offspring):
 
     d = cuda.grid(1)
     nbParent = 2
@@ -41,10 +39,11 @@ def computeCrossover_OX(rng_states, size_pop, distance_matrix_gpu, solution_pop,
         # Initialisation des vecteurs GT1 et GT2 avec des valeurs -1
         vecteur_GT1 = nb.cuda.local.array((nb_clients), dtype=np.int16)
         vecteur_GT2 = nb.cuda.local.array((nb_clients), dtype=np.int16)
-
-        for c in range(nb_clients):
-            vecteur_GT1[c] = -1
-            vecteur_GT2[c] = -1
+        
+        # Initialiser les tableaux vecteur_GT1 et vecteur_GT2 avec des valeurs -1
+        for i in range(size):
+            vecteur_GT1[i] = -1
+            vecteur_GT2[i] = -1
 
         # Initialisation des indices pour les vecteurs GT1 et GT2
         indice_GT1 = 0
@@ -86,21 +85,17 @@ def computeCrossover_OX(rng_states, size_pop, distance_matrix_gpu, solution_pop,
             point_de_coupure1, point_de_coupure2 = point_de_coupure2, point_de_coupure1
 
 
-        # Crée un tableau offspring de la même taille que vecteur_GT1 et initialise à -1
-        offspring = nb.cuda.local.array((nb_clients), nb.int16)
-
-        # Remplissage du tableau avec -1
+        # Création du tableau offspring initialisé à -1
         for i in range(nb_clients):
-            offspring[i] = -1
+            offspring[d, i] = -1
 
         # Remplit le segment entre les points de coupure avec les clients de vecteur_GT2
         for i in range(point_de_coupure1, point_de_coupure2):
-            offspring[ i] = vecteur_GT2[i]
+            offspring[d, i] = vecteur_GT2[i]
 
         # Crée un vecteur intermédiaire de longueur len_GT1
         intermediate_route = nb.cuda.local.array((nb_clients), nb.int16)
 
-        # Remplissage du tableau avec -1
         for i in range(nb_clients):
             intermediate_route[i] = -1
 
@@ -116,49 +111,45 @@ def computeCrossover_OX(rng_states, size_pop, distance_matrix_gpu, solution_pop,
         for i in range(nb_clients):
             client_intermediate = intermediate_route[i]
             if client_intermediate != -1:
-                for client_offspring in offspring:
+                for client_offspring in offspring[d]:
                     if client_intermediate == client_offspring:
                         intermediate_route[i] = -1
                         break  # Sortir de la boucle dès qu'une correspondance est trouvée
-
 
         # Remplit le vecteur offspring avec les clients de intermediate_route différents de -1
         idx_offspring = point_de_coupure2
         for i in range(nb_clients):
             client_intermediate = intermediate_route[i]
             if client_intermediate != -1:
-                offspring[idx_offspring] = client_intermediate
+                offspring[d, idx_offspring] = client_intermediate
                 idx_offspring = (idx_offspring + 1) % nb_clients
+                
+##### Split Part
+      
+        V = nb.cuda.local.array(size2, nb.int64)
+        P = nb.cuda.local.array(size2, nb.int64)
 
-######### Splitting algorithm ########
-
-        V = nb.cuda.local.array((size2), nb.int16)
-        
-        for i in range(1, nb_clients + 1):
-            V[i] = 9999
-            
-        V[0] = 0
-        
-  
-        P = nb.cuda.local.array((size2), nb.int16)
-        for i in range(nb_clients+1):
+        for i in range(1, size2):
+            V[i] = infinit
             P[i] = -1
+
+        V[0] = 0
 
         for i in range(1, nb_clients + 1):
             demand_route = 0
             cost = 0
-            j =  i
+            j = i
 
             while j <= nb_clients and demand_route <= vehicle_capacity[0]:
-                demand_route += client_demands[int(offspring[j - 1])]
+                if j <= nb_clients:
+                    demand_route += client_demands[int(offspring[d, j - 1])]
 
                 if i == j:
-                    cost = distance_matrix_gpu[0][int(offspring[j - 1])] + distance_matrix_gpu[int(offspring[j - 1])][
-                        0]
+                    cost = distance_matrix_gpu[0][int(offspring[d, j - 1])] + distance_matrix_gpu[int(offspring[d, j - 1])][0]
                 else:
-                    cost = cost - distance_matrix_gpu[int(offspring[j - 2])][0] + \
-                           distance_matrix_gpu[int(offspring[j - 2])][int(offspring[j - 1])] + distance_matrix_gpu[int(offspring[j - 1])][
-                               0]
+                    cost = cost - distance_matrix_gpu[int(offspring[d, j - 2])][0] + \
+                           distance_matrix_gpu[int(offspring[d, j - 2])][int(offspring[d, j - 1])] + \
+                           distance_matrix_gpu[int(offspring[d, j - 1])][0]
 
                 if demand_route <= vehicle_capacity[0]:
                     if V[i - 1] + cost < V[j]:
@@ -173,62 +164,46 @@ def computeCrossover_OX(rng_states, size_pop, distance_matrix_gpu, solution_pop,
 
         for v in range(nb_voitures):
             offsprings_pop[d, 0, v] = 0
-            
-        
-        
+
         for c in range(nb_clients):
             client_affecte[c] = 0
- 
+
         for idx1_v in range(nb_voitures):
             size_route_offspring[d, idx1_v] = 2
             demand_route_global_mem[d, idx1_v] = 0
-            
+
         i = 1
 
         # Répétition jusqu'à ce que j atteigne le dépôt (0)
         while i > 0:
-            
             i = P[j]
-            
             cpt = 1
             # Ajouter les clients de i+1 à j à la tournée t
-            for k in range(i+ 1, j + 1):
-                
-                if(t < nb_voitures):
-                    offsprings_pop[d, cpt, t] =  offspring[k-1]
-                    
-                    client_affecte[offspring[k-1] - 1] = 1
-                    
+            for k in range(i + 1, j + 1):
+                if t < nb_voitures:
+                    offsprings_pop[d, cpt, t] = offspring[d, k - 1]
+                    client_affecte[offspring[d, k - 1] - 1] = 1
                     size_route_offspring[d, t] += 1
-                    
-                    demand_route_global_mem[d,t] += client_demands[offspring[k-1]]
-
+                    demand_route_global_mem[d, t] += client_demands[offspring[d, k - 1]]
                     cpt += 1
-                
-            j = i
-            t = t + 1
-            
 
+            j = i
+            t += 1
 
         for c in range(nb_clients):
-            if(client_affecte[c] == 0):
+            if client_affecte[c] == 0:
                 r = int(nb_voitures * xoroshiro128p_uniform_float32(rng_states, d))
-                
-                if(r > nb_voitures - 1):
+                if r > nb_voitures - 1:
                     r = nb_voitures - 1
-                    
-                offsprings_pop[d, int(size_route_offspring[d, r]) - 1,r] = c + 1
-                
+                offsprings_pop[d, int(size_route_offspring[d, r]) - 1, r] = c + 1
                 size_route_offspring[d, r] += 1
-                
-                demand_route_global_mem[d,r] += client_demands[c + 1]
-        
-        for v in range(nb_voitures):
-            offsprings_pop[d,int(size_route_offspring[d, v]) - 1, v] = 0
+                demand_route_global_mem[d, r] += client_demands[c + 1]
 
-                
+        for v in range(nb_voitures):
+            offsprings_pop[d, int(size_route_offspring[d, v]) - 1, v] = 0 
+              
 @cuda.jit
-def computeCrossover_AOX(rng_states, size_pop, distance_matrix_gpu, solution_pop, offsprings_pop, size_route_offspring, demand_route_global_mem, client_demands, indices, vehicle_capacity):
+def computeCrossover_AOX(rng_states, size_pop, distance_matrix_gpu, solution_pop, offsprings_pop, size_route_offspring, demand_route_global_mem, client_demands, indices, vehicle_capacity, offspring):
 
     d = cuda.grid(1)
     nbParent = 2
@@ -312,16 +287,13 @@ def computeCrossover_AOX(rng_states, size_pop, distance_matrix_gpu, solution_pop
             
         #####
 
-        # Crée un tableau offspring de la même taille que vecteur_GT1 et initialise à -1
-        offspring = nb.cuda.local.array((nb_clients), nb.int16)
-
-        # Remplissage du tableau avec -1
+        # Création du tableau offspring initialisé à -1
         for i in range(nb_clients):
-            offspring[i] = -1
+            offspring[d, i] = -1
 
         # Remplit le segment entre les points de coupure avec les clients de vecteur_GT2
         for i in range(point_de_coupure1, point_de_coupure2):
-            offspring[ i] = vecteur_GT2[i]
+            offspring[d, i] = vecteur_GT2[i]
 
         # Crée un vecteur intermédiaire de longueur len_GT1
         intermediate_route = nb.cuda.local.array((nb_clients), nb.int16)
@@ -342,7 +314,7 @@ def computeCrossover_AOX(rng_states, size_pop, distance_matrix_gpu, solution_pop
         for i in range(nb_clients):
             client_intermediate = intermediate_route[i]
             if client_intermediate != -1:
-                for client_offspring in offspring:
+                for client_offspring in offspring[d]:
                     if client_intermediate == client_offspring:
                         intermediate_route[i] = -1
                         break  # Sortir de la boucle dès qu'une correspondance est trouvée
@@ -353,38 +325,35 @@ def computeCrossover_AOX(rng_states, size_pop, distance_matrix_gpu, solution_pop
         for i in range(nb_clients):
             client_intermediate = intermediate_route[i]
             if client_intermediate != -1:
-                offspring[idx_offspring] = client_intermediate
-                idx_offspring = (idx_offspring + 1) % nb_clients
+                offspring[d, idx_offspring] = client_intermediate
+                idx_offspring = (idx_offspring + 1) % nb_clients     
+                
+##### Split Part
+      
+        V = nb.cuda.local.array(size2, nb.int64)
+        P = nb.cuda.local.array(size2, nb.int64)
 
-######### Splitting algorithm ########
-
-        V = nb.cuda.local.array((size2), nb.int16)
-        
-        for i in range(1, nb_clients + 1):
-            V[i] = 9999
-            
-        V[0] = 0
-        
-  
-        P = nb.cuda.local.array((size2), nb.int16)
-        for i in range(nb_clients+1):
+        for i in range(1, size2):
+            V[i] = infinit
             P[i] = -1
+
+        V[0] = 0
 
         for i in range(1, nb_clients + 1):
             demand_route = 0
             cost = 0
-            j =  i
+            j = i
 
             while j <= nb_clients and demand_route <= vehicle_capacity[0]:
-                demand_route += client_demands[int(offspring[j - 1])]
+                if j <= nb_clients:
+                    demand_route += client_demands[int(offspring[d, j - 1])]
 
                 if i == j:
-                    cost = distance_matrix_gpu[0][int(offspring[j - 1])] + distance_matrix_gpu[int(offspring[j - 1])][
-                        0]
+                    cost = distance_matrix_gpu[0][int(offspring[d, j - 1])] + distance_matrix_gpu[int(offspring[d, j - 1])][0]
                 else:
-                    cost = cost - distance_matrix_gpu[int(offspring[j - 2])][0] + \
-                           distance_matrix_gpu[int(offspring[j - 2])][int(offspring[j - 1])] + distance_matrix_gpu[int(offspring[j - 1])][
-                               0]
+                    cost = cost - distance_matrix_gpu[int(offspring[d, j - 2])][0] + \
+                           distance_matrix_gpu[int(offspring[d, j - 2])][int(offspring[d, j - 1])] + \
+                           distance_matrix_gpu[int(offspring[d, j - 1])][0]
 
                 if demand_route <= vehicle_capacity[0]:
                     if V[i - 1] + cost < V[j]:
@@ -399,61 +368,46 @@ def computeCrossover_AOX(rng_states, size_pop, distance_matrix_gpu, solution_pop
 
         for v in range(nb_voitures):
             offsprings_pop[d, 0, v] = 0
-            
-        
-        
+
         for c in range(nb_clients):
             client_affecte[c] = 0
- 
+
         for idx1_v in range(nb_voitures):
             size_route_offspring[d, idx1_v] = 2
             demand_route_global_mem[d, idx1_v] = 0
-            
+
         i = 1
 
         # Répétition jusqu'à ce que j atteigne le dépôt (0)
         while i > 0:
-            
             i = P[j]
-            
             cpt = 1
             # Ajouter les clients de i+1 à j à la tournée t
-            for k in range(i+ 1, j + 1):
-                
-                if(t < nb_voitures):
-                    offsprings_pop[d, cpt, t] =  offspring[k-1]
-                    
-                    client_affecte[offspring[k-1] - 1] = 1
-                    
+            for k in range(i + 1, j + 1):
+                if t < nb_voitures:
+                    offsprings_pop[d, cpt, t] = offspring[d, k - 1]
+                    client_affecte[offspring[d, k - 1] - 1] = 1
                     size_route_offspring[d, t] += 1
-                    
-                    demand_route_global_mem[d,t] += client_demands[offspring[k-1]]
-
+                    demand_route_global_mem[d, t] += client_demands[offspring[d, k - 1]]
                     cpt += 1
-                
-            j = i
-            t = t + 1
 
+            j = i
+            t += 1
 
         for c in range(nb_clients):
-            if(client_affecte[c] == 0):
+            if client_affecte[c] == 0:
                 r = int(nb_voitures * xoroshiro128p_uniform_float32(rng_states, d))
-                
-                if(r > nb_voitures - 1):
+                if r > nb_voitures - 1:
                     r = nb_voitures - 1
-                    
-                offsprings_pop[d, int(size_route_offspring[d, r]) - 1,r] = c + 1
-                
+                offsprings_pop[d, int(size_route_offspring[d, r]) - 1, r] = c + 1
                 size_route_offspring[d, r] += 1
-                
-                demand_route_global_mem[d,r] += client_demands[c + 1]
-        
+                demand_route_global_mem[d, r] += client_demands[c + 1]
+
         for v in range(nb_voitures):
-            offsprings_pop[d,int(size_route_offspring[d, v]) - 1, v] = 0
-            
+            offsprings_pop[d, int(size_route_offspring[d, v]) - 1, v] = 0 
 
 @cuda.jit
-def computeCrossover_LOX(rng_states, size_pop, distance_matrix_gpu, solution_pop, offsprings_pop, size_route_offspring, demand_route_global_mem, client_demands, indices, vehicle_capacity):
+def computeCrossover_LOX(rng_states, size_pop, distance_matrix_gpu, solution_pop, offsprings_pop, size_route_offspring, demand_route_global_mem, client_demands, indices, vehicle_capacity, offspring):
 
     d = cuda.grid(1)
     nbParent = 2
@@ -524,16 +478,13 @@ def computeCrossover_LOX(rng_states, size_pop, distance_matrix_gpu, solution_pop
             point_de_coupure1, point_de_coupure2 = point_de_coupure2, point_de_coupure1
 
 
-        # Crée un tableau offspring de la même taille que vecteur_GT1 et initialise à -1
-        offspring = nb.cuda.local.array((nb_clients), nb.int16)
-
-        # Remplissage du tableau avec -1
+        # Création du tableau offspring initialisé à -1
         for i in range(nb_clients):
-            offspring[i] = -1
+            offspring[d, i] = -1
 
         # Remplit le segment entre les points de coupure avec les clients de vecteur_GT2
         for i in range(point_de_coupure1, point_de_coupure2):
-            offspring[ i] = vecteur_GT2[i]
+            offspring[d, i] = vecteur_GT2[i]
 
         # Crée un vecteur intermédiaire de longueur len_GT1
         intermediate_route = nb.cuda.local.array((nb_clients), nb.int16)
@@ -552,51 +503,47 @@ def computeCrossover_LOX(rng_states, size_pop, distance_matrix_gpu, solution_pop
         for i in range(nb_clients):
             client_intermediate = intermediate_route[i]
             if client_intermediate != -1:
-                for client_offspring in offspring:
+                for client_offspring in offspring[d]:
                     if client_intermediate == client_offspring:
                         intermediate_route[i] = -1
                         break
                     
         # Remplit le vecteur offspring avec les clients de intermediate_route différents de -1
-        for i in range(len(offspring)):
-            if offspring[i] == -1:
+        for i in range(len(offspring[d])):
+            if offspring[d, i] == -1:
                 for j in range(len(intermediate_route)):
                     if intermediate_route[j] != -1:
                         # Remplacer la valeur dans offspring
-                        offspring[i] = intermediate_route[j]
+                        offspring[d, i] = intermediate_route[j]
                         intermediate_route[j] = -1
                         break
-            
 
-######### Splitting algorithm ########
+##### Split Part
+      
+        V = nb.cuda.local.array(size2, nb.int64)
+        P = nb.cuda.local.array(size2, nb.int64)
 
-        V = nb.cuda.local.array((size2), nb.int16)
-        
-        for i in range(1, nb_clients + 1):
-            V[i] = 9999
-            
-        V[0] = 0
-        
-  
-        P = nb.cuda.local.array((size2), nb.int16)
-        for i in range(nb_clients+1):
+        for i in range(1, size2):
+            V[i] = infinit
             P[i] = -1
+
+        V[0] = 0
 
         for i in range(1, nb_clients + 1):
             demand_route = 0
             cost = 0
-            j =  i
+            j = i
 
             while j <= nb_clients and demand_route <= vehicle_capacity[0]:
-                demand_route += client_demands[int(offspring[j - 1])]
+                if j <= nb_clients:
+                    demand_route += client_demands[int(offspring[d, j - 1])]
 
                 if i == j:
-                    cost = distance_matrix_gpu[0][int(offspring[j - 1])] + distance_matrix_gpu[int(offspring[j - 1])][
-                        0]
+                    cost = distance_matrix_gpu[0][int(offspring[d, j - 1])] + distance_matrix_gpu[int(offspring[d, j - 1])][0]
                 else:
-                    cost = cost - distance_matrix_gpu[int(offspring[j - 2])][0] + \
-                           distance_matrix_gpu[int(offspring[j - 2])][int(offspring[j - 1])] + distance_matrix_gpu[int(offspring[j - 1])][
-                               0]
+                    cost = cost - distance_matrix_gpu[int(offspring[d, j - 2])][0] + \
+                           distance_matrix_gpu[int(offspring[d, j - 2])][int(offspring[d, j - 1])] + \
+                           distance_matrix_gpu[int(offspring[d, j - 1])][0]
 
                 if demand_route <= vehicle_capacity[0]:
                     if V[i - 1] + cost < V[j]:
@@ -611,62 +558,291 @@ def computeCrossover_LOX(rng_states, size_pop, distance_matrix_gpu, solution_pop
 
         for v in range(nb_voitures):
             offsprings_pop[d, 0, v] = 0
-            
-        
-        
+
         for c in range(nb_clients):
             client_affecte[c] = 0
- 
+
         for idx1_v in range(nb_voitures):
             size_route_offspring[d, idx1_v] = 2
             demand_route_global_mem[d, idx1_v] = 0
-            
+
         i = 1
 
         # Répétition jusqu'à ce que j atteigne le dépôt (0)
         while i > 0:
-            
             i = P[j]
-            
             cpt = 1
             # Ajouter les clients de i+1 à j à la tournée t
-            for k in range(i+ 1, j + 1):
-                
-                if(t < nb_voitures):
-                    offsprings_pop[d, cpt, t] =  offspring[k-1]
-                    
-                    client_affecte[offspring[k-1] - 1] = 1
-                    
+            for k in range(i + 1, j + 1):
+                if t < nb_voitures:
+                    offsprings_pop[d, cpt, t] = offspring[d, k - 1]
+                    client_affecte[offspring[d, k - 1] - 1] = 1
                     size_route_offspring[d, t] += 1
-                    
-                    demand_route_global_mem[d,t] += client_demands[offspring[k-1]]
-
+                    demand_route_global_mem[d, t] += client_demands[offspring[d, k - 1]]
                     cpt += 1
-                
-            j = i
-            t = t + 1
 
+            j = i
+            t += 1
 
         for c in range(nb_clients):
-            if(client_affecte[c] == 0):
+            if client_affecte[c] == 0:
                 r = int(nb_voitures * xoroshiro128p_uniform_float32(rng_states, d))
-                
-                if(r > nb_voitures - 1):
+                if r > nb_voitures - 1:
                     r = nb_voitures - 1
-                    
-                offsprings_pop[d, int(size_route_offspring[d, r]) - 1,r] = c + 1
-                
+                offsprings_pop[d, int(size_route_offspring[d, r]) - 1, r] = c + 1
                 size_route_offspring[d, r] += 1
-                
-                demand_route_global_mem[d,r] += client_demands[c + 1]
-        
+                demand_route_global_mem[d, r] += client_demands[c + 1]
+
         for v in range(nb_voitures):
-            offsprings_pop[d,int(size_route_offspring[d, v]) - 1, v] = 0
+            offsprings_pop[d, int(size_route_offspring[d, v]) - 1, v] = 0 
             
+@cuda.jit
+def computeCrossover_EAX(rng_states, size_pop, distance_matrix_gpu, solution_pop, offsprings_pop, size_route_offspring, demand_route_global_mem, client_demands, indices, vehicle_capacity, offspring):
+
+    d = cuda.grid(1)
+    nbParent = 2
+
+    if d < size_pop:
+
+        idx1 = int(d)
+        idx2 = int(indices[idx1])
         
+        client_affecte = nb.cuda.local.array((size), nb.int16)
+        
+        for idx1_v in range(nb_voitures):
+            for idx1_c in range(size):
+                offsprings_pop[d,idx1_c,idx1_v]  = -1
+                
+        parents = nb.cuda.local.array((nbParent, size, nb_voitures), nb.int16)
+
+        for idx1_v in range(nb_voitures):
+            for idx1_c in range(size):
+                parents[0, idx1_c, idx1_v] = solution_pop[idx1, idx1_c, idx1_v]
+                parents[1, idx1_c, idx1_v] = solution_pop[idx2, idx1_c, idx1_v]
+
+        # Initialisation des vecteurs GT1 et GT2 avec des valeurs -1
+        vecteur_GT1 = nb.cuda.local.array((size), dtype=nb.int16)
+        vecteur_GT2 = nb.cuda.local.array((size), dtype=nb.int16)
+        
+        # Initialiser les tableaux vecteur_GT1 et vecteur_GT2 avec des valeurs -1
+        for i in range(size):
+            vecteur_GT1[i] = -1
+            vecteur_GT2[i] = -1
+            
+        # Initialisation des indices pour les vecteurs GT1 et GT2
+        indice_GT1 = 0
+        indice_GT2 = 0
+
+        # Parcours des itinéraires de chaque ensemble de parents
+        for idx_parent in range(2):  # 0 pour parents[0], 1 pour parents[1]
+            for idx1_v in range(nb_voitures):
+                for idx1_c in range(size):
+                    client = parents[idx_parent, idx1_c, idx1_v]
+
+                    # Vérifie si le client est entre les dépôts (client > 0)
+                    if client > 0:
+                        # Place le client dans le vecteur correspondant
+                        if idx_parent == 0:
+                            vecteur_GT1[indice_GT1] = client
+                            indice_GT1 += 1
+                        else:
+                            vecteur_GT2[indice_GT2] = client
+                            indice_GT2 += 1
+        
+        # Remplir les matrices binaires pour les parents
+        matrice_binaire_pA = nb.cuda.local.array((nb_clients, nb_clients), dtype=nb.int16)
+        matrice_binaire_pB = nb.cuda.local.array((nb_clients, nb_clients), dtype=nb.int16)
+
+        # Remplir la matrice binaire pA
+        for i in range(len(vecteur_GT1) - 1):
+            matrice_binaire_pA[int(vecteur_GT1[i]), int(vecteur_GT1[i + 1])] = 1
+
+        # Remplir la matrice binaire pB
+        for i in range(len(vecteur_GT2) - 1):
+            matrice_binaire_pB[int(vecteur_GT2[i]), int(vecteur_GT2[i + 1])] = 1
+        
+        # Remplir la matrice AB
+        matrice_GAB = nb.cuda.local.array((nb_clients, nb_clients), dtype=nb.int16)
+
+        # Création de la matrice d'adjacence combinée (GAB)
+        for i in range(nb_clients):
+            for j in range(nb_clients):
+                matrice_GAB[i, j] = (matrice_binaire_pA[i, j] and matrice_binaire_pB[i, j]) or matrice_GAB[i, j]
+        
+        # Matrice des clients visités
+        visites = nb.cuda.local.array(shape=(nb_clients), dtype=nb.int16)
+        for i in range(nb_clients):
+            visites[i] = 0
+        
+        # Matrice pour stocker les arêtes des cycles détectés
+        Eset = nb.cuda.local.array(shape=(nb_clients, nb_clients), dtype=nb.int16)
+        for i in range(nb_clients):
+            for j in range(nb_clients):
+                Eset[i, j] = 0
+                
+        # Initialisation de la pile
+        stack = nb.cuda.local.array(shape=(nb_clients), dtype=nb.int16)
+        for i in range(nb_clients):
+            stack[i] = 0
+            
+        # Boucle DFS pour trouver les cycles
+        for i in range(nb_clients):
+            if visites[i] == 0:
+                stack[0] = i
+                visites[i] = 1
+                stack_ptr = 1
+
+                while stack_ptr > 0:
+                    current_node = stack[stack_ptr - 1]
+                    stack_ptr -= 1
+
+                    for j in range(nb_clients):
+                        if matrice_GAB[current_node, j] == 1 or (matrice_binaire_pA[current_node, j] == 1 and matrice_binaire_pB[current_node, j] == 1):
+                            if Eset[current_node, j] == 0:
+                                Eset[current_node, j] = 1
+                                Eset[j, current_node] = 1
+
+                                if visites[j] == 0:
+                                    stack[stack_ptr] = j
+                                    stack_ptr += 1
+                                    visites[j] = 1
+                                    
+        # Création des vecteurs GT3
+        vecteur_GT3 = nb.cuda.local.array((size), dtype=nb.int16)
+
+        # Initialisation des indices pour les vecteurs GT3
+        indice_GT3 = 0
+        
+        # Parcours des arêtes des cycles détectés
+        for i in range(nb_clients):
+            for j in range(nb_clients):
+                if Eset[i, j] == 1:
+                    if matrice_binaire_pA[i, j] == 1:
+                        vecteur_GT3[indice_GT3] = i
+                        indice_GT3 += 1
+                        vecteur_GT3[indice_GT3] = j
+                        indice_GT3 += 1
+                        
+        # Recherche et élimination des doublons
+        for i in range(size - 1):
+            for j in range(i + 1, size):
+                if vecteur_GT3[i] != -1 and vecteur_GT3[i] == vecteur_GT3[j]:
+                    # Le client est un doublon, le remplacer par -1
+                    vecteur_GT3[j] = -1
+        
+        # Création du tableau offspring initialisé à -1
+        for i in range(nb_clients):
+            offspring[d, i] = -1
+
+        # Placer les clients du cycle dans le tableau offspring
+        indice_offspring = 0
+        for client in vecteur_GT3:
+            if client > 0:
+                offspring[d, indice_offspring] = client
+                indice_offspring += 1
+
+        # Parcourir offspring, remplacer les -1 par les éléments de vecteur_GT1
+        for i in range(nb_clients):
+            if offspring[d, i] == -1:
+                client_found = False
+
+                # Trouver le prochain élément non présent dans offspring
+                for j in range(size):
+                    client = vecteur_GT1[j]
+                    if client > 0:
+                        # Vérifier si le client est déjà dans offspring
+                        found_in_offspring = False
+                        for k in range(nb_clients):
+                            if offspring[d, k] == client:
+                                found_in_offspring = True
+                                break
+
+                        # Si le client n'est pas dans offspring, le placer
+                        if not found_in_offspring:
+                            offspring[d, i] = client
+                            client_found = True
+                            break
+
+##### Split Part
+      
+        V = nb.cuda.local.array(size2, nb.int64)
+        P = nb.cuda.local.array(size2, nb.int64)
+
+        for i in range(1, size2):
+            V[i] = infinit
+            P[i] = -1
+
+        V[0] = 0
+
+        for i in range(1, nb_clients + 1):
+            demand_route = 0
+            cost = 0
+            j = i
+
+            while j <= nb_clients and demand_route <= vehicle_capacity[0]:
+                if j <= nb_clients:
+                    demand_route += client_demands[int(offspring[d, j - 1])]
+
+                if i == j:
+                    cost = distance_matrix_gpu[0][int(offspring[d, j - 1])] + distance_matrix_gpu[int(offspring[d, j - 1])][0]
+                else:
+                    cost = cost - distance_matrix_gpu[int(offspring[d, j - 2])][0] + \
+                           distance_matrix_gpu[int(offspring[d, j - 2])][int(offspring[d, j - 1])] + \
+                           distance_matrix_gpu[int(offspring[d, j - 1])][0]
+
+                if demand_route <= vehicle_capacity[0]:
+                    if V[i - 1] + cost < V[j]:
+                        V[j] = V[i - 1] + cost
+                        P[j] = i - 1
+
+                    j += 1
+
+        # Initialisation des tournées
+        t = 0
+        j = nb_clients
+
+        for v in range(nb_voitures):
+            offsprings_pop[d, 0, v] = 0
+
+        for c in range(nb_clients):
+            client_affecte[c] = 0
+
+        for idx1_v in range(nb_voitures):
+            size_route_offspring[d, idx1_v] = 2
+            demand_route_global_mem[d, idx1_v] = 0
+
+        i = 1
+
+        # Répétition jusqu'à ce que j atteigne le dépôt (0)
+        while i > 0:
+            i = P[j]
+            cpt = 1
+            # Ajouter les clients de i+1 à j à la tournée t
+            for k in range(i + 1, j + 1):
+                if t < nb_voitures:
+                    offsprings_pop[d, cpt, t] = offspring[d, k - 1]
+                    client_affecte[offspring[d, k - 1] - 1] = 1
+                    size_route_offspring[d, t] += 1
+                    demand_route_global_mem[d, t] += client_demands[offspring[d, k - 1]]
+                    cpt += 1
+
+            j = i
+            t += 1
+
+        for c in range(nb_clients):
+            if client_affecte[c] == 0:
+                r = int(nb_voitures * xoroshiro128p_uniform_float32(rng_states, d))
+                if r > nb_voitures - 1:
+                    r = nb_voitures - 1
+                offsprings_pop[d, int(size_route_offspring[d, r]) - 1, r] = c + 1
+                size_route_offspring[d, r] += 1
+                demand_route_global_mem[d, r] += client_demands[c + 1]
+
+        for v in range(nb_voitures):
+            offsprings_pop[d, int(size_route_offspring[d, v]) - 1, v] = 0 
+            
 @cuda.jit
 def computeClosestCrossover_GPX(rng_states, size_pop, distance_matrix_gpu, solution_pop, offspring, size_route_offspring, demand_route_global_mem, client_demands, indices):
-
 
     d = cuda.grid(1)
     nbParent = 2
@@ -700,7 +876,6 @@ def computeClosestCrossover_GPX(rng_states, size_pop, distance_matrix_gpu, solut
 
         position_client_parents = nb.cuda.local.array((nbParent, nb_clients, 2), nb.int16)
         
-        
 
         for i in range(nbParent):
 
@@ -721,6 +896,8 @@ def computeClosestCrossover_GPX(rng_states, size_pop, distance_matrix_gpu, solut
                         if ( parents[i, c, v] != 0):
 
                             quality_routes[i, v] += distance_matrix_gpu[0, client]
+                            
+                            # quality_routes[i, v] += distance_matrix_gpu[0, client] * demand_route_global_mem[client] à tester dans une seconde phase
                             
                         if(client != 0 and client != -1):
                             
@@ -771,7 +948,7 @@ def computeClosestCrossover_GPX(rng_states, size_pop, distance_matrix_gpu, solut
 
 
 
-            quality_routes[int(indiceParent), voitureMax] = -999
+            quality_routes[int(indiceParent), voitureMax] = -
             distances_routes[int(indiceParent), voitureMax] = 1
 
 
@@ -831,14 +1008,9 @@ def computeClosestCrossover_GPX(rng_states, size_pop, distance_matrix_gpu, solut
         
         for v in range(nb_voitures):
             offspring[d,int(size_route_offspring[d, v]) - 1, v] = 0
-            
-            
-    
-    
     
 @cuda.jit
 def compute_pathRelinking(rng_states, size_pop, distance_matrix_gpu, solution_pop, offspring, size_route_offspring, demand_route_global_mem, client_demands, indices):
-
 
     d = cuda.grid(1)
     nbParent = 2
@@ -911,10 +1083,6 @@ def compute_pathRelinking(rng_states, size_pop, distance_matrix_gpu, solution_po
                     for j in range(m+1):
                         D[i, j] = 0
 
-
-
-
-
                 for i in range(n + 1):
                     D[i, 0] = i
 
@@ -978,7 +1146,7 @@ def compute_pathRelinking(rng_states, size_pop, distance_matrix_gpu, solution_po
 
         for c in range(nb_voitures):
 
-            minVal = 99999
+            minVal = infinit
             minI = -1
             minJ = -1
 
@@ -997,10 +1165,6 @@ def compute_pathRelinking(rng_states, size_pop, distance_matrix_gpu, solution_po
                 A[k, minJ] = 9999
 
             affectation[minI] = minJ
-            
-    
-            
-
 
         for k in range(nb_voitures):
 
@@ -1141,9 +1305,6 @@ def compute_pathRelinking(rng_states, size_pop, distance_matrix_gpu, solution_po
                             size_route_offspring[d,idx_v] += 1
                             idx_c += 1
                             cpt += 1
-                            
-                            
-
                 else:
 
                     if(parents[1,cpt, int(affectation[idx_v])] != -1):
@@ -1153,8 +1314,6 @@ def compute_pathRelinking(rng_states, size_pop, distance_matrix_gpu, solution_po
                         idx_c += 1
                         cpt += 1
                         
-
-
         for idx_v in range(nb_voitures):
             offspring[d,int(size_route_offspring[d,idx_v]), idx_v] = 0
 

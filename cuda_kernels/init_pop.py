@@ -4,6 +4,7 @@ import numba as nb
 
 nb_clients = -1
 nb_voitures = -1
+infinit = 99999
 
 
 
@@ -132,7 +133,7 @@ def repair_solutions(D, rng_states, distance_matrix_gpu, demand_route, client_de
                     impact_client_leaving = distance_matrix_gpu[client_before, client_after] - distance_matrix_gpu[current_client, client_before] - distance_matrix_gpu[current_client, client_after]
 
                     
-                    best_delta = 99999
+                    best_delta = infinit
                     best_idx1_client = -1
                     best_idx1_voiture = -1
                     best_idx2_client = -1

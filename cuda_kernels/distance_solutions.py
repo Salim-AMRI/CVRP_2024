@@ -9,6 +9,7 @@ nb_voitures = -1
 nb_clients = -1
 size = -1
 max_size_route = -1
+infinit = 99999
 
 # CUDA kernel : compute symmetric distance matrix between solutions
 @cuda.jit
@@ -201,7 +202,7 @@ def computeSymmetricMatrixDistance_Sorensen(size_pop, matrixDistance, solution_p
 
                         else:
 
-                            c = 99999
+                            c = infinit
 
                         test = min(D[i - 1, j] + 1, D[i, j - 1] + 1)
                         D[i, j] = min(test, D[i - 1, j - 1] + c)
@@ -228,7 +229,7 @@ def computeSymmetricMatrixDistance_Sorensen(size_pop, matrixDistance, solution_p
 
                         else:
 
-                            c = 99999
+                            c = infinit
 
                         test = min(D[i - 1, j] + 1, D[i, j - 1] + 1)
                         D[i, j] = min(test, D[i - 1, j - 1] + c)
@@ -244,7 +245,7 @@ def computeSymmetricMatrixDistance_Sorensen(size_pop, matrixDistance, solution_p
 
         for c in range(nb_voitures):
 
-            minVal = 99999
+            minVal = infinit
             minI = -1
             minJ = -1
 
@@ -259,8 +260,8 @@ def computeSymmetricMatrixDistance_Sorensen(size_pop, matrixDistance, solution_p
                         minJ = j
 
             for k in range(nb_voitures):
-                A[minI, k] = 9999
-                A[k, minJ] = 9999
+                A[minI, k] = infinit
+                A[k, minJ] = infinit
 
             distance += minVal
 
@@ -368,7 +369,7 @@ def computeMatrixDistance_Sorensen(size_sub_pop, size_sub_pop2, matrixDistance, 
 
                         else:
 
-                            c = 99999
+                            c = infinit
 
                         test = min(D[i - 1, j] + 1, D[i, j - 1] + 1)
                         D[i, j] = min(test, D[i - 1, j - 1] + c)
@@ -395,7 +396,7 @@ def computeMatrixDistance_Sorensen(size_sub_pop, size_sub_pop2, matrixDistance, 
 
                         else:
 
-                            c = 99999
+                            c = infinit
 
                         test = min(D[i - 1, j] + 1, D[i, j - 1] + 1)
                         D[i, j] = min(test, D[i - 1, j - 1] + c)
@@ -411,7 +412,7 @@ def computeMatrixDistance_Sorensen(size_sub_pop, size_sub_pop2, matrixDistance, 
 
         for c in range(nb_voitures):
 
-            minVal = 99999
+            minVal = infinit
             minI = -1
             minJ = -1
 
@@ -426,8 +427,8 @@ def computeMatrixDistance_Sorensen(size_sub_pop, size_sub_pop2, matrixDistance, 
                         minJ = j
 
             for k in range(nb_voitures):
-                A[minI, k] = 9999
-                A[k, minJ] = 9999
+                A[minI, k] = infinit
+                A[k, minJ] = infinit
 
             distance += minVal
 

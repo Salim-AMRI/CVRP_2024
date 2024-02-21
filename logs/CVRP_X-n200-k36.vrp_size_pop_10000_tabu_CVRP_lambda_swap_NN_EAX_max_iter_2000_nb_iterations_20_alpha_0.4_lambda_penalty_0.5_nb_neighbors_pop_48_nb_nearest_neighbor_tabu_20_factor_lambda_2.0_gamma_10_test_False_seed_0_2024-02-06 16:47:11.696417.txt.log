@@ -1,0 +1,30 @@
+06/02/2024 04:47:11 init
+06/02/2024 04:47:14 cuda:0
+06/02/2024 04:47:16 ############################
+06/02/2024 04:47:16 Init population
+06/02/2024 04:47:16 ############################
+06/02/2024 04:47:17 add pending dealloc: cuMemFree_v2 31840 bytes
+06/02/2024 04:47:17 add pending dealloc: cuMemFree_v2 800000000 bytes
+06/02/2024 04:47:17 add pending dealloc: cuMemFree_v2 800000000 bytes
+06/02/2024 04:47:17 add pending dealloc: cuMemFree_v2 398 bytes
+06/02/2024 04:47:17 add pending dealloc: cuMemFree_v2 7960000 bytes
+06/02/2024 04:47:17 add pending dealloc: cuMemFree_v2 40000 bytes
+06/02/2024 04:47:17 add pending dealloc: cuMemFree_v2 320000 bytes
+06/02/2024 04:47:17 add pending dealloc: cuMemFree_v2 288 bytes
+06/02/2024 04:47:17 add pending dealloc: cuMemFree_v2 1600 bytes
+06/02/2024 04:47:17 add pending dealloc: cuMemFree_v2 2880000 bytes
+06/02/2024 04:47:17 add pending dealloc: cuMemFree_v2 2880000 bytes
+06/02/2024 04:47:17 dealloc: cuMemFree_v2 31840 bytes
+06/02/2024 04:47:17 dealloc: cuMemFree_v2 800000000 bytes
+06/02/2024 04:47:17 dealloc: cuMemFree_v2 800000000 bytes
+06/02/2024 04:47:17 dealloc: cuMemFree_v2 398 bytes
+06/02/2024 04:47:17 dealloc: cuMemFree_v2 7960000 bytes
+06/02/2024 04:47:17 dealloc: cuMemFree_v2 40000 bytes
+06/02/2024 04:47:17 dealloc: cuMemFree_v2 320000 bytes
+06/02/2024 04:47:17 dealloc: cuMemFree_v2 288 bytes
+06/02/2024 04:47:17 dealloc: cuMemFree_v2 1600 bytes
+06/02/2024 04:47:17 dealloc: cuMemFree_v2 2880000 bytes
+06/02/2024 04:47:17 dealloc: cuMemFree_v2 2880000 bytes
+06/02/2024 04:47:17 add pending dealloc: cuMemFree_v2 2880000 bytes
+06/02/2024 04:47:17 add pending dealloc: cuMemFree_v2 578880000 bytes
+06/02/2024 04:47:17 add pending dealloc: cuMemFree_v2 160768 bytes

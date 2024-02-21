@@ -1,0 +1,4922 @@
+24/01/2024 02:43:11 init
+24/01/2024 02:43:11 cuda:1
+24/01/2024 02:43:13 ############################
+24/01/2024 02:43:13 Init population
+24/01/2024 02:43:13 ############################
+24/01/2024 02:43:14 begin verify solution init
+24/01/2024 02:43:14 end verify solution init
+24/01/2024 02:43:14 ############################
+24/01/2024 02:43:14 Start Memetic algorithm
+24/01/2024 02:43:14 ############################
+24/01/2024 02:43:14 ############################
+24/01/2024 02:43:14 Start TABU
+24/01/2024 02:43:14 ############################
+24/01/2024 02:43:19 ############################
+24/01/2024 02:43:19 Log results Tabu
+24/01/2024 02:43:19 ############################
+24/01/2024 02:43:19 Tabucol duration : 5.274091005325317
+24/01/2024 02:43:19 Epoch : 0
+24/01/2024 02:43:19 Pop best : 1084_worst : 99999_avg : 50660.5
+24/01/2024 02:43:19 Save best solution
+24/01/2024 02:43:19 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:19 ############################
+24/01/2024 02:43:19 Start distance evaluation between individuals in pop
+24/01/2024 02:43:19 ############################
+24/01/2024 02:43:20 Matrix distance duration : 0.696181058883667
+24/01/2024 02:43:20 end  matrix distance
+24/01/2024 02:43:20 ############################
+24/01/2024 02:43:20 Start insertion in pop
+24/01/2024 02:43:20 ############################
+24/01/2024 02:43:20 len(idx_selected) 10
+24/01/2024 02:43:20 Nb insertion 10
+24/01/2024 02:43:20 Insertion in pop : 0.002788543701171875
+24/01/2024 02:43:20 ############################
+24/01/2024 02:43:20 Start log pop and verification
+24/01/2024 02:43:20 ############################
+24/01/2024 02:43:20 begin verify solution pop
+24/01/2024 02:43:20 end verify solution pop
+24/01/2024 02:43:20 After keep best info
+24/01/2024 02:43:20 Pop _best : 1084_worst : 99999_avg : 50660.5
+24/01/2024 02:43:20 [ 1084  1162  1179  1489  1696 99999 99999 99999 99999 99999]
+24/01/2024 02:43:20 Avg dist : 26.933333333333334 min dist : 25.0 max dist : 29
+24/01/2024 02:43:20 ############################
+24/01/2024 02:43:20 Crossovers
+24/01/2024 02:43:20 ############################
+24/01/2024 02:43:20 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:22 nb cross already tested in pop : 10
+24/01/2024 02:43:22 Crossover duration : 2.0742735862731934
+24/01/2024 02:43:22 begin verify crosssovers
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 end verify crosssovers
+24/01/2024 02:43:22 end generation
+24/01/2024 02:43:22 generation duration : 8.240100145339966
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Start TABU
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Log results Tabu
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Tabucol duration : 0.008374214172363281
+24/01/2024 02:43:22 Epoch : 1
+24/01/2024 02:43:22 Pop best : -2340_worst : 99999_avg : 69298.2
+24/01/2024 02:43:22 Save best solution
+24/01/2024 02:43:22 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Start distance evaluation between individuals in pop
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:22 Matrix distance duration : 0.0033185482025146484
+24/01/2024 02:43:22 end  matrix distance
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Start insertion in pop
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 len(idx_selected) 10
+24/01/2024 02:43:22 Nb insertion 1
+24/01/2024 02:43:22 Insertion in pop : 0.002529621124267578
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Start log pop and verification
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 begin verify solution pop
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 PB solution : 0
+24/01/2024 02:43:22 PB score : 0
+24/01/2024 02:43:22 end verify solution pop
+24/01/2024 02:43:22 After keep best info
+24/01/2024 02:43:22 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:22 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:22 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Crossovers
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:22 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:22 nb cross already tested in pop : 18
+24/01/2024 02:43:22 Crossover duration : 0.005528450012207031
+24/01/2024 02:43:22 begin verify crosssovers
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 end verify crosssovers
+24/01/2024 02:43:22 end generation
+24/01/2024 02:43:22 generation duration : 0.23602819442749023
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Start TABU
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Log results Tabu
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Tabucol duration : 0.011018514633178711
+24/01/2024 02:43:22 Epoch : 2
+24/01/2024 02:43:22 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:22 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Start distance evaluation between individuals in pop
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:22 Matrix distance duration : 0.002271890640258789
+24/01/2024 02:43:22 end  matrix distance
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Start insertion in pop
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 len(idx_selected) 10
+24/01/2024 02:43:22 Nb insertion 0
+24/01/2024 02:43:22 Insertion in pop : 0.0023164749145507812
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Start log pop and verification
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 begin verify solution pop
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 PB solution : 0
+24/01/2024 02:43:22 PB score : 0
+24/01/2024 02:43:22 end verify solution pop
+24/01/2024 02:43:22 After keep best info
+24/01/2024 02:43:22 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:22 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:22 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Crossovers
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:22 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:22 nb cross already tested in pop : 28
+24/01/2024 02:43:22 Crossover duration : 0.0049877166748046875
+24/01/2024 02:43:22 begin verify crosssovers
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 end verify crosssovers
+24/01/2024 02:43:22 end generation
+24/01/2024 02:43:22 generation duration : 0.2125988006591797
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Start TABU
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Log results Tabu
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Tabucol duration : 0.008072376251220703
+24/01/2024 02:43:22 Epoch : 3
+24/01/2024 02:43:22 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:22 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Start distance evaluation between individuals in pop
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:22 Matrix distance duration : 0.0022912025451660156
+24/01/2024 02:43:22 end  matrix distance
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Start insertion in pop
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 len(idx_selected) 10
+24/01/2024 02:43:22 Nb insertion 0
+24/01/2024 02:43:22 Insertion in pop : 0.002169370651245117
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Start log pop and verification
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 begin verify solution pop
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 PB solution : 0
+24/01/2024 02:43:22 PB score : 0
+24/01/2024 02:43:22 end verify solution pop
+24/01/2024 02:43:22 After keep best info
+24/01/2024 02:43:22 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:22 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:22 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 Crossovers
+24/01/2024 02:43:22 ############################
+24/01/2024 02:43:22 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:22 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:22 nb cross already tested in pop : 38
+24/01/2024 02:43:22 Crossover duration : 0.005023956298828125
+24/01/2024 02:43:22 begin verify crosssovers
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:22 nb depots
+24/01/2024 02:43:22 nb clients
+24/01/2024 02:43:22 pb first depot
+24/01/2024 02:43:22 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 end verify crosssovers
+24/01/2024 02:43:23 end generation
+24/01/2024 02:43:23 generation duration : 0.21716547012329102
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Start TABU
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Log results Tabu
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Tabucol duration : 0.00829768180847168
+24/01/2024 02:43:23 Epoch : 4
+24/01/2024 02:43:23 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:23 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Start distance evaluation between individuals in pop
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 Matrix distance duration : 0.011818408966064453
+24/01/2024 02:43:23 end  matrix distance
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Start insertion in pop
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 len(idx_selected) 10
+24/01/2024 02:43:23 Nb insertion 0
+24/01/2024 02:43:23 Insertion in pop : 0.002562284469604492
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Start log pop and verification
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 begin verify solution pop
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 PB solution : 0
+24/01/2024 02:43:23 PB score : 0
+24/01/2024 02:43:23 end verify solution pop
+24/01/2024 02:43:23 After keep best info
+24/01/2024 02:43:23 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:23 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:23 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Crossovers
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:23 nb cross already tested in pop : 48
+24/01/2024 02:43:23 Crossover duration : 0.005377531051635742
+24/01/2024 02:43:23 begin verify crosssovers
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 end verify crosssovers
+24/01/2024 02:43:23 end generation
+24/01/2024 02:43:23 generation duration : 0.24676895141601562
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Start TABU
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Log results Tabu
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Tabucol duration : 0.010071516036987305
+24/01/2024 02:43:23 Epoch : 5
+24/01/2024 02:43:23 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:23 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Start distance evaluation between individuals in pop
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 Matrix distance duration : 0.002283811569213867
+24/01/2024 02:43:23 end  matrix distance
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Start insertion in pop
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 len(idx_selected) 10
+24/01/2024 02:43:23 Nb insertion 0
+24/01/2024 02:43:23 Insertion in pop : 0.0022935867309570312
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Start log pop and verification
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 begin verify solution pop
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 PB solution : 0
+24/01/2024 02:43:23 PB score : 0
+24/01/2024 02:43:23 end verify solution pop
+24/01/2024 02:43:23 After keep best info
+24/01/2024 02:43:23 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:23 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:23 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Crossovers
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:23 nb cross already tested in pop : 58
+24/01/2024 02:43:23 Crossover duration : 0.006194591522216797
+24/01/2024 02:43:23 begin verify crosssovers
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 end verify crosssovers
+24/01/2024 02:43:23 end generation
+24/01/2024 02:43:23 generation duration : 0.22568964958190918
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Start TABU
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Log results Tabu
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Tabucol duration : 0.008002281188964844
+24/01/2024 02:43:23 Epoch : 6
+24/01/2024 02:43:23 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:23 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Start distance evaluation between individuals in pop
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 Matrix distance duration : 0.0029430389404296875
+24/01/2024 02:43:23 end  matrix distance
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Start insertion in pop
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 len(idx_selected) 10
+24/01/2024 02:43:23 Nb insertion 0
+24/01/2024 02:43:23 Insertion in pop : 0.0024106502532958984
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Start log pop and verification
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 begin verify solution pop
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 PB solution : 0
+24/01/2024 02:43:23 PB score : 0
+24/01/2024 02:43:23 end verify solution pop
+24/01/2024 02:43:23 After keep best info
+24/01/2024 02:43:23 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:23 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:23 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Crossovers
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:23 nb cross already tested in pop : 68
+24/01/2024 02:43:23 Crossover duration : 0.005676984786987305
+24/01/2024 02:43:23 begin verify crosssovers
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 end verify crosssovers
+24/01/2024 02:43:23 end generation
+24/01/2024 02:43:23 generation duration : 0.2252366542816162
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Start TABU
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Log results Tabu
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Tabucol duration : 0.008070230484008789
+24/01/2024 02:43:23 Epoch : 7
+24/01/2024 02:43:23 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:23 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Start distance evaluation between individuals in pop
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 Matrix distance duration : 0.0029103755950927734
+24/01/2024 02:43:23 end  matrix distance
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Start insertion in pop
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 len(idx_selected) 10
+24/01/2024 02:43:23 Nb insertion 0
+24/01/2024 02:43:23 Insertion in pop : 0.002541065216064453
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Start log pop and verification
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 begin verify solution pop
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 PB solution : 0
+24/01/2024 02:43:23 PB score : 0
+24/01/2024 02:43:23 end verify solution pop
+24/01/2024 02:43:23 After keep best info
+24/01/2024 02:43:23 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:23 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:23 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 Crossovers
+24/01/2024 02:43:23 ############################
+24/01/2024 02:43:23 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:23 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:23 nb cross already tested in pop : 78
+24/01/2024 02:43:23 Crossover duration : 0.016025543212890625
+24/01/2024 02:43:23 begin verify crosssovers
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 nb clients
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:23 nb depots
+24/01/2024 02:43:23 pb first depot
+24/01/2024 02:43:23 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 end verify crosssovers
+24/01/2024 02:43:24 end generation
+24/01/2024 02:43:24 generation duration : 0.24050331115722656
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Start TABU
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Log results Tabu
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Tabucol duration : 0.008080720901489258
+24/01/2024 02:43:24 Epoch : 8
+24/01/2024 02:43:24 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:24 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Start distance evaluation between individuals in pop
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:24 Matrix distance duration : 0.002889394760131836
+24/01/2024 02:43:24 end  matrix distance
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Start insertion in pop
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 len(idx_selected) 10
+24/01/2024 02:43:24 Nb insertion 0
+24/01/2024 02:43:24 Insertion in pop : 0.0023288726806640625
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Start log pop and verification
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 begin verify solution pop
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 PB solution : 0
+24/01/2024 02:43:24 PB score : 0
+24/01/2024 02:43:24 end verify solution pop
+24/01/2024 02:43:24 After keep best info
+24/01/2024 02:43:24 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:24 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:24 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Crossovers
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:24 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:24 nb cross already tested in pop : 88
+24/01/2024 02:43:24 Crossover duration : 0.0060389041900634766
+24/01/2024 02:43:24 begin verify crosssovers
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 end verify crosssovers
+24/01/2024 02:43:24 end generation
+24/01/2024 02:43:24 generation duration : 0.2272195816040039
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Start TABU
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Log results Tabu
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Tabucol duration : 0.008416891098022461
+24/01/2024 02:43:24 Epoch : 9
+24/01/2024 02:43:24 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:24 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Start distance evaluation between individuals in pop
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:24 Matrix distance duration : 0.0034770965576171875
+24/01/2024 02:43:24 end  matrix distance
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Start insertion in pop
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 len(idx_selected) 10
+24/01/2024 02:43:24 Nb insertion 0
+24/01/2024 02:43:24 Insertion in pop : 0.002507448196411133
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Start log pop and verification
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 begin verify solution pop
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 PB solution : 0
+24/01/2024 02:43:24 PB score : 0
+24/01/2024 02:43:24 end verify solution pop
+24/01/2024 02:43:24 After keep best info
+24/01/2024 02:43:24 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:24 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:24 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Crossovers
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:24 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:24 nb cross already tested in pop : 90
+24/01/2024 02:43:24 Crossover duration : 0.00649571418762207
+24/01/2024 02:43:24 begin verify crosssovers
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 end verify crosssovers
+24/01/2024 02:43:24 end generation
+24/01/2024 02:43:24 generation duration : 0.23185086250305176
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Start TABU
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Log results Tabu
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Tabucol duration : 0.008542060852050781
+24/01/2024 02:43:24 Epoch : 10
+24/01/2024 02:43:24 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:24 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Start distance evaluation between individuals in pop
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:24 Matrix distance duration : 0.002428770065307617
+24/01/2024 02:43:24 end  matrix distance
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Start insertion in pop
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 len(idx_selected) 10
+24/01/2024 02:43:24 Nb insertion 0
+24/01/2024 02:43:24 Insertion in pop : 0.003045320510864258
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Start log pop and verification
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 begin verify solution pop
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 PB solution : 0
+24/01/2024 02:43:24 PB score : 0
+24/01/2024 02:43:24 end verify solution pop
+24/01/2024 02:43:24 After keep best info
+24/01/2024 02:43:24 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:24 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:24 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Crossovers
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:24 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:24 nb cross already tested in pop : 90
+24/01/2024 02:43:24 Crossover duration : 0.005933046340942383
+24/01/2024 02:43:24 begin verify crosssovers
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 end verify crosssovers
+24/01/2024 02:43:24 end generation
+24/01/2024 02:43:24 generation duration : 0.23148560523986816
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Start TABU
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Log results Tabu
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Tabucol duration : 0.008318662643432617
+24/01/2024 02:43:24 Epoch : 11
+24/01/2024 02:43:24 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:24 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Start distance evaluation between individuals in pop
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:24 Matrix distance duration : 0.002835988998413086
+24/01/2024 02:43:24 end  matrix distance
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Start insertion in pop
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 len(idx_selected) 10
+24/01/2024 02:43:24 Nb insertion 0
+24/01/2024 02:43:24 Insertion in pop : 0.002465963363647461
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Start log pop and verification
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 begin verify solution pop
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 PB solution : 0
+24/01/2024 02:43:24 PB score : 0
+24/01/2024 02:43:24 end verify solution pop
+24/01/2024 02:43:24 After keep best info
+24/01/2024 02:43:24 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:24 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:24 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 Crossovers
+24/01/2024 02:43:24 ############################
+24/01/2024 02:43:24 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:24 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:24 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:24 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:24 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:24 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:24 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:24 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:24 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:24 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:24 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:24 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:24 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:24 nb cross already tested in pop : 90
+24/01/2024 02:43:24 Crossover duration : 0.016115903854370117
+24/01/2024 02:43:24 begin verify crosssovers
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:24 pb last depot
+24/01/2024 02:43:24 nb depots
+24/01/2024 02:43:24 nb clients
+24/01/2024 02:43:24 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 end verify crosssovers
+24/01/2024 02:43:25 end generation
+24/01/2024 02:43:25 generation duration : 0.23524832725524902
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start TABU
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Log results Tabu
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Tabucol duration : 0.007745504379272461
+24/01/2024 02:43:25 Epoch : 12
+24/01/2024 02:43:25 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:25 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start distance evaluation between individuals in pop
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:25 Matrix distance duration : 0.0023484230041503906
+24/01/2024 02:43:25 end  matrix distance
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start insertion in pop
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 len(idx_selected) 10
+24/01/2024 02:43:25 Nb insertion 0
+24/01/2024 02:43:25 Insertion in pop : 0.0021467208862304688
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start log pop and verification
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 begin verify solution pop
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 PB solution : 0
+24/01/2024 02:43:25 PB score : 0
+24/01/2024 02:43:25 end verify solution pop
+24/01/2024 02:43:25 After keep best info
+24/01/2024 02:43:25 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:25 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:25 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Crossovers
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:25 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:25 nb cross already tested in pop : 90
+24/01/2024 02:43:25 Crossover duration : 0.0053479671478271484
+24/01/2024 02:43:25 begin verify crosssovers
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 end verify crosssovers
+24/01/2024 02:43:25 end generation
+24/01/2024 02:43:25 generation duration : 0.2161421775817871
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start TABU
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Log results Tabu
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Tabucol duration : 0.008106231689453125
+24/01/2024 02:43:25 Epoch : 13
+24/01/2024 02:43:25 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:25 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start distance evaluation between individuals in pop
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:25 Matrix distance duration : 0.002027273178100586
+24/01/2024 02:43:25 end  matrix distance
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start insertion in pop
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 len(idx_selected) 10
+24/01/2024 02:43:25 Nb insertion 0
+24/01/2024 02:43:25 Insertion in pop : 0.002489805221557617
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start log pop and verification
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 begin verify solution pop
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 PB solution : 0
+24/01/2024 02:43:25 PB score : 0
+24/01/2024 02:43:25 end verify solution pop
+24/01/2024 02:43:25 After keep best info
+24/01/2024 02:43:25 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:25 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:25 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Crossovers
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:25 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:25 nb cross already tested in pop : 90
+24/01/2024 02:43:25 Crossover duration : 0.005192279815673828
+24/01/2024 02:43:25 begin verify crosssovers
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 end verify crosssovers
+24/01/2024 02:43:25 end generation
+24/01/2024 02:43:25 generation duration : 0.22988080978393555
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start TABU
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Log results Tabu
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Tabucol duration : 0.008381843566894531
+24/01/2024 02:43:25 Epoch : 14
+24/01/2024 02:43:25 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:25 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start distance evaluation between individuals in pop
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:25 Matrix distance duration : 0.0019276142120361328
+24/01/2024 02:43:25 end  matrix distance
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start insertion in pop
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 len(idx_selected) 10
+24/01/2024 02:43:25 Nb insertion 0
+24/01/2024 02:43:25 Insertion in pop : 0.0024747848510742188
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start log pop and verification
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 begin verify solution pop
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 PB solution : 0
+24/01/2024 02:43:25 PB score : 0
+24/01/2024 02:43:25 end verify solution pop
+24/01/2024 02:43:25 After keep best info
+24/01/2024 02:43:25 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:25 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:25 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Crossovers
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:25 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:25 nb cross already tested in pop : 90
+24/01/2024 02:43:25 Crossover duration : 0.005486488342285156
+24/01/2024 02:43:25 begin verify crosssovers
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 end verify crosssovers
+24/01/2024 02:43:25 end generation
+24/01/2024 02:43:25 generation duration : 0.22295331954956055
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start TABU
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Log results Tabu
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Tabucol duration : 0.008013725280761719
+24/01/2024 02:43:25 Epoch : 15
+24/01/2024 02:43:25 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:25 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start distance evaluation between individuals in pop
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:25 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:25 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:25 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:25 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:25 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:25 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:25 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:25 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:25 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:25 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:25 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:25 Matrix distance duration : 0.012077093124389648
+24/01/2024 02:43:25 end  matrix distance
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start insertion in pop
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 len(idx_selected) 10
+24/01/2024 02:43:25 Nb insertion 0
+24/01/2024 02:43:25 Insertion in pop : 0.0026450157165527344
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start log pop and verification
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 begin verify solution pop
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 PB solution : 0
+24/01/2024 02:43:25 PB score : 0
+24/01/2024 02:43:25 end verify solution pop
+24/01/2024 02:43:25 After keep best info
+24/01/2024 02:43:25 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:25 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:25 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Crossovers
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:25 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:25 nb cross already tested in pop : 90
+24/01/2024 02:43:25 Crossover duration : 0.0051844120025634766
+24/01/2024 02:43:25 begin verify crosssovers
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 end verify crosssovers
+24/01/2024 02:43:25 end generation
+24/01/2024 02:43:25 generation duration : 0.2360985279083252
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start TABU
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Log results Tabu
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Tabucol duration : 0.0076410770416259766
+24/01/2024 02:43:25 Epoch : 16
+24/01/2024 02:43:25 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:25 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start distance evaluation between individuals in pop
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:25 Matrix distance duration : 0.0019197463989257812
+24/01/2024 02:43:25 end  matrix distance
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start insertion in pop
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 len(idx_selected) 10
+24/01/2024 02:43:25 Nb insertion 0
+24/01/2024 02:43:25 Insertion in pop : 0.002260923385620117
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 Start log pop and verification
+24/01/2024 02:43:25 ############################
+24/01/2024 02:43:25 begin verify solution pop
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 pb first depot
+24/01/2024 02:43:25 pb last depot
+24/01/2024 02:43:25 nb depots
+24/01/2024 02:43:25 nb clients
+24/01/2024 02:43:25 PB solution : 0
+24/01/2024 02:43:25 PB score : 0
+24/01/2024 02:43:25 end verify solution pop
+24/01/2024 02:43:25 After keep best info
+24/01/2024 02:43:26 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:26 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:26 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Crossovers
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:26 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:26 nb cross already tested in pop : 90
+24/01/2024 02:43:26 Crossover duration : 0.004773855209350586
+24/01/2024 02:43:26 begin verify crosssovers
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 end verify crosssovers
+24/01/2024 02:43:26 end generation
+24/01/2024 02:43:26 generation duration : 0.201324462890625
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Start TABU
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Log results Tabu
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Tabucol duration : 0.007701873779296875
+24/01/2024 02:43:26 Epoch : 17
+24/01/2024 02:43:26 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:26 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Start distance evaluation between individuals in pop
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:26 Matrix distance duration : 0.0029752254486083984
+24/01/2024 02:43:26 end  matrix distance
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Start insertion in pop
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 len(idx_selected) 10
+24/01/2024 02:43:26 Nb insertion 0
+24/01/2024 02:43:26 Insertion in pop : 0.002432584762573242
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Start log pop and verification
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 begin verify solution pop
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 PB solution : 0
+24/01/2024 02:43:26 PB score : 0
+24/01/2024 02:43:26 end verify solution pop
+24/01/2024 02:43:26 After keep best info
+24/01/2024 02:43:26 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:26 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:26 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Crossovers
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:26 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:26 nb cross already tested in pop : 90
+24/01/2024 02:43:26 Crossover duration : 0.005676984786987305
+24/01/2024 02:43:26 begin verify crosssovers
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 end verify crosssovers
+24/01/2024 02:43:26 end generation
+24/01/2024 02:43:26 generation duration : 0.22448110580444336
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Start TABU
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Log results Tabu
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Tabucol duration : 0.00799870491027832
+24/01/2024 02:43:26 Epoch : 18
+24/01/2024 02:43:26 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:26 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Start distance evaluation between individuals in pop
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:26 Matrix distance duration : 0.0023336410522460938
+24/01/2024 02:43:26 end  matrix distance
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Start insertion in pop
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 len(idx_selected) 10
+24/01/2024 02:43:26 Nb insertion 0
+24/01/2024 02:43:26 Insertion in pop : 0.0024557113647460938
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Start log pop and verification
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 begin verify solution pop
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 PB solution : 0
+24/01/2024 02:43:26 PB score : 0
+24/01/2024 02:43:26 end verify solution pop
+24/01/2024 02:43:26 After keep best info
+24/01/2024 02:43:26 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:26 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:26 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Crossovers
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:26 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:26 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:26 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:26 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:26 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:26 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:26 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:26 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:26 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:26 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:26 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:26 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:26 nb cross already tested in pop : 90
+24/01/2024 02:43:26 Crossover duration : 0.01488494873046875
+24/01/2024 02:43:26 begin verify crosssovers
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 end verify crosssovers
+24/01/2024 02:43:26 end generation
+24/01/2024 02:43:26 generation duration : 0.23241400718688965
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Start TABU
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Log results Tabu
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Tabucol duration : 0.00786590576171875
+24/01/2024 02:43:26 Epoch : 19
+24/01/2024 02:43:26 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:26 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Start distance evaluation between individuals in pop
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:26 Matrix distance duration : 0.0024602413177490234
+24/01/2024 02:43:26 end  matrix distance
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Start insertion in pop
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 len(idx_selected) 10
+24/01/2024 02:43:26 Nb insertion 0
+24/01/2024 02:43:26 Insertion in pop : 0.002357006072998047
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Start log pop and verification
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 begin verify solution pop
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 PB solution : 0
+24/01/2024 02:43:26 PB score : 0
+24/01/2024 02:43:26 end verify solution pop
+24/01/2024 02:43:26 After keep best info
+24/01/2024 02:43:26 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:26 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:26 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Crossovers
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:26 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:26 nb cross already tested in pop : 90
+24/01/2024 02:43:26 Crossover duration : 0.005384683609008789
+24/01/2024 02:43:26 begin verify crosssovers
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 end verify crosssovers
+24/01/2024 02:43:26 end generation
+24/01/2024 02:43:26 generation duration : 0.22115325927734375
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Start TABU
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Log results Tabu
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Tabucol duration : 0.008470535278320312
+24/01/2024 02:43:26 Epoch : 20
+24/01/2024 02:43:26 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:26 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Start distance evaluation between individuals in pop
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:26 Matrix distance duration : 0.0023560523986816406
+24/01/2024 02:43:26 end  matrix distance
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Start insertion in pop
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 len(idx_selected) 10
+24/01/2024 02:43:26 Nb insertion 0
+24/01/2024 02:43:26 Insertion in pop : 0.0023348331451416016
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Start log pop and verification
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 begin verify solution pop
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 PB solution : 0
+24/01/2024 02:43:26 PB score : 0
+24/01/2024 02:43:26 end verify solution pop
+24/01/2024 02:43:26 After keep best info
+24/01/2024 02:43:26 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:26 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:26 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 Crossovers
+24/01/2024 02:43:26 ############################
+24/01/2024 02:43:26 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:26 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:26 nb cross already tested in pop : 90
+24/01/2024 02:43:26 Crossover duration : 0.00588536262512207
+24/01/2024 02:43:26 begin verify crosssovers
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 nb clients
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:26 pb last depot
+24/01/2024 02:43:26 nb depots
+24/01/2024 02:43:26 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 nb clients
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 nb clients
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 nb clients
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 nb clients
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 nb clients
+24/01/2024 02:43:27 end verify crosssovers
+24/01/2024 02:43:27 end generation
+24/01/2024 02:43:27 generation duration : 0.21643614768981934
+24/01/2024 02:43:27 ############################
+24/01/2024 02:43:27 Start TABU
+24/01/2024 02:43:27 ############################
+24/01/2024 02:43:27 ############################
+24/01/2024 02:43:27 Log results Tabu
+24/01/2024 02:43:27 ############################
+24/01/2024 02:43:27 Tabucol duration : 0.0075855255126953125
+24/01/2024 02:43:27 Epoch : 21
+24/01/2024 02:43:27 Pop best : -2340_worst : 99999_avg : 69297.3
+24/01/2024 02:43:27 Keep best with diversity/fit tradeoff
+24/01/2024 02:43:27 ############################
+24/01/2024 02:43:27 Start distance evaluation between individuals in pop
+24/01/2024 02:43:27 ############################
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:27 Matrix distance duration : 0.001970529556274414
+24/01/2024 02:43:27 end  matrix distance
+24/01/2024 02:43:27 ############################
+24/01/2024 02:43:27 Start insertion in pop
+24/01/2024 02:43:27 ############################
+24/01/2024 02:43:27 len(idx_selected) 10
+24/01/2024 02:43:27 Nb insertion 0
+24/01/2024 02:43:27 Insertion in pop : 0.0019125938415527344
+24/01/2024 02:43:27 ############################
+24/01/2024 02:43:27 Start log pop and verification
+24/01/2024 02:43:27 ############################
+24/01/2024 02:43:27 begin verify solution pop
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 nb clients
+24/01/2024 02:43:27 PB solution : 0
+24/01/2024 02:43:27 PB score : 0
+24/01/2024 02:43:27 end verify solution pop
+24/01/2024 02:43:27 After keep best info
+24/01/2024 02:43:27 Pop _best : -2340_worst : 99999_avg : 40426.6
+24/01/2024 02:43:27 [-2340  1084  1162  1179  1489  1696 99999 99999 99999 99999]
+24/01/2024 02:43:27 Avg dist : 26.42222222222222 min dist : 23.0 max dist : 29
+24/01/2024 02:43:27 ############################
+24/01/2024 02:43:27 Crossovers
+24/01/2024 02:43:27 ############################
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:27 nb cross already tested in pop : 90
+24/01/2024 02:43:27 Crossover duration : 0.0045909881591796875
+24/01/2024 02:43:27 begin verify crosssovers
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 nb clients
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 nb clients
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 nb clients
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 nb clients
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 nb clients
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 nb clients
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 nb clients
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 nb clients
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 nb clients
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 nb depots
+24/01/2024 02:43:27 pb first depot
+24/01/2024 02:43:27 pb last depot
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 80 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:27 add pending dealloc: module_unload ? bytes
+24/01/2024 02:43:27 add pending dealloc: module_unload ? bytes
+24/01/2024 02:43:27 add pending dealloc: module_unload ? bytes
+24/01/2024 02:43:27 add pending dealloc: module_unload ? bytes
+24/01/2024 02:43:27 add pending dealloc: module_unload ? bytes
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 4960 bytes
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 800 bytes
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 800 bytes
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 62 bytes
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 1240 bytes
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 40 bytes
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 8192 bytes
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 40 bytes
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 256 bytes
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 400 bytes
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 400 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 4960 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 800 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 800 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 62 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 1240 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 40 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 8192 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 40 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 256 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 400 bytes
+24/01/2024 02:43:27 dealloc: cuMemFree_v2 400 bytes
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 400 bytes
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 13200 bytes
+24/01/2024 02:43:27 add pending dealloc: cuMemFree_v2 1024 bytes

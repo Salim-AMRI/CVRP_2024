@@ -1,0 +1,40 @@
+24/01/2024 04:48:04 init
+24/01/2024 04:48:04 cuda:1
+24/01/2024 04:48:06 ############################
+24/01/2024 04:48:06 Init population
+24/01/2024 04:48:06 ############################
+24/01/2024 04:48:07 begin verify solution init
+24/01/2024 04:48:08 end verify solution init
+24/01/2024 04:48:08 ############################
+24/01/2024 04:48:08 Start Memetic algorithm
+24/01/2024 04:48:08 ############################
+24/01/2024 04:48:08 ############################
+24/01/2024 04:48:08 Start TABU
+24/01/2024 04:48:08 ############################
+24/01/2024 04:48:32 add pending dealloc: module_unload ? bytes
+24/01/2024 04:48:32 add pending dealloc: module_unload ? bytes
+24/01/2024 04:48:32 add pending dealloc: cuMemFree_v2 4960 bytes
+24/01/2024 04:48:32 add pending dealloc: cuMemFree_v2 800000000 bytes
+24/01/2024 04:48:32 add pending dealloc: cuMemFree_v2 800000000 bytes
+24/01/2024 04:48:32 add pending dealloc: cuMemFree_v2 62 bytes
+24/01/2024 04:48:32 add pending dealloc: cuMemFree_v2 1240000 bytes
+24/01/2024 04:48:32 add pending dealloc: cuMemFree_v2 40000 bytes
+24/01/2024 04:48:32 add pending dealloc: cuMemFree_v2 8192 bytes
+24/01/2024 04:48:32 add pending dealloc: cuMemFree_v2 40 bytes
+24/01/2024 04:48:32 add pending dealloc: cuMemFree_v2 256 bytes
+24/01/2024 04:48:32 add pending dealloc: cuMemFree_v2 400000 bytes
+24/01/2024 04:48:32 add pending dealloc: cuMemFree_v2 400000 bytes
+24/01/2024 04:48:32 dealloc: cuMemFree_v2 4960 bytes
+24/01/2024 04:48:33 dealloc: cuMemFree_v2 800000000 bytes
+24/01/2024 04:48:33 dealloc: cuMemFree_v2 800000000 bytes
+24/01/2024 04:48:33 dealloc: cuMemFree_v2 62 bytes
+24/01/2024 04:48:33 dealloc: cuMemFree_v2 1240000 bytes
+24/01/2024 04:48:33 dealloc: cuMemFree_v2 40000 bytes
+24/01/2024 04:48:33 dealloc: cuMemFree_v2 8192 bytes
+24/01/2024 04:48:33 dealloc: cuMemFree_v2 40 bytes
+24/01/2024 04:48:33 dealloc: cuMemFree_v2 256 bytes
+24/01/2024 04:48:33 dealloc: cuMemFree_v2 400000 bytes
+24/01/2024 04:48:33 dealloc: cuMemFree_v2 400000 bytes
+24/01/2024 04:48:33 add pending dealloc: cuMemFree_v2 400000 bytes
+24/01/2024 04:48:33 add pending dealloc: cuMemFree_v2 13200000 bytes
+24/01/2024 04:48:33 add pending dealloc: cuMemFree_v2 160768 bytes

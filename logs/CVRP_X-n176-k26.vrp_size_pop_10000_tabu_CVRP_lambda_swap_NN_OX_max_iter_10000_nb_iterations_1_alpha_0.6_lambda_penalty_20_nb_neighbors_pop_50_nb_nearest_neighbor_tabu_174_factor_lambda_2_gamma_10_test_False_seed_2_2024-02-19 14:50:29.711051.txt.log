@@ -1,0 +1,82 @@
+19/02/2024 02:50:29 init
+19/02/2024 02:50:35 cuda:0
+19/02/2024 02:50:37 ############################
+19/02/2024 02:50:37 Init population
+19/02/2024 02:50:37 ############################
+19/02/2024 02:50:42 ############################
+19/02/2024 02:50:42 Start Memetic algorithm
+19/02/2024 02:50:42 ############################
+19/02/2024 02:50:42 ############################
+19/02/2024 02:50:42 Start TABU
+19/02/2024 02:50:42 ############################
+19/02/2024 03:01:50 ############################
+19/02/2024 03:01:50 Log results Tabu
+19/02/2024 03:01:50 ############################
+19/02/2024 03:01:50 Tabucol duration : 667.9590418338776
+19/02/2024 03:01:50 Epoch : 0
+19/02/2024 03:01:50 Pop best : 49913_worst : 99999_avg : 99955.452
+19/02/2024 03:01:50 Save best solution
+19/02/2024 03:01:50 Keep best with diversity/fit tradeoff
+19/02/2024 03:01:50 ############################
+19/02/2024 03:01:50 Start distance evaluation between individuals in pop
+19/02/2024 03:01:50 ############################
+19/02/2024 03:02:08 Matrix distance duration : 18.337031602859497
+19/02/2024 03:02:08 end  matrix distance
+19/02/2024 03:02:08 ############################
+19/02/2024 03:02:08 Start insertion in pop
+19/02/2024 03:02:08 ############################
+19/02/2024 03:02:10 len(idx_selected) 10000
+19/02/2024 03:02:10 Nb insertion 10000
+19/02/2024 03:02:11 Insertion in pop : 3.2076427936553955
+19/02/2024 03:02:11 After keep best info
+19/02/2024 03:02:11 Pop _best : 49913_worst : 99999_avg : 99955.452
+19/02/2024 03:02:11 [49913 50074 50243 ... 99999 99999 99999]
+19/02/2024 03:02:12 Avg dist : 149.49236535653566 min dist : 137.0 max dist : 164
+19/02/2024 03:02:12 ############################
+19/02/2024 03:02:12 Crossovers
+19/02/2024 03:02:12 ############################
+19/02/2024 03:02:12 add pending dealloc: cuMemFree_v2 368160000 bytes
+19/02/2024 03:02:18 nb cross already tested in pop : 10000
+19/02/2024 03:02:18 Crossover duration : 5.912028551101685
+19/02/2024 03:02:18 begin verify crosssovers
+19/02/2024 03:02:22 end generation
+19/02/2024 03:02:22 generation duration : 700.6279094219208
+19/02/2024 03:02:22 ############################
+19/02/2024 03:02:22 Start TABU
+19/02/2024 03:02:22 ############################
+19/02/2024 03:03:05 Call to cuCtxSynchronize results in UNKNOWN_CUDA_ERROR
+19/02/2024 03:03:05 add pending dealloc: module_unload ? bytes
+19/02/2024 03:03:05 add pending dealloc: cuMemFree_v2 80000 bytes
+19/02/2024 03:03:05 add pending dealloc: cuMemFree_v2 368160000 bytes
+19/02/2024 03:03:05 add pending dealloc: module_unload ? bytes
+19/02/2024 03:03:05 add pending dealloc: module_unload ? bytes
+19/02/2024 03:03:05 add pending dealloc: module_unload ? bytes
+19/02/2024 03:03:05 add pending dealloc: module_unload ? bytes
+19/02/2024 03:03:05 add pending dealloc: cuMemFree_v2 243600 bytes
+19/02/2024 03:03:05 add pending dealloc: cuMemFree_v2 800000000 bytes
+19/02/2024 03:03:05 add pending dealloc: cuMemFree_v2 800000000 bytes
+19/02/2024 03:03:05 add pending dealloc: cuMemFree_v2 350 bytes
+19/02/2024 03:03:05 add pending dealloc: cuMemFree_v2 7000000 bytes
+19/02/2024 03:03:05 add pending dealloc: cuMemFree_v2 40000 bytes
+19/02/2024 03:03:05 add pending dealloc: cuMemFree_v2 247808 bytes
+19/02/2024 03:03:05 add pending dealloc: cuMemFree_v2 208 bytes
+19/02/2024 03:03:05 dealloc: cuMemFree_v2 368160000 bytes
+19/02/2024 03:03:05 Call to cuMemFree results in UNKNOWN_CUDA_ERROR
+19/02/2024 03:03:05 add pending dealloc: cuMemFree_v2 1408 bytes
+19/02/2024 03:03:05 dealloc: cuMemFree_v2 80000 bytes
+19/02/2024 03:03:05 Call to cuMemFree results in UNKNOWN_CUDA_ERROR
+19/02/2024 03:03:05 add pending dealloc: cuMemFree_v2 2080000 bytes
+19/02/2024 03:03:05 dealloc: cuMemFree_v2 368160000 bytes
+19/02/2024 03:03:05 Call to cuMemFree results in UNKNOWN_CUDA_ERROR
+19/02/2024 03:03:05 add pending dealloc: cuMemFree_v2 2080000 bytes
+19/02/2024 03:03:05 dealloc: cuMemFree_v2 243600 bytes
+19/02/2024 03:03:05 Call to cuMemFree results in UNKNOWN_CUDA_ERROR
+19/02/2024 03:03:05 add pending dealloc: cuMemFree_v2 2080000 bytes
+19/02/2024 03:03:05 dealloc: cuMemFree_v2 800000000 bytes
+19/02/2024 03:03:05 Call to cuMemFree results in UNKNOWN_CUDA_ERROR
+19/02/2024 03:03:05 add pending dealloc: cuMemFree_v2 368160000 bytes
+19/02/2024 03:03:05 dealloc: cuMemFree_v2 800000000 bytes
+19/02/2024 03:03:05 Call to cuMemFree results in UNKNOWN_CUDA_ERROR
+19/02/2024 03:03:05 add pending dealloc: cuMemFree_v2 160768 bytes
+19/02/2024 03:03:05 dealloc: cuMemFree_v2 350 bytes
+19/02/2024 03:03:05 Call to cuMemFree results in UNKNOWN_CUDA_ERROR

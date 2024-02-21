@@ -1,24 +1,21 @@
 import argparse
 import datetime
 import logging
-
-from utils.utils import read_instance, evaluate_distance_solutions, verify_solution, insertion_pop
-
-from numba import cuda, int32
 import numpy as np
-from numba.cuda.random import create_xoroshiro128p_states, xoroshiro128p_uniform_float32
-
 import numba as nb
 import cuda_kernels.distance_solutions
 import cuda_kernels.local_search
 import cuda_kernels.init_pop
 import cuda_kernels.crossover
+import cuda_kernels.split
+import sys
 
 from time import time
-
+from utils.utils import read_instance, evaluate_distance_solutions, verify_solution, insertion_pop
+from numba.cuda.random import create_xoroshiro128p_states, xoroshiro128p_uniform_float32
+from numba import cuda, int32
 
 # Parse arguments
-
 
 parser = argparse.ArgumentParser(description="Memetic algo for CVRP")
 
@@ -27,21 +24,20 @@ parser.add_argument("--id_gpu", type=int, help="id_gpu", default=0)
 parser.add_argument("--seed", type=int, help="seed", default=0)
 
 parser.add_argument("--size_pop", help="size_pop", type=int, default=10000)
-parser.add_argument("--alpha", help="alpha", type=float, default=0.4)
+parser.add_argument("--alpha", help="alpha", type=float, default=0.6)
 
-parser.add_argument("--max_iter", help="max_iter", type=int, default=2000)
-parser.add_argument("--nb_iterations", help="nb_iterations", type=int, default=20)
-parser.add_argument("--lambda_penalty", help="lambda_penalty", type=float, default=0.5)
-parser.add_argument("--nb_neighbors", help="nb_neighbors", type=int, default=48)
+parser.add_argument("--max_iter", help="max_iter", type=int, default=10000)
+parser.add_argument("--nb_iterations", help="nb_iterations", type=int, default=1)
+parser.add_argument("--lambda_penalty", help="lambda_penalty", type=float, default=20)
+parser.add_argument("--nb_neighbors", help="nb_neighbors", type=int, default=50)
 
-parser.add_argument("--factor_lambda", help="nb_iterations", type=float, default=2.0)
+parser.add_argument("--factor_lambda", help="nb_iterations", type=float, default=2)
 
-parser.add_argument("--nb_nearest_neighbor_tabu", help="nb_nearest_neighbor_tabu", type=int, default=20)
+parser.add_argument("--nb_nearest_neighbor_tabu", help="nb_nearest_neighbor_tabu", type=int, default=-1)
 
 parser.add_argument("--gamma", help="gamma", type=int, default=10)
 parser.add_argument("--LS", help="LS", type=str, default="tabu_CVRP_lambda_swap_NN")
 parser.add_argument("--type_crossover", help="type_crossover", type=str, default="OX")
-
 
 parser.add_argument('--test', help="test", action='store_true')
 
@@ -154,8 +150,12 @@ cuda_kernels.crossover.nb_voitures = nb_voitures
 cuda_kernels.crossover.size = nb_clients + 2
 cuda_kernels.crossover.max_size_route = int(nb_clients/nb_voitures * 4)
 cuda_kernels.crossover.size2 = nb_clients + 1
-cuda_kernels.crossover.max_clients = 2*nb_clients
 
+cuda_kernels.split.nb_clients = nb_clients
+cuda_kernels.split.nb_voitures = nb_voitures
+cuda_kernels.split.size = nb_clients + 2
+cuda_kernels.split.size2 = nb_clients + 1
+cuda_kernels.split.max_size_route = int(nb_clients/nb_voitures * 4)
 
 # Définir blockspergrid1 et threadsperblock
 threadsperblock = 64
@@ -170,9 +170,6 @@ rng_states = create_xoroshiro128p_states(threadsperblock * blockspergrid0, seed=
 np.random.seed(int(seed))
 
 time_start = time()
-
-
-
 
 # Calcul de la matrice de distance
 distance_matrix_cvrp = np.zeros((nb_clients + 1, nb_clients + 1))
@@ -191,6 +188,9 @@ print(distance_matrix_cvrp)
 # Creation des tenseurs sur le CPU
 offsprings_pop = np.ones((size_pop, nb_clients + 2, nb_voitures), dtype=int) * (-1)
 offsprings_pop[:, 0, :] = 0
+
+offspring = np.zeros((size_pop, nb_clients), dtype=np.int32)
+client_affecte = np.zeros(nb_clients, dtype=np.int16)
 
 demand_route = np.zeros((size_pop, nb_voitures), dtype=int)
 size_route = np.ones((size_pop, nb_voitures), dtype=int)
@@ -216,6 +216,8 @@ client_demands_global_mem = cuda.to_device(client_demands)
 vehicle_capacity_global_mem = cuda.to_device(vehicle_capacity)
 distance_matrix_cvrp_global_mem = cuda.to_device(distance_matrix_cvrp)
 fitness_offsprings_gpu_memory = cuda.to_device(fitness_offsprings)
+offsprings_global_mem = cuda.to_device(offspring)
+client_affecte_global_mem = cuda.to_device(client_affecte)
 
 matrixDistance1_gpu_memory = cuda.to_device(matrixDistance1)
 matrixDistance2_gpu_memory = cuda.to_device(matrixDistance2)
@@ -275,17 +277,18 @@ solutions_pop =  offsprings_pop_global_mem.copy_to_host()
 
 
 
-logging.info("begin verify solution init")
-for i in range(size_pop):
+if(test):
+    logging.info("begin verify solution init")
+    for i in range(size_pop):
 
-    score, demand,  size_route, is_correct_solution = verify_solution(nb_clients, nb_voitures, distance_matrix_cvrp, client_demands, vehicle_capacity, solutions_pop[i], 0, logging)
+        score, demand,  size_route, is_correct_solution = verify_solution(nb_clients, nb_voitures, distance_matrix_cvrp, client_demands, vehicle_capacity, solutions_pop[i], 0, logging)
 
 
-    if(is_correct_solution != True):
-        logging.info("PB solution : " + str(i))
-        
+        if(is_correct_solution != True):
+            logging.info("PB solution : " + str(i))
+            
 
-logging.info("end verify solution init")   
+    logging.info("end verify solution init")   
     
     
 
@@ -297,9 +300,9 @@ logging.info("Start Memetic algorithm")
 logging.info("############################")
     
 
-best_score = 9999999
+best_score = sys.maxsize
 
-for epoch in range(99999):
+for epoch in range(sys.maxsize):
     # First step : local search
     # Start tabu
 
@@ -338,7 +341,6 @@ for epoch in range(99999):
 
         print("START TABU SWAP NN")
 
-        
         cuda_kernels.local_search.tabu_CVRP_lambda_swap_NN[blockspergrid0, threadsperblock](rng_states, size_pop, max_iter, distance_matrix_cvrp_global_mem,
                                                        offsprings_pop_global_mem, demand_route_global_mem,
                                                        vehicle_capacity_global_mem, client_demands_global_mem,
@@ -420,8 +422,6 @@ for epoch in range(99999):
 
     logging.info("Keep best with diversity/fit tradeoff")
     
-    
-    
     logging.info("############################")
     logging.info("Start distance evaluation between individuals in pop")
     logging.info("############################")     
@@ -479,34 +479,31 @@ for epoch in range(99999):
 
     
 
-    
-    logging.info("############################")
-    logging.info("Start log pop and verification")
-    logging.info("############################")   
+    if(test):
+        logging.info("############################")
+        logging.info("Start log pop and verification")
+        logging.info("############################")   
 
 
 
-    logging.info("begin verify solution pop")
-    for i in range(size_pop):
+        logging.info("begin verify solution pop")
+        for i in range(size_pop):
 
-        score, demand,  size_route, is_correct_solution = verify_solution(nb_clients, nb_voitures, distance_matrix_cvrp, client_demands, vehicle_capacity, solutions_pop[i], 0, logging)
-
-
-        if(is_correct_solution != True):
-            logging.info("PB solution : " + str(i))
-            
-        if(score != fitness_pop[i] and fitness_pop[i] != 99999):
-            logging.info("PB score : " + str(i))
-            
-        if(np.max(demand) > capacity and fitness_pop[i] != 99999):
-            logging.info("PB demand solution " + str(i))     
+            score, demand,  size_route, is_correct_solution = verify_solution(nb_clients, nb_voitures, distance_matrix_cvrp, client_demands, vehicle_capacity, solutions_pop[i], 0, logging)
 
 
+            if(is_correct_solution != True):
+                logging.info("PB solution : " + str(i))
                 
-    logging.info("end verify solution pop")     
-    
-    
-    
+            if(score != fitness_pop[i] and fitness_pop[i] != 99999):
+                logging.info("PB score : " + str(i))
+                
+            if(np.max(demand) > capacity and fitness_pop[i] != 99999):
+                logging.info("PB demand solution " + str(i))     
+
+
+                    
+        logging.info("end verify solution pop")     
     
     logging.info("After keep best info")
 
@@ -529,11 +526,6 @@ for epoch in range(99999):
         f"Avg dist : {avg_dist} min dist : {min_dist} max dist : {max_dist}"
     )
 
-    
-
-
-
-
     # Third step : selection of best crossovers to generate new offsprings
     logging.info("############################")
     logging.info("Crossovers")
@@ -549,7 +541,7 @@ for epoch in range(99999):
     ########## Compute neighbor matching #####################
     dist_neighbors = np.where(
         matrice_crossovers_already_tested == 1,
-        9999,
+        99999,
         matrixDistanceAll[:size_pop, :size_pop],
     )
     dist_neighbors = np.where(dist_neighbors == 0, 99999, dist_neighbors)
@@ -564,11 +556,8 @@ for epoch in range(99999):
     
     ########## Compute crossovers #####################
     
-
-
-    
     if(type_crossover == "OX"):
-        cuda_kernels.crossover.computeCrossover_OX[blockspergrid0, threadsperblock](
+        cuda_kernels.crossover.computeCrossover_OX[blockspergrid1, threadsperblock](
                 rng_states,
                 size_pop,
                 distance_matrix_cvrp_global_mem,
@@ -578,11 +567,27 @@ for epoch in range(99999):
                 demand_route_global_mem,
                 client_demands_global_mem,
                 closest_individuals_gpu_memory,
-                vehicle_capacity_global_mem
-                )
-                
+                vehicle_capacity_global_mem,
+                offsprings_global_mem
+            )
+        '''
+        cuda_kernels.crossover.splitting_algorithm[blockspergrid1, threadsperblock](
+                offsprings_global_mem,
+                size_pop,
+                distance_matrix_cvrp_global_mem, 
+                client_demands_global_mem, 
+                vehicle_capacity_global_mem,
+                nb_clients, 
+                nb_voitures, 
+                rng_states, 
+                offsprings_pop_global_mem,
+                size_route_global_mem, 
+                demand_route_global_mem, 
+                client_affecte_global_mem
+            )
+        '''
     elif(type_crossover == "AOX"):
-        cuda_kernels.crossover.computeCrossover_AOX[blockspergrid0, threadsperblock](
+        cuda_kernels.crossover.computeCrossover_AOX[blockspergrid1, threadsperblock](
                 rng_states,
                 size_pop,
                 distance_matrix_cvrp_global_mem,
@@ -592,11 +597,12 @@ for epoch in range(99999):
                 demand_route_global_mem,
                 client_demands_global_mem,
                 closest_individuals_gpu_memory,
-                vehicle_capacity_global_mem
-                )
-
+                vehicle_capacity_global_mem,
+                offsprings_global_mem
+            )
+        
     elif(type_crossover == "LOX"):
-        cuda_kernels.crossover.computeCrossover_LOX[blockspergrid0, threadsperblock](
+        cuda_kernels.crossover.computeCrossover_LOX[blockspergrid1, threadsperblock](
                 rng_states,
                 size_pop,
                 distance_matrix_cvrp_global_mem,
@@ -606,8 +612,24 @@ for epoch in range(99999):
                 demand_route_global_mem,
                 client_demands_global_mem,
                 closest_individuals_gpu_memory,
-                vehicle_capacity_global_mem
-                )
+                vehicle_capacity_global_mem,
+                offsprings_global_mem
+            )
+        
+    elif(type_crossover == "EAX"):
+        cuda_kernels.crossover.computeCrossover_EAX[blockspergrid1, threadsperblock](
+                rng_states,
+                size_pop,
+                distance_matrix_cvrp_global_mem,
+                solutions_pop_global_mem,
+                offsprings_pop_global_mem,
+                size_route_global_mem,
+                demand_route_global_mem,
+                client_demands_global_mem,
+                closest_individuals_gpu_memory,
+                vehicle_capacity_global_mem,
+                offsprings_global_mem
+            )
         
     elif(type_crossover == "GPX"):
         cuda_kernels.crossover.computeClosestCrossover_GPX[blockspergrid0, threadsperblock](
@@ -657,30 +679,30 @@ for epoch in range(99999):
     
     demand_route = demand_route_global_mem.copy_to_host()
     
+    if(test):
+        for i in range(size_pop):
 
-    for i in range(size_pop):
+            score, demand,  size_route, is_correct_solution = verify_solution(nb_clients, nb_voitures, distance_matrix_cvrp, client_demands, vehicle_capacity, offspring[i], 0, logging)
 
-        score, demand,  size_route, is_correct_solution = verify_solution(nb_clients, nb_voitures, distance_matrix_cvrp, client_demands, vehicle_capacity, offspring[i], 0, logging)
-
-        
-        for j in range(nb_voitures):
-            if(size_route_offspring[i,j] != size_route[j]):
-                print("PB size route")
-                
-        if(is_correct_solution != True):
-            print("PB solution : " + str(i))
             
+            for j in range(nb_voitures):
+                if(size_route_offspring[i,j] != size_route[j]):
+                    print("PB size route")
+                    
+            if(is_correct_solution != True):
+                print("PB solution : " + str(i))
+                
 
-        
-        for j in range(nb_voitures):
-            if(demand[j] != demand_route[i,j]):
-                print("PB demande : " + str(i))
-                
-                print(demand)
-                print(demand_route[i])
-                
-                
-    logging.info("end verify crosssovers")
+            
+            for j in range(nb_voitures):
+                if(demand[j] != demand_route[i,j]):
+                    print("PB demande : " + str(i))
+                    
+                    print(demand)
+                    print(demand_route[i])
+                    
+                    
+        logging.info("end verify crosssovers")
     
     logging.info("end generation")
 
