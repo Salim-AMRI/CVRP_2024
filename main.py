@@ -26,16 +26,21 @@ parser.add_argument("--seed", type=int, help="seed", default=0)
 parser.add_argument("--size_pop", help="size_pop", type=int, default=10000)
 parser.add_argument("--alpha", help="alpha", type=float, default=0.6)
 
-parser.add_argument("--max_iter", help="max_iter", type=int, default=10000)
-parser.add_argument("--nb_iterations", help="nb_iterations", type=int, default=1)
-parser.add_argument("--lambda_penalty", help="lambda_penalty", type=float, default=20)
+parser.add_argument("--max_iter", help="max_iter", type=int, default=2000)
+
+parser.add_argument("--nb_iterations", help="nb_iterations", type=int, default=10)
+
+parser.add_argument("--lambda_penalty", help="lambda_penalty", type=float, default=0.5)
+
 parser.add_argument("--nb_neighbors", help="nb_neighbors", type=int, default=50)
 
 parser.add_argument("--factor_lambda", help="nb_iterations", type=float, default=2)
 
-parser.add_argument("--nb_nearest_neighbor_tabu", help="nb_nearest_neighbor_tabu", type=int, default=-1)
+parser.add_argument("--nb_nearest_neighbor_tabu", help="nb_nearest_neighbor_tabu", type=int, default=20)
 
 parser.add_argument("--gamma", help="gamma", type=int, default=10)
+
+
 parser.add_argument("--LS", help="LS", type=str, default="tabu_CVRP_lambda_swap_NN")
 parser.add_argument("--type_crossover", help="type_crossover", type=str, default="OX")
 
@@ -195,8 +200,11 @@ client_affecte = np.zeros(nb_clients, dtype=np.int16)
 demand_route = np.zeros((size_pop, nb_voitures), dtype=int)
 size_route = np.ones((size_pop, nb_voitures), dtype=int)
 
-fitness_pop = np.ones((size_pop), dtype=np.int32) * 999999
+fitness_pop = np.ones((size_pop), dtype=np.int32) * 99999999
 fitness_offsprings = np.zeros((size_pop), dtype=np.int32)
+
+test_fit = np.ones((size_pop), dtype=np.int32) * 99999999
+
 
 matrixDistance1 = np.zeros((size_pop, size_pop))
 matrixDistance2 = np.zeros((size_pop, size_pop))
@@ -204,7 +212,7 @@ matrixDistanceAll = np.zeros((2 * size_pop, 2 * size_pop), dtype=np.int16)
 matrixDistanceAll[:size_pop, :size_pop] = (np.ones((size_pop, size_pop), dtype=np.int16) * 999999)
 matrice_crossovers_already_tested = np.zeros((size_pop, size_pop), dtype=np.uint8)
 
-
+position_clients_test = np.zeros((size_pop,nb_clients,2), dtype=np.int32)
 
 ### Passages des données sur la carte GPU
 offsprings_pop_global_mem = cuda.to_device(offsprings_pop)
@@ -221,6 +229,20 @@ client_affecte_global_mem = cuda.to_device(client_affecte)
 
 matrixDistance1_gpu_memory = cuda.to_device(matrixDistance1)
 matrixDistance2_gpu_memory = cuda.to_device(matrixDistance2)
+
+test_fit_global_mem = cuda.to_device(test_fit)
+
+test_fit2 = np.ones((size_pop), dtype=np.int32) * 999999
+test_fit3 = np.ones((size_pop), dtype=np.int32) * 999999
+
+best_is_swap = np.zeros((size_pop), dtype=np.int32)
+
+test_fit_global_mem2  = cuda.to_device(test_fit2)
+test_fit_global_mem3  = cuda.to_device(test_fit3)
+best_is_swap_test  = cuda.to_device(best_is_swap)
+
+
+position_clients_test_global_mem = cuda.to_device(position_clients_test)
 
 
 
@@ -276,13 +298,32 @@ nb.cuda.synchronize()
 solutions_pop =  offsprings_pop_global_mem.copy_to_host()
 
 
+np.savetxt("test.csv", solutions_pop[0])
+
+
 
 if(test):
     logging.info("begin verify solution init")
-    for i in range(size_pop):
+    for i in range(10):
 
         score, demand,  size_route, is_correct_solution = verify_solution(nb_clients, nb_voitures, distance_matrix_cvrp, client_demands, vehicle_capacity, solutions_pop[i], 0, logging)
 
+        print("score")
+        print(score)
+        print("demand")
+        print(demand)
+
+        print("np.sum(demand)")
+        print(np.sum(demand))
+
+        print("size_route")
+        print(size_route)
+
+        print("client_demands")
+        print(client_demands)
+
+        print("np.sum(client_demands)")
+        print(np.sum(client_demands))
 
         if(is_correct_solution != True):
             logging.info("PB solution : " + str(i))
@@ -344,20 +385,20 @@ for epoch in range(sys.maxsize):
         cuda_kernels.local_search.tabu_CVRP_lambda_swap_NN[blockspergrid0, threadsperblock](rng_states, size_pop, max_iter, distance_matrix_cvrp_global_mem,
                                                        offsprings_pop_global_mem, demand_route_global_mem,
                                                        vehicle_capacity_global_mem, client_demands_global_mem,
-                                                       size_route_global_mem, fitness_offsprings_gpu_memory, closest_clients_gpu_memory, lambda_penalty, factor_lambda, alpha,  nb_iterations)  
+                                                       size_route_global_mem, fitness_offsprings_gpu_memory, closest_clients_gpu_memory, lambda_penalty, factor_lambda, alpha,  nb_iterations, test_fit_global_mem, test_fit_global_mem2, test_fit_global_mem3, best_is_swap_test, position_clients_test_global_mem)
         
-
-    elif(LS == "tabu_CVRP_lambda_swap_NN_v2"):
-
-        print("START TABU SWAP NN v2")
-
-        
-        cuda_kernels.local_search.tabu_CVRP_lambda_swap_NN_v2[blockspergrid0, threadsperblock](rng_states, size_pop, max_iter, distance_matrix_cvrp_global_mem,
-                                                       offsprings_pop_global_mem, demand_route_global_mem,
-                                                       vehicle_capacity_global_mem, client_demands_global_mem,
-                                                       size_route_global_mem, fitness_offsprings_gpu_memory, closest_clients_gpu_memory, lambda_penalty, alpha,  nb_iterations) 
-
-        
+    #
+    # elif(LS == "tabu_CVRP_lambda_swap_NN_v2"):
+    #
+    #     print("START TABU SWAP NN v2")
+    #
+    #
+    #     cuda_kernels.local_search.tabu_CVRP_lambda_swap_NN_v2[blockspergrid0, threadsperblock](rng_states, size_pop, max_iter, distance_matrix_cvrp_global_mem,
+    #                                                    offsprings_pop_global_mem, demand_route_global_mem,
+    #                                                    vehicle_capacity_global_mem, client_demands_global_mem,
+    #                                                    size_route_global_mem, fitness_offsprings_gpu_memory, closest_clients_gpu_memory, lambda_penalty, alpha,  nb_iterations)
+    #
+    #
     #elif(LS == "tabu_lambda_swap_v2"):
 
         #print("START TABU SWAP v2")
@@ -373,9 +414,68 @@ for epoch in range(sys.maxsize):
     offsprings_pop = offsprings_pop_global_mem.copy_to_host()
     fitness_offsprings = fitness_offsprings_gpu_memory.copy_to_host()
 
+
+    test_fit = test_fit_global_mem.copy_to_host()
+
+
+    test_fit2 = test_fit_global_mem2.copy_to_host()
+    test_fit3 = test_fit_global_mem3.copy_to_host()
+
+    print("test_fit")
+    print(test_fit)
+
+    print("test_fit2")
+    print(test_fit2)
+
+    print("test_fit3")
+    print(test_fit3)
+
+    best_is_swap = best_is_swap_test.copy_to_host()
+
+    print("best_is_swap")
+    print(best_is_swap)
+
+    print("fitness_offsprings")
     print(fitness_offsprings)
-    
-    
+
+    # if (test):
+
+    print("test debug tabu")
+    for i in range(10):
+
+        score, demand, size_route, is_correct_solution = verify_solution(nb_clients, nb_voitures,
+                                                                         distance_matrix_cvrp, client_demands,
+                                                                         vehicle_capacity, offsprings_pop[i], 0,
+                                                                         logging)
+
+        print("score")
+        print(score)
+        print("demand")
+        print(demand)
+
+        print("np.sum(demand)")
+        print(np.sum(demand))
+
+        print("size_route")
+        print(size_route)
+
+        print("client_demands")
+        print(client_demands)
+
+        print("np.sum(client_demands)")
+        print(np.sum(client_demands))
+
+        if (is_correct_solution != True):
+            logging.info("PB solution : " + str(i))
+
+
+
+
+        # position_clients_test = position_clients_test_global_mem.copy_to_host()
+
+    # print("position_clients_test")
+    # print(position_clients_test[0])
+
     
     logging.info("############################")
     logging.info("Log results Tabu")

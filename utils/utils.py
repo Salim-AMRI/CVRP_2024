@@ -110,6 +110,8 @@ def verify_solution(nb_clients, nb_voitures, distance_matrix, client_demands, ve
         if(route_demand[idx1_v] > vehicule_capacity[idx1_v]):
            
            f += lambda_ * (route_demand[idx1_v] - vehicule_capacity[idx1_v])
+
+
                         
                         
     if(nb_clients_in_solution != nb_clients):

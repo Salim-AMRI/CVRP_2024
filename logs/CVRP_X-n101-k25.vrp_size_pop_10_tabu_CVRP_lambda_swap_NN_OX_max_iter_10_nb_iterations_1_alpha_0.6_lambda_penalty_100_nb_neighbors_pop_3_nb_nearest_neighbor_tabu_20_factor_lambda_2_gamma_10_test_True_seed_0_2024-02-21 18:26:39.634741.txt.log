@@ -1,0 +1,76 @@
+21/02/2024 06:26:39 init
+21/02/2024 06:26:39 cuda:0
+21/02/2024 06:26:40 ############################
+21/02/2024 06:26:40 Init population
+21/02/2024 06:26:40 ############################
+21/02/2024 06:26:40 begin verify solution init
+21/02/2024 06:26:41 end verify solution init
+21/02/2024 06:26:41 ############################
+21/02/2024 06:26:41 Start Memetic algorithm
+21/02/2024 06:26:41 ############################
+21/02/2024 06:26:41 ############################
+21/02/2024 06:26:41 Start TABU
+21/02/2024 06:26:41 ############################
+21/02/2024 06:26:47 ############################
+21/02/2024 06:26:47 Log results Tabu
+21/02/2024 06:26:47 ############################
+21/02/2024 06:26:47 Tabucol duration : 6.628894805908203
+21/02/2024 06:26:47 Epoch : 0
+21/02/2024 06:26:47 Pop best : 99999_worst : 99999_avg : 99999.0
+21/02/2024 06:26:47 Save best solution
+21/02/2024 06:26:47 Keep best with diversity/fit tradeoff
+21/02/2024 06:26:47 ############################
+21/02/2024 06:26:47 Start distance evaluation between individuals in pop
+21/02/2024 06:26:47 ############################
+21/02/2024 06:26:48 Matrix distance duration : 1.0805079936981201
+21/02/2024 06:26:48 end  matrix distance
+21/02/2024 06:26:48 ############################
+21/02/2024 06:26:48 Start insertion in pop
+21/02/2024 06:26:48 ############################
+21/02/2024 06:26:48 len(idx_selected) 10
+21/02/2024 06:26:48 Nb insertion 10
+21/02/2024 06:26:48 Insertion in pop : 0.00045108795166015625
+21/02/2024 06:26:48 ############################
+21/02/2024 06:26:48 Start log pop and verification
+21/02/2024 06:26:48 ############################
+21/02/2024 06:26:48 begin verify solution pop
+21/02/2024 06:26:48 end verify solution pop
+21/02/2024 06:26:48 After keep best info
+21/02/2024 06:26:48 Pop _best : 99999_worst : 99999_avg : 99999.0
+21/02/2024 06:26:48 [99999 99999 99999 99999 99999 99999 99999 99999 99999 99999]
+21/02/2024 06:26:48 Avg dist : 76.4888888888889 min dist : 73.0 max dist : 81
+21/02/2024 06:26:48 ############################
+21/02/2024 06:26:48 Crossovers
+21/02/2024 06:26:48 ############################
+21/02/2024 06:26:48 add pending dealloc: cuMemFree_v2 204000 bytes
+21/02/2024 06:26:52 add pending dealloc: cuMemFree_v2 80 bytes
+21/02/2024 06:26:52 add pending dealloc: cuMemFree_v2 204000 bytes
+21/02/2024 06:26:52 add pending dealloc: module_unload ? bytes
+21/02/2024 06:26:52 add pending dealloc: module_unload ? bytes
+21/02/2024 06:26:52 add pending dealloc: module_unload ? bytes
+21/02/2024 06:26:52 add pending dealloc: module_unload ? bytes
+21/02/2024 06:26:52 add pending dealloc: cuMemFree_v2 16000 bytes
+21/02/2024 06:26:52 add pending dealloc: cuMemFree_v2 800 bytes
+21/02/2024 06:26:52 add pending dealloc: cuMemFree_v2 800 bytes
+21/02/2024 06:26:52 add pending dealloc: cuMemFree_v2 200 bytes
+21/02/2024 06:26:52 add pending dealloc: cuMemFree_v2 4000 bytes
+21/02/2024 06:26:52 add pending dealloc: cuMemFree_v2 40 bytes
+21/02/2024 06:26:52 add pending dealloc: cuMemFree_v2 81608 bytes
+21/02/2024 06:26:52 add pending dealloc: cuMemFree_v2 200 bytes
+21/02/2024 06:26:52 dealloc: cuMemFree_v2 204000 bytes
+21/02/2024 06:26:52 dealloc: cuMemFree_v2 80 bytes
+21/02/2024 06:26:52 dealloc: cuMemFree_v2 204000 bytes
+21/02/2024 06:26:52 dealloc: cuMemFree_v2 16000 bytes
+21/02/2024 06:26:52 dealloc: cuMemFree_v2 800 bytes
+21/02/2024 06:26:52 dealloc: cuMemFree_v2 800 bytes
+21/02/2024 06:26:52 dealloc: cuMemFree_v2 200 bytes
+21/02/2024 06:26:52 dealloc: cuMemFree_v2 4000 bytes
+21/02/2024 06:26:52 dealloc: cuMemFree_v2 40 bytes
+21/02/2024 06:26:52 dealloc: cuMemFree_v2 81608 bytes
+21/02/2024 06:26:52 dealloc: cuMemFree_v2 200 bytes
+21/02/2024 06:26:52 add pending dealloc: cuMemFree_v2 808 bytes
+21/02/2024 06:26:52 add pending dealloc: cuMemFree_v2 2000 bytes
+21/02/2024 06:26:52 add pending dealloc: cuMemFree_v2 2000 bytes
+21/02/2024 06:26:52 add pending dealloc: cuMemFree_v2 2000 bytes
+21/02/2024 06:26:52 add pending dealloc: cuMemFree_v2 204000 bytes
+21/02/2024 06:26:52 add pending dealloc: cuMemFree_v2 1024 bytes

@@ -948,7 +948,7 @@ def computeClosestCrossover_GPX(rng_states, size_pop, distance_matrix_gpu, solut
 
 
 
-            quality_routes[int(indiceParent), voitureMax] = -
+            quality_routes[int(indiceParent), voitureMax] = -999
             distances_routes[int(indiceParent), voitureMax] = 1
 
 
